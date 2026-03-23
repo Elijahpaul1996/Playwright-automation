@@ -1,82 +1,77 @@
+const { expect } = require('@playwright/test');
+
 class CreateProjectPage {
 
   constructor(page) {
     this.page = page;
   }
 
-  async createProject() {
+  async createProject(projectData) {
 
-    // Wait for modal
+    console.log('Create project page');
+
     await this.page.getByRole('button', { name: 'Create Project' }).waitFor();
+    await this.page.getByRole('button', { name: 'Create Project' }).click();
 
     // Client
     await this.page.getByLabel('Client').click();
-    await this.page.getByRole('option', { name: 'Insight Global', exact: true }).click();
+    await this.page.getByRole('option', { name: projectData.client, exact: true }).click();
 
     // Opportunity
     await this.page.getByLabel('Dynamics Opportunity').click();
-    await this.page.getByRole('option', { name: 'IG consultant Support Solution' }).click();
+    await this.page.getByRole('option', { name: projectData.opportunity }).click();
 
     // Text fields
-    await this.page.getByLabel('Project Name').fill('Test5 Auto');
-    await this.page.getByLabel('Project Description').fill('Created for test');
+    await this.page.getByLabel('Project Name').fill(projectData.projectName);
+    await this.page.getByLabel('Project Description').fill(projectData.projectDescription);
 
-         await this.page.waitForTimeout(3000);
-         
-const datePickers = this.page.locator('[role="group"]');
+    await this.page.waitForTimeout(3000);
 
-// Start Date
-await datePickers.nth(0).click();
-await this.page.keyboard.press('Control+A');
-await this.page.keyboard.type('06012026');
-await this.page.keyboard.press('Tab');
+    // Start Date
+    const datePickers = this.page.locator('[role="group"]');
+    await datePickers.nth(0).click();
+    await this.page.keyboard.press('Control+A');
+    await this.page.keyboard.type(projectData.startDate);
+    await this.page.keyboard.press('Tab');
 
-// End Date
-await datePickers.nth(1).dblclick();   // ← key change
-await this.page.keyboard.press('Control+A');
-await this.page.keyboard.type('06012027');
-await this.page.waitForTimeout(3000);
-
+    // End Date
+    await datePickers.nth(1).dblclick();
+    await this.page.keyboard.press('Control+A');
+    await this.page.keyboard.type(projectData.endDate);
+    await this.page.waitForTimeout(3000);
 
     // Practice
     await this.page.getByLabel('Practice').click();
-    await this.page.getByRole('option', { name: 'Data and Apps' }).click();
+    await this.page.getByRole('option', { name: projectData.practice }).click();
 
     // Service
     await this.page.getByLabel('Service').click();
-    await this.page.getByRole('option', { name: 'Data transformation' }).click();
+    await this.page.getByRole('option', { name: projectData.service }).click();
 
     // Billing Type
     await this.page.getByLabel('Billing Type').click();
     await this.page.locator('.react-select__menu').waitFor();
-    await this.page.getByRole('option', { name: 'T&M', exact: true }).click();
+    await this.page.getByRole('option', { name: projectData.billingType, exact: true }).click();
 
     // Billing Cycle
     await this.page.getByLabel('Billing Cycle').click();
-    await this.page.getByRole('option', { name: 'Monthly' }).click();
-
-    // Currency
-    await this.page.getByLabel('Contract Currency').click();
-    await this.page.getByRole('option', { name: 'United States Dollar - USD ($)' }).click();
+    await this.page.getByRole('option', { name: projectData.billingCycle }).click();
 
     // Payment Terms
     await this.page.getByLabel('Payment Terms').click();
     await this.page.locator('.react-select__menu').waitFor();
-    await this.page.getByRole('option', { name: 'Net 60', exact: true }).click();
+    await this.page.getByRole('option', { name: projectData.paymentTerms, exact: true }).click();
 
     // Numeric fields
-    await this.page.getByLabel('Volume Rebate %').fill('5');
-    await this.page.getByLabel('VMS Fee %').fill('5');
+    await this.page.getByLabel('Volume Rebate %').fill(String(projectData.volumeRebate));
+    await this.page.getByLabel('VMS Fee %').fill(String(projectData.vmsFee));
 
     // Submit
     await this.page.getByRole('button', { name: 'Create', exact: true }).click();
-    // Click Create
+    console.log('Project created:', projectData.projectName);
 
-await this.page.waitForURL(/\/projects\//);
-
-// ✅ Optional small wait after page appears
-await this.page.waitForTimeout(3000);
-
+    await this.page.waitForURL(/\/projects\//);
+    await this.page.waitForTimeout(3000);
   }
 }
 

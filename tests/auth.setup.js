@@ -6,14 +6,14 @@ test('login and save session', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Sign in with Microsoft' }).click();
 
-  console.log('👉 Login manually now...');
+  console.log(' Login manually now...');
 
-  // give time to login manually
+
   await page.waitForURL(/dashboard/, { timeout: 300000 });
 
-  console.log('✅ Login saved');
+  console.log(' Login saved');
 
-  // ⭐ Save login session
+  
   await page.context().storageState({ path: 'storageState.json' });
 
 });

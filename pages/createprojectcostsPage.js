@@ -1,142 +1,113 @@
 const { expect } = require('@playwright/test');
-const { title } = require('node:process');
 
 class CreateprojectCostsPage {
 
-constructor(page) {
+  constructor(page) {
     this.page = page;
   }
 
-  async selectFromDropdownByIndex(index, valueText) {
-
-  const dropdown = this.page.locator('[role="combobox"]').nth(index);
-
-  await dropdown.waitFor();
-  await dropdown.click();
-
-  await this.page.getByRole('option', { name: valueText }).waitFor();
-
-  await this.page.getByRole('option', {
-    name: valueText,
-    exact: true
-  }).click();
-  }
-async createprojectcosts(){
-
-console.log(' CreateRolePage');
-
-    /*console.log('Entered CreateRolePage');
-
-    const projectBtn = this.page.getByText('Test3 Auto', { exact: true });
-
+  /*async navigateToProject() {
+    const projectBtn = this.page.getByText('Test7 Auto', { exact: true });
     await projectBtn.waitFor({ timeout: 30000 });
     console.log('Project button visible');
-
     await projectBtn.click();
     console.log('Project button clicked');
-
-    await this.page.waitForLoadState('networkidle');
-
-    await this.page.getByRole('button', { name: 'Project Costs', exact: true }).click();
-    await this.page.getByRole('button', { name: '+ Add Role', exact: true }).click();
-
     await this.page.waitForLoadState('networkidle');
     
+  }*/
 
-    //await this.page.waitForURL('https://pricingtool-ui.azurewebsites.net/projects/484');
-    //await this.page.waitForLoadState('networkidle');
-
-    console.log('Entered Dashboard');
-
-    const projectBtn = this.page.getByText('Test3 Auto', { exact: true });
-
-    await projectBtn.waitFor({ timeout: 30000 });
-    console.log('Project button visible');
-
-    await projectBtn.click();
-    console.log('Project button clicked');*/
-    await this.page.waitForLoadState('networkidle');
-
-    
-    await this.page.getByRole('button', { name: '$ Project Costs', exact: true }).click();
-    await this.page.getByRole('button', {name:'+ Add Cost Item', exact: true}).click();
-    await this.page.waitForLoadState('networkidle');
-
-    
-   
-    //await this.page.waitForTimeout(3000);
-
-    //await this.page.locator('//span[normalize-space()="Cost Description"]/parent::div/following-sibling::div//input').fill('Morale');
-    //await this.page.getByText('Cost Description', exact:true).
-
-    //await this.page.getByLable('Cost Description', {exact: true}).fill('Morale');
-    //const costInput = this.page.locator(
-  //'//span[normalize-space()="Cost Description"]/following::input[1]');
- // await costInput.fill('Morale');
-
-    //await this.page.locator('[name="CostDescription"]').fill('Morale');
-    //await this.fillInputBySpanLabel('Cost Description', 'morale');
-    /*const costInput = this.page.locator(
-  '//span[normalize-space()="CostDescription"]/parent::div/following-sibling::div//input'
-);
-
-await costInput.waitFor({ state: 'visible' });
-await costInput.fill('Morale');
-    
-await this.page.pause();
-await this.page
-  .locator('div.flex-col', { hasText: 'Cost Description' })
-  .locator('input')
-  .fill('Morale');
-    console.log('Morale entered');*/
-   
-//const costInput = this.page.locator(
-  //'//span[contains(text(),"Description")]/ancestor::div//input[@type="text" and not(@role="combobox")]'
-//);
-//await costInput.fill('Morale');
-
-await this.page.locator('//span[contains(text(),"Cost Description")]//following-sibling::div//input').fill('facility cost');
-
-
-   
-  console.log('des');
-  await this.page.waitForTimeout(2000);
-  await this.selectFromDropdownByIndex(0, 'FX Costs');
-    await this.selectFromDropdownByIndex(1, 'Pass-Through');
-      await this.selectFromDropdownByIndex(2, 'United States');
-
-
-       await this.selectFromDropdownByIndex(3, 'Monthly');
-
-  console.log('all dropdowns selected');
-
-
-await this.page.locator('//span[text()="Quantity"]//following-sibling::div//input').fill('2');
-
-
+  async selectFromDropdownByIndex(index, valueText) {
+    const dropdown = this.page.locator('[role="combobox"]').nth(index);
+    await dropdown.waitFor();
+    await dropdown.click();
+    //  Scoped inside listbox — avoids strict mode violation
+    const option = this.page.locator(
+      `//div[@role="listbox"]//div[@role="option" and normalize-space()="${valueText}"]`
+    );
+    await option.waitFor({ state: 'visible' });
+    await option.click();
+  }
 
  
+  async fillProjectCostForm(costData, index = 1) {
 
-await this.page.waitForTimeout(3000);
+   
+    await this.page.getByRole('button', { name: '+ Add Cost Item', exact: true }).click();
+    await this.page.waitForLoadState('networkidle');
 
-await this.page.locator(
-  '//span[text()="Frequency"]//following-sibling::div//input').fill('2');
+    
+    await this.page.locator(
+      '//span[contains(text(),"Cost Description")]//following-sibling::div//input'
+    ).fill(costData.description);
+    console.log(`Cost description filled: ${costData.description}`);
 
-  await this.page.waitForTimeout(3000);
+    // Dropdown 0 — Cost Type
+    await this.selectFromDropdownByIndex(0, costData.costType);
+    console.log(`Cost type selected: ${costData.costType}`);
 
-await this.page.locator('//span[text()="Contract Currency Unit Rate"]//following-sibling::div//input').fill('25');
-await this.page.locator('//span[text()="Markup (%)"]//following-sibling::div//input').fill('2');
-console.log('input selected');
+    await this.page.waitForTimeout(2000);
 
-await this.page.getByRole('button', {name:'Save'}).click();
-console.log('save clicked');
-//await this.page.locator('button[title="Save"]').click();
-await this.page.waitForTimeout(3000);
+    // Dropdown 1 — Billing Type
+    await this.selectFromDropdownByIndex(1, costData.billingType);
 
+    // Dropdown 2 — Country
+    await this.selectFromDropdownByIndex(2, costData.country);
+
+    // Dropdown 3 — Cashflow Impact / Frequency
+    await this.selectFromDropdownByIndex(3, costData.cashflowImpact);
+    console.log(`All dropdowns selected`);
+
+    // Quantity
+    await this.page.locator(
+      '//span[text()="Quantity"]//following-sibling::div//input'
+    ).fill(String(costData.quantity));
+    console.log(`Quantity filled: ${costData.quantity}`);
+
+    // Frequency
+    await this.page.locator(
+      '//span[text()="Frequency"]//following-sibling::div//input'
+    ).fill(String(costData.frequency));
+    console.log(`Frequency filled: ${costData.frequency}`);
+
+    // Unit Rate
+    const unitRateInput = this.page.locator(
+      '//span[text()="Contract Currency Unit Rate"]//following-sibling::div//input'
+    );
+    await unitRateInput.waitFor({ state: 'visible', timeout: 5000 });
+    await unitRateInput.fill(String(costData.unitRate));
+    console.log(`Unit rate filled: ${costData.unitRate}`);
+
+    // Markup
+    await this.page.locator(
+      '//span[text()="Markup (%)"]//following-sibling::div//input'
+    ).fill(String(costData.markup));
+    console.log(`Markup filled: ${costData.markup}`);
+
+    // Save
+    await this.page.getByRole('button', { name: 'Save' }).click();
+    console.log(`Cost item ${index} saved`);
+    await this.page.waitForTimeout(3000);
+  }
+
+  
+  async multipleprojectcosts(costsData) {
+    console.log(`Creating ${costsData.length} cost items...`);
+
+   // await this.navigateToProject();
+    console.log(' project selected');
+
+     await this.page.waitForLoadState('networkidle');
+    await this.page.getByRole('button', { name: ' Project Costs' }).click();
+
+    for (let i = 0; i < costsData.length; i++) {
+      console.log(`\nCreating cost item ${i + 1} of ${costsData.length}: ${costsData[i].costType}`);
+      await this.page.waitForLoadState('networkidle');
+      await this.fillProjectCostForm(costsData[i], i + 1);
+      console.log(`Cost item ${i + 1} done`);
+    }
+
+    console.log(`\nAll ${costsData.length} cost items created!`);
+  }
 }
 
-
-
-}
 module.exports = CreateprojectCostsPage;
-

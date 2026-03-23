@@ -1,77 +1,82 @@
+
 const { expect } = require('@playwright/test');
-const { title } = require('node:process');
 
- class CreateWorkitemPage {
-
-constructor(page){
-this.page=page
-}
-
-async createworkitem() {
-
-console.log('Workitem Page');
-/*console.log('Entered Dashboard');
-
-    const projectBtn = this.page.getByText('Test3 Auto', { exact: true });
-
-    await projectBtn.waitFor({ timeout: 30000 });
-    console.log('Project button visible');
-
-    await projectBtn.click();
-    console.log('Project button clicked');*/
-    await this.page.waitForLoadState('networkidle');
-
-    await this.page.getByRole('button', {name: 'Work Items' , exact: true}).click();
-    await this.page.getByRole('button', { name: '+ Add Work Item', exact: true }).click();
-    console.log('add Workitem page');
-
-
-    await this.page.waitForTimeout(3000);
-    await expect(this.page.locator('[name="workItemName"]')).toBeVisible();
-
-// Fill fields
-await this.page.locator('[name="workItemName"]').fill('Workitem 1');
-console.log('name filled');
-const description = this.page.locator('textarea').first();
-await description.waitFor({ state: 'visible' });
-await description.fill('This is description');
-console.log('description filled');
-    //await this.page.locator('[name="workItemName"]').fill('Workitem 1');
-    //await this.page.getByText('Description', { exact: true }).waitFor();
-    //await this.page.locator('textarea').fill('This is description');
-    //await this.page.locator(
- // '//label[normalize-space()="Description"]/following-sibling::textarea').fill('This is description');
-    //await this.page.locator('[name="Description"]').fill('workitem 1 description');
-    //await this.page.locator('textarea').fill('This is description');
-    //const workitemname= await this.page.getByLabel('Work Item Name', { exact: true}).fill('Workitem 1');
-    //const workitemname= await this.page.locator('//span[normalize-space()="Work Item Name]/ancestor::div[contains(@class,"flex-col")]//input');
-    
-    await this.page.waitForLoadState('networkidle');
-
-await this.page.locator('tr', {hasText: 'Agile Coach'}).locator('input[type="checkbox"]').check(); 
-console.log('checked'); // if there are multiple checkbox then we can mention the number
-//await this.page.locator('input[type="number"]').nth(0).fill('3');
-await this.page
-  .locator('tr', { hasText: 'Agile Coach' })
-  .locator('td')
-  .nth(3)
-  .locator('input').fill('3');
-  await this.page
-  .locator('tr', { hasText: 'Agile Coach' })
-  .locator('td')
-  .nth(8)
-  .locator('input').fill('2');
-  console.log("all options selected");
-   await this.page.waitForTimeout(2000);
-  await this.page.locator('button[title="Save"]').click();
+class createWorkitemPage {
   
-    await this.page.waitForTimeout(3000);
+constructor(page) {
+  this.page = page;
+}
 
 
 
+async fillWorkItemForm(name, description, rowName, col3Value, col8Value) {
 
+  await this.page.getByRole('button', { name: '+ Add Work Item', exact: true }).click();
+  console.log('Add Work Item clicked');
 
+  // Wait for form
+  //await expect(this.page.locator('[name="WorkItemName"]')).toBeVisible();
+      await expect(this.page.locator('[name="workItemName"]')).toBeVisible();
 
+  // Fill name and description
+  await this.page.locator('[name="workItemName"]').fill(name);
+  console.log(`Work item name filled: ${name}`);
+
+  const desc = this.page.locator('textarea').first();
+  await desc.waitFor({ state: 'visible' });
+  await desc.fill(description);
+  console.log('Description filled');
+
+  await this.page.waitForLoadState('networkidle');
+
+ const activeRow = this.page.locator('tr', { hasText: rowName }).last();
+
+  await activeRow.locator('input[type="checkbox"]').check();
+  console.log(`Checkbox checked for: ${rowName}`);
+  await this.page.waitForTimeout(1000);
+
+  await activeRow.locator('td').nth(2).locator('input').fill(String(col3Value));
+  await activeRow.locator('td').nth(7).locator('input').fill(String(col8Value));
+  console.log('All fields filled');
+
+  console.log('All fields filled');
+
+  await this.page.waitForTimeout(2000);
+  await this.page.locator('button[title="Save"]').click();
+  console.log(` Work item "${name}" saved`);
+  await this.page.waitForTimeout(3000);
+}
+
+async createMultipleWorkItems(workItems) {    //Main method
+  console.log('Entered Work Items Page');
+
+  // Navigate once - if we are calling or executing directly from wk page 
+  /*const projectBtn = this.page.getByText('Test7 Auto', { exact: true });
+  await projectBtn.waitFor({ timeout: 30000 });
+  await projectBtn.click();
+  await this.page.waitForLoadState('networkidle');*/
+
+  await this.page.getByRole('button', { name: 'Work Items', exact: true }).click();
+  console.log('Work Items section opened');
+
+  // Loop — create work items
+for (let i = 0; i < workItems.length; i++) {
+    const item = workItems[i];                    // get each object
+    console.log(`Creating work item ${i + 1} of ${workItems.length}`);
+
+    await this.fillWorkItemForm(
+      item.name,                                  
+      `This is description ${i + 1}`,          
+      item.role,                                  
+      item.col3Value,                              
+      item.col8Value                                 
+    );
+    console.log(` Work item ${i + 1} done`);
+
+  console.log(` All ${workItems.length} work items created!`);
 }
 }
-module.exports = CreateWorkitemPage;
+
+}
+
+module.exports = createWorkitemPage;
