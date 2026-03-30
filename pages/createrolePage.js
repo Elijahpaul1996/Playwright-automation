@@ -1,75 +1,57 @@
 const { expect } = require('@playwright/test');
+const { roleLocators } = require('../Locators/Rolesloc');
 
 class CreateRolePage {
 
   constructor(page) {
     this.page = page;
+    this.loc = roleLocators(page); // all locators loaded here
   }
 
-
-  /*async navigateToProject() {
-    const projectBtn = this.page.getByText('Test7 Auto', { exact: true });
+  async navigateToProject() {
+    const projectBtn = this.page.getByText('Test13 Auto', { exact: true });
     await projectBtn.waitFor({ timeout: 30000 });
     console.log('Project button visible');
     await projectBtn.click();
     console.log('Project button clicked');
     await this.page.waitForLoadState('networkidle');
-  }*/
+  }
   
+
   async selectFromDropdownByIndex(index, valueText) {
-    const dropdown = this.page.locator('[role="combobox"]').nth(index);
-    await dropdown.waitFor();
-    await dropdown.click();
-    await this.page.getByRole('option', { name: valueText }).waitFor();
-    await this.page.getByRole('option', { name: valueText, exact: true }).click();
+    await this.loc.dropdown(index).waitFor();
+    await this.loc.dropdown(index).click();
+    await this.loc.dropdownOption(valueText).waitFor();
+    await this.loc.dropdownOptionExact(valueText).click();
   }
 
- 
   async fillDecimalByLabel(labelText, value) {
-    const input = this.page.locator(
-      `//span[contains(normalize-space(),"${labelText}")]/parent::div//input[@inputmode="decimal"]`
-    );
-    await input.fill(String(value));
+    await this.loc.decimalInput(labelText).fill(String(value));
   }
 
-  // ─────────────────────────────────────────────────────────────
-  // Reusable numeric input helper
-  // ─────────────────────────────────────────────────────────────
   async fillNumericByLabel(labelText, value) {
-    const input = this.page.locator(
-      `//span[contains(normalize-space(),"${labelText}")]/parent::div//input[@inputmode="numeric"]`
-    );
-    await input.fill(String(value));
+    await this.loc.numericInput(labelText).fill(String(value));
   }
 
-  // ─────────────────────────────────────────────────────────────
-  // Reusable checkbox helper — safe across multiple roles
-  // ─────────────────────────────────────────────────────────────
   async checkBoxByLabel(labelText) {
-    const checkbox = this.page.locator(
-      `//span[normalize-space()="${labelText}"]/parent::div//input[@type="checkbox" and not(@disabled)]`
-    );
-    await checkbox.waitFor({ state: 'visible', timeout: 3000 });
-    await checkbox.check();
+    await this.loc.checkbox(labelText).waitFor({ state: 'visible', timeout: 3000 });
+    await this.loc.checkbox(labelText).check();
   }
 
-  // ─────────────────────────────────────────────────────────────
-  // Fill ONE role form — ALL data passed as roleData object
-  // ─────────────────────────────────────────────────────────────
   async fillRoleForm(roleData) {
 
     await this.page.waitForLoadState('networkidle');
-    await this.page.getByRole('button', { name: 'Roles', exact: true }).click();
-    await this.page.getByRole('button', { name: '+ Add Role', exact: true }).click();
+    await this.loc.rolesBtn.click();
+    await this.loc.addRoleBtn.click();
     await this.page.waitForLoadState('networkidle');
 
-    // Dropdowns — all values from roleData
+    // Dropdowns
     await this.selectFromDropdownByIndex(0, roleData.roleType);
-    console.log(`Role selected: ${roleData.roleType}`);
+    console.log('Role selected:', roleData.roleType);
 
     await this.page.waitForTimeout(1000);
     await this.selectFromDropdownByIndex(1, roleData.tenure);
-    console.log(`Tenure selected: ${roleData.tenure}`);
+    console.log('Tenure selected:', roleData.tenure);
 
     await this.page.waitForTimeout(2000);
     await this.selectFromDropdownByIndex(2, roleData.country);
@@ -79,13 +61,8 @@ class CreateRolePage {
     await this.selectFromDropdownByIndex(6, roleData.billRateType);
     console.log('All dropdowns selected');
 
-    await this.page.getByLabel(roleData.billRateType).nth(1).check();
-
-    // Headcount (optional)
-    /*if (roleData.headcount) {
-      await this.fillNumericByLabel('Headcount', roleData.headcount);
-      console.log(`Headcount: ${roleData.headcount}`);
-    }*/
+    // Bill Rate Type radio
+    await this.loc.billRateLabel(roleData.billRateType).check();
 
     // Decimal fields
     await this.fillDecimalByLabel('Contract Currency Pay Rate/hr', roleData.payRate);
@@ -100,7 +77,7 @@ class CreateRolePage {
     await this.fillNumericByLabel('Holidays/year(Default=0)', roleData.holidays);
     console.log('Numeric values entered');
 
-    // Cross Border checkbox — only check if true in data
+    // Cross Border checkbox — only if true
     if (roleData.crossBorder) {
       await this.checkBoxByLabel('Cross Border');
       console.log('Cross Border checked');
@@ -109,31 +86,26 @@ class CreateRolePage {
     await this.page.waitForTimeout(1000);
 
     // Discount
-    const discount = this.page.locator(
-      '//span[contains(normalize-space(),"Discount")]/parent::div//input[@type="number"]'
-    );
-    await discount.fill(String(roleData.discount));
-    console.log(`Discount: ${roleData.discount}`);
+    await this.loc.discountInput.fill(String(roleData.discount));
+    console.log('Discount:', roleData.discount);
 
     // Save
-    await this.page.locator('button[title="Save"]').click();
-    console.log(`Role "${roleData.roleType}" saved`);
+    await this.loc.saveBtn.click();
+    console.log('Role saved:', roleData.roleType);
     await this.page.waitForTimeout(2000);
   }
 
-  
   async createMultipleRoles(rolesData) {
-    console.log(`Creating ${rolesData.length} roles...`);
-    //await this.navigateToProject();
-    //console.log(' project selected');
+    console.log('Creating', rolesData.length, 'roles...');
+    await this.navigateToProject();
 
     for (let i = 0; i < rolesData.length; i++) {
-      console.log(`\nCreating role ${i + 1} of ${rolesData.length}: ${rolesData[i].roleType}`);
+      console.log('Creating role', i + 1, 'of', rolesData.length, ':', rolesData[i].roleType);
       await this.fillRoleForm(rolesData[i]);
-      console.log(`Role ${i + 1} done`);
+      console.log('Role', i + 1, 'done');
     }
 
-    console.log(`\nAll ${rolesData.length} roles created!`);
+    console.log('All', rolesData.length, 'roles created!');
   }
 }
 

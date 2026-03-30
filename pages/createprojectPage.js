@@ -1,73 +1,74 @@
 const { expect } = require('@playwright/test');
+const projectLocators  = require('../Locators/Createprojectloc');
 
 class CreateProjectPage {
 
   constructor(page) {
     this.page = page;
+    this.loc = projectLocators(page); // all locators loaded here
   }
 
   async createProject(projectData) {
 
     console.log('Create project page');
 
-    await this.page.getByRole('button', { name: 'Create Project' }).waitFor();
-    await this.page.getByRole('button', { name: 'Create Project' }).click();
+    await this.loc.createProjectBtn.waitFor();
+    await this.loc.createProjectBtn.click();
 
     // Client
-    await this.page.getByLabel('Client').click();
-    await this.page.getByRole('option', { name: projectData.client, exact: true }).click();
+    await this.loc.clientDropdown.click();
+    await this.loc.dropdownOption(projectData.client, true).click();
 
     // Opportunity
-    await this.page.getByLabel('Dynamics Opportunity').click();
-    await this.page.getByRole('option', { name: projectData.opportunity }).click();
+    await this.loc.opportunityDropdown.click();
+    await this.loc.dropdownOption(projectData.opportunity).click();
 
     // Text fields
-    await this.page.getByLabel('Project Name').fill(projectData.projectName);
-    await this.page.getByLabel('Project Description').fill(projectData.projectDescription);
+    await this.loc.projectNameInput.fill(projectData.projectName);
+    await this.loc.projectDescriptionInput.fill(projectData.projectDescription);
 
     await this.page.waitForTimeout(3000);
 
     // Start Date
-    const datePickers = this.page.locator('[role="group"]');
-    await datePickers.nth(0).click();
+    await this.loc.datePicker(0).click();
     await this.page.keyboard.press('Control+A');
     await this.page.keyboard.type(projectData.startDate);
     await this.page.keyboard.press('Tab');
 
     // End Date
-    await datePickers.nth(1).dblclick();
+    await this.loc.datePicker(1).dblclick();
     await this.page.keyboard.press('Control+A');
     await this.page.keyboard.type(projectData.endDate);
     await this.page.waitForTimeout(3000);
 
     // Practice
-    await this.page.getByLabel('Practice').click();
-    await this.page.getByRole('option', { name: projectData.practice }).click();
+    await this.loc.practiceDropdown.click();
+    await this.loc.dropdownOption(projectData.practice).click();
 
     // Service
-    await this.page.getByLabel('Service').click();
-    await this.page.getByRole('option', { name: projectData.service }).click();
+    await this.loc.serviceDropdown.click();
+    await this.loc.dropdownOption(projectData.service).click();
 
     // Billing Type
-    await this.page.getByLabel('Billing Type').click();
-    await this.page.locator('.react-select__menu').waitFor();
-    await this.page.getByRole('option', { name: projectData.billingType, exact: true }).click();
+    await this.loc.billingTypeDropdown.click();
+    await this.loc.reactSelectMenu.waitFor();
+    await this.loc.dropdownOption(projectData.billingType, true).click();
 
     // Billing Cycle
-    await this.page.getByLabel('Billing Cycle').click();
-    await this.page.getByRole('option', { name: projectData.billingCycle }).click();
+    await this.loc.billingCycleDropdown.click();
+    await this.loc.dropdownOption(projectData.billingCycle).click();
 
     // Payment Terms
-    await this.page.getByLabel('Payment Terms').click();
-    await this.page.locator('.react-select__menu').waitFor();
-    await this.page.getByRole('option', { name: projectData.paymentTerms, exact: true }).click();
+    await this.loc.paymentTermsDropdown.click();
+    await this.loc.reactSelectMenu.waitFor();
+    await this.loc.dropdownOption(projectData.paymentTerms, true).click();
 
     // Numeric fields
-    await this.page.getByLabel('Volume Rebate %').fill(String(projectData.volumeRebate));
-    await this.page.getByLabel('VMS Fee %').fill(String(projectData.vmsFee));
+    await this.loc.volumeRebateInput.fill(String(projectData.volumeRebate));
+    await this.loc.vmsFeeInput.fill(String(projectData.vmsFee));
 
     // Submit
-    await this.page.getByRole('button', { name: 'Create', exact: true }).click();
+    await this.loc.createBtn.click();
     console.log('Project created:', projectData.projectName);
 
     await this.page.waitForURL(/\/projects\//);

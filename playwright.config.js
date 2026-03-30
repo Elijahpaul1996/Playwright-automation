@@ -3,6 +3,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.js', 
 
 
   fullyParallel: true,
@@ -15,15 +16,15 @@ export default defineConfig({
 use: {
   headless: false,
   trace: 'on-first-retry',
-  storageState: 'storageState.json',   // ⭐ add this
+  storageState: 'storageState.json',   
 },
-  // ⭐ Run ONLY Chrome browser
+  // Run ONLY Chrome browser
   projects: [
     {
       name: 'chromium',
       use: {
         browserName: 'chromium',
-        channel: 'chrome',   // 👉 this makes it real Google Chrome
+        channel: 'chrome',   
       },
     },
   ],

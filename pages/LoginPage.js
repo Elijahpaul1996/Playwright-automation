@@ -23,8 +23,7 @@ class LoginPage {
     //await popup.waitForEvent('close');
     //await this.page.waitForLoadState('networkidle');
     //console.log('Login complete');
-  
-}
+  }
 }
 
 module.exports = LoginPage;

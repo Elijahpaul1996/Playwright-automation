@@ -19,15 +19,16 @@ test('Create Project E2E', async ({ page }) => {
   test.setTimeout(300000); // 5 minutes
 
   //1. Login
-  await page.goto('https://pricingtool-ui.azurewebsites.net/dashboard');
+  //await page.goto('https://pricingtool-ui.azurewebsites.net/dashboard');  // dev URL
+  await page.goto('https://qa-ui-pricing-tool.azurewebsites.net/'); // QA URL
   await page.waitForLoadState('networkidle');
 
   const login = new LoginPage(page);
   await login.loginWithMicrosoft();
 
-  //2. Create Project
-  const createProject = new CreateProjectPage(page);
-  await createProject.createProject(projectData);
+  // //2. Create Project
+  // const createProject = new CreateProjectPage(page);
+  // await createProject.createProject(projectData);
 
   
 
@@ -35,12 +36,15 @@ test('Create Project E2E', async ({ page }) => {
   const createRole = new CreateRolePage(page);
   await createRole.createMultipleRoles(rolesData);
 
+
+
   //4. Create Work Items 
   const createWorkitem = new CreateWorkitemPage(page);
   await createWorkitem.createMultipleWorkItems(workItems);
-
+ 
   //5. Create Project Costs 
   const createProjectCosts = new CreateprojectCostsPage(page);
   await createProjectCosts.multipleprojectcosts(costsData); 
+  
 
 });
