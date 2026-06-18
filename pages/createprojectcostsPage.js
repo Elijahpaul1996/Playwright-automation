@@ -34,12 +34,12 @@ class CreateprojectCostsPage {
     await this.loc.costDescription.fill(costData.description);
     console.log('Cost description filled:', costData.description);
 
-    await this.selectFromDropdownByIndex(0, costData.costType);
-    console.log('Cost type selected:', costData.costType);
+    await this.selectFromDropdownByIndex(0, costData.costAccount);
+    console.log('Cost account selected:', costData.costAccount);
 
     await this.page.waitForTimeout(2000);
 
-    await this.selectFromDropdownByIndex(1, costData.billingType);
+    await this.selectFromDropdownByIndex(1, costData.costType);
     await this.selectFromDropdownByIndex(2, costData.country);
     await this.selectFromDropdownByIndex(3, costData.cashflowImpact);
     console.log('All dropdowns selected');
@@ -50,17 +50,30 @@ class CreateprojectCostsPage {
     await this.loc.frequency.fill(String(costData.frequency));
     console.log('Frequency filled:', costData.frequency);
 
-    await this.loc.unitRate.waitFor({ state: 'visible', timeout: 5000 });
+    await this.loc.unitRate.waitFor({ state: 'visible', timeout: 5000 });  // remove timeout
     await this.loc.unitRate.fill(String(costData.unitRate));
     console.log('Unit rate filled:', costData.unitRate);
 
     await this.loc.markup.fill(String(costData.markup));
     console.log('Markup filled:', costData.markup);
 
+    await expect(this.loc.saveBtn).toBeEnabled();
     await this.loc.saveBtn.click();
     console.log('Cost item saved:', costData.costType);
     await this.page.waitForTimeout(3000);
+
+    
+
+
   }
+async clickGenerateSummary() {
+  await this.loc.GenerateSummary.waitFor({ state: 'visible' });
+     await expect(this.loc.GenerateSummary).toBeEnabled();
+     await this.loc.GenerateSummary.click();
+     await this.page.waitForTimeout(4000);
+}
+
+
 
   async multipleprojectcosts(costsData) {
     console.log('Creating', costsData.length, 'cost items...');

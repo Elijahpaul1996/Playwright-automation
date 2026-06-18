@@ -2,9 +2,9 @@
 
 const costsData = [
   {
-    costType:       'Morale',
+    costAccount:       'Morale',
     description:    'Morale Cost',
-    billingType:    'Pass-Through',
+    costType:    'Pass-Through',
     country:        'United States',
     cashflowImpact: 'Monthly',
     quantity:       2,
@@ -13,9 +13,9 @@ const costsData = [
     markup:         2,
   },
   {
-    costType:       'Equipment Expense',
+    costAccount:       'Equipment Expense',
     description:    'Equipment Cost',
-    billingType:    'Pass-Through',
+    costType:    'Pass-Through',
     country:        'United States',
     cashflowImpact: 'Quarterly',
     quantity:       2,
@@ -24,9 +24,9 @@ const costsData = [
     markup:         2,
   },
   {
-    costType:       'Travel',
+    costAccount:       'Travel',
     description:    'Travel Cost',
-    billingType:    'Pass-Through',
+    costType:    'Pass-Through',
     country:        'United States',
     cashflowImpact: 'Yearly',
     quantity:       2,
@@ -35,9 +35,9 @@ const costsData = [
     markup:         2,
   },
   {
-    costType:       'Software Expense',
+    costAccount:       'Software Expense',
     description:    'Software Cost',
-    billingType:    'Pass-Through',
+    costType:    'Pass-Through',
     country:        'United States',
     cashflowImpact: 'End of Project',
     quantity:       2,

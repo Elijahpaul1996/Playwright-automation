@@ -8,20 +8,20 @@ class CreateRolePage {
     this.loc = roleLocators(page); // all locators loaded here
   }
 
-  async navigateToProject() {
-    const projectBtn = this.page.getByText('Test13 Auto', { exact: true });
-    await projectBtn.waitFor({ timeout: 30000 });
-    console.log('Project button visible');
-    await projectBtn.click();
-    console.log('Project button clicked');
-    await this.page.waitForLoadState('networkidle');
-  }
+  // async navigateToProject() {
+  //   const projectBtn = this.page.getByText('Test Project01');
+  //   await projectBtn.waitFor({ timeout: 30000 });
+  //   console.log('Project button visible');
+  //   await projectBtn.click();
+  //   console.log('Project button clicked');
+  //   await this.page.waitForLoadState('networkidle');
+  // }
   
 
   async selectFromDropdownByIndex(index, valueText) {
     await this.loc.dropdown(index).waitFor();
     await this.loc.dropdown(index).click();
-    await this.loc.dropdownOption(valueText).waitFor();
+    await this.loc.dropdownOptionExact(valueText,{exact: true}).waitFor();
     await this.loc.dropdownOptionExact(valueText).click();
   }
 
@@ -45,25 +45,50 @@ class CreateRolePage {
     await this.loc.addRoleBtn.click();
     await this.page.waitForLoadState('networkidle');
 
+
+// await this.page.getByLabel('Custom').check();
+// await this.page.getByLabel
+``
+
+    //select Custom raido button as custom role ( standard role will have default values and custom role will allow to enter values)
+    // if (roleData.customradio) {
+    //   await this.loc.Customcheckbox.click();
+    //   console.log('Custom radio checked');
+    //   await this.page.waitForTimeout(1000);
+    // }
     // Dropdowns
-    await this.selectFromDropdownByIndex(0, roleData.roleType);
+    await this.selectFromDropdownByIndex(0, roleData.roleType);   // comment for Custom role selection
     console.log('Role selected:', roleData.roleType);
 
     await this.page.waitForTimeout(1000);
-    await this.selectFromDropdownByIndex(1, roleData.tenure);
+    await this.selectFromDropdownByIndex(1, roleData.tenure);   
     console.log('Tenure selected:', roleData.tenure);
+
+
+
+
 
     await this.page.waitForTimeout(2000);
     await this.selectFromDropdownByIndex(2, roleData.country);
     await this.selectFromDropdownByIndex(3, roleData.employmentType);
     await this.selectFromDropdownByIndex(4, roleData.state);
-    await this.selectFromDropdownByIndex(5, roleData.city);
-    await this.selectFromDropdownByIndex(6, roleData.billRateType);
+    await this.selectFromDropdownByIndex(5, roleData.Metro);
+    await this.selectFromDropdownByIndex(6, roleData.workerscomprisk);
     console.log('All dropdowns selected');
 
     // Bill Rate Type radio
-    await this.loc.billRateLabel(roleData.billRateType).check();
+    //  await this.loc.billRateLabel(roleData.workerscomprisk).check();
+    //  console.log('skillset selected:', roleData.workerscomprisk);
+    // try {
+    // await this.loc.billRateLabel(roleData.workerscomprisk).check({
+    //     timeout: 2000
+    // });
+    // console.log('Checked successfully');
+// } catch {
+//     console.log('Field not found, moving to next step');
 
+
+// }
     // Decimal fields
     await this.fillDecimalByLabel('Contract Currency Pay Rate/hr', roleData.payRate);
     await this.fillDecimalByLabel('Contract Currency Fringe Rate/hr', roleData.fringeRate);
@@ -72,22 +97,33 @@ class CreateRolePage {
     console.log('Decimal values entered');
 
     // Numeric fields
+    //await this.fillNumericByLabel('Benchmark Rate', roleData.BenchmarkRate);
     await this.fillNumericByLabel('PTO Days/year(Default=10)', roleData.pto);
     await this.fillNumericByLabel('Sick Days/year(Default=0)', roleData.sickDays);
     await this.fillNumericByLabel('Holidays/year(Default=0)', roleData.holidays);
     console.log('Numeric values entered');
+
+
+
 
     // Cross Border checkbox — only if true
     if (roleData.crossBorder) {
       await this.checkBoxByLabel('Cross Border');
       console.log('Cross Border checked');
     }
-
+       // 
     await this.page.waitForTimeout(1000);
 
     // Discount
     await this.loc.discountInput.fill(String(roleData.discount));
     console.log('Discount:', roleData.discount);
+
+// standard radio button for skillset
+    // await this.page.locator("//span[contains(.,'Standard')]/preceding-sibling::input[@type='radio']").check();
+    // console.log('skillset selected');
+    await this.page
+  .locator("//span[contains(.,'Standard')]/preceding-sibling::input[@type='radio' and not(@disabled)]")
+  .check();
 
     // Save
     await this.loc.saveBtn.click();
@@ -97,7 +133,7 @@ class CreateRolePage {
 
   async createMultipleRoles(rolesData) {
     console.log('Creating', rolesData.length, 'roles...');
-    await this.navigateToProject();
+      // await this.navigateToProject();
 
     for (let i = 0; i < rolesData.length; i++) {
       console.log('Creating role', i + 1, 'of', rolesData.length, ':', rolesData[i].roleType);

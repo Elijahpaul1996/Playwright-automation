@@ -32,6 +32,11 @@ const roleLocators = (page) => ({
     `//span[normalize-space()="${labelText}"]/parent::div//input[@type="checkbox" and not(@disabled)]`
   ),
 
+  // Cross Border checkbox (special case with unique label)
+  // Customcheckbox: page.locator(
+  //   `//label[normalize-space()='Custom']//input[@type='radio']`
+  // ),
+
   // Discount input
   discountInput: page.locator(
     '//span[contains(normalize-space(),"Discount")]/parent::div//input[@type="number"]'

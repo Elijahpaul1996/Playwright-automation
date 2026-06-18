@@ -2,6 +2,7 @@
 const projectLocators = (page) => ({
 
   // Buttons
+  viewllBtn       :    page.getByRole('button', { name: 'View All' }),
   createProjectBtn:    page.getByRole('button', { name: 'Create Project' }),
   createBtn:           page.getByRole('button', { name: 'Create', exact: true }),
 

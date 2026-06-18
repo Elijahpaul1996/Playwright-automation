@@ -1,0 +1,23 @@
+- generic [ref=e3]:
+  - main [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "Logo"
+      - generic [ref=e8]:
+        - heading "Welcome to FinSight!" [level=1] [ref=e10]
+        - button "Sign in with Microsoft" [ref=e12] [cursor=pointer]:
+          - generic [ref=e13]:
+            - img [ref=e14]
+            - text: Sign in with Microsoft
+        - paragraph [ref=e17]:
+          - text: Having trouble?
+          - link "Contact Support" [ref=e18] [cursor=pointer]:
+            - /url: mailto:FinSight@insightglobal.com
+    - region "Notifications Alt+T"
+  - contentinfo [ref=e20]:
+    - generic [ref=e22]:
+      - paragraph [ref=e23]: © 2025 Insight Global, Inc. All rights reserved.
+      - generic [ref=e24]:
+        - link "Privacy Policy" [ref=e25] [cursor=pointer]:
+          - /url: https://insightglobal.com/privacy-policy/
+        - button "Feedback" [ref=e26] [cursor=pointer]

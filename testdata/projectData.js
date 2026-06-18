@@ -2,18 +2,19 @@
 
 const projectData = {
   client:             'Insight Global',
-  opportunity:        'IG consultant Support Solution',
-  projectName:        'Test13 Auto',
+  //opportunity:        'IG Consultant Support Solution',
+  projectName:        'Test Project05',
   projectDescription: 'Created for test',
-  startDate:          '06012026', 
-  endDate:            '06012027',
-  practice:           'Data and Apps',
-  service:            'Data transformation',
-  billingType:        'T&M',
+  startDate:          '03012026',  
+  endDate:            '02282030',
+  practice:           'AES',
+  service:            'Engineering',
+  billingType:        'T&M NTE',
   billingCycle:       'Monthly',
-  paymentTerms:       'Net 60',
-  volumeRebate:       5,
-  vmsFee:             5,
+  paymentTerms:       'Net 90',
+  volumeRebate:       4,
+  vmsFee:             2,
+ 
 };
 
 module.exports = { projectData };

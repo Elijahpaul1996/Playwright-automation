@@ -6,6 +6,8 @@ const projectCostsLocators = (page) => ({
   addCostItemBtn:    page.getByRole('button', { name: '+ Add Cost Item', exact: true }),
   projectCostsBtn:   page.getByRole('button', { name: '$ Project Costs' }),
   saveBtn:           page.getByRole('button', { name: 'Save' }),
+  GenerateSummary:   page.getByRole('button', { name: 'Generate' }),
+
 
   // Dropdown
   dropdown:          (index) => page.locator('[role="combobox"]').nth(index),
@@ -19,7 +21,7 @@ const projectCostsLocators = (page) => ({
   frequency:         page.locator('//span[text()="Frequency"]//following-sibling::div//input'),
   unitRate:          page.locator('//span[text()="Contract Currency Unit Rate"]//following-sibling::div//input'),
   markup:            page.locator('//span[text()="Markup (%)"]//following-sibling::div//input'),
-
+  
 });
 
 module.exports = projectCostsLocators;
