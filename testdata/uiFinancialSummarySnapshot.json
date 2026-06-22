@@ -1,0 +1,218 @@
+{
+  "source": "UI",
+  "savedAt": "2026-06-22T07:31:29.166Z",
+  "values": [
+    {
+      "fieldName": "Fully Loaded Gross Profit",
+      "value": "$5,523,616"
+    },
+    {
+      "fieldName": "Reported Gross Profit",
+      "value": "$5,466,115"
+    },
+    {
+      "fieldName": "Contract Revenue",
+      "value": "$2,250,892"
+    },
+    {
+      "fieldName": "Labor Revenue",
+      "value": "$2,124,348"
+    },
+    {
+      "fieldName": "Billable Expense Pass Through",
+      "value": "$408"
+    },
+    {
+      "fieldName": "Fee",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Fee at Risk",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Implementation Fee",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Management Fee",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Volume Discount",
+      "value": "$84,974"
+    },
+    {
+      "fieldName": "Early Pay Discount",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Innovation Fund",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Total Revenue",
+      "value": "$2,039,782"
+    },
+    {
+      "fieldName": "External Direct Labor - Onshore",
+      "value": "$7,505,495"
+    },
+    {
+      "fieldName": "External Project OH - Onshore",
+      "value": "$0"
+    },
+    {
+      "fieldName": "External Direct Labor - Offshore",
+      "value": "$0"
+    },
+    {
+      "fieldName": "External Project OH - Offshore",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Internal Direct Labor - Onshore",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Internal Project OH - Onshore",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Total Labor Structure",
+      "value": "$7,505,495"
+    },
+    {
+      "fieldName": "Consultant Salaries and Wages",
+      "value": "$6,959,164"
+    },
+    {
+      "fieldName": "Consultant Payroll Taxes",
+      "value": "$533,354"
+    },
+    {
+      "fieldName": "Consultant Bonuses",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Workers Comp Insurance",
+      "value": "$9,106"
+    },
+    {
+      "fieldName": "Clinical Insurance",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Medical Benefits",
+      "value": "$3,871"
+    },
+    {
+      "fieldName": "ACA Subsides",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Internal PM/PC salaries and wages",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Internal payroll taxes on PM/PC salaries and wages",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Total Labor Costs",
+      "value": "$7,505,495"
+    },
+    {
+      "fieldName": "Facility Rent Expense",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Capital Facility Expense",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Equipment Expense",
+      "value": "$100"
+    },
+    {
+      "fieldName": "Software Expense",
+      "value": "$100"
+    },
+    {
+      "fieldName": "Morale",
+      "value": "$100"
+    },
+    {
+      "fieldName": "Travel",
+      "value": "$100"
+    },
+    {
+      "fieldName": "vendor Expenses",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Working Capital Finance Cost",
+      "value": "$57,503"
+    },
+    {
+      "fieldName": "Other costs",
+      "value": "$0"
+    },
+    {
+      "fieldName": "FX Costs",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Licensing/Certification",
+      "value": "$0"
+    },
+    {
+      "fieldName": "Total Project Costs",
+      "value": "$57,903"
+    },
+    {
+      "fieldName": "Average Discount",
+      "value": "10"
+    },
+    {
+      "fieldName": "Max Headcount",
+      "value": "3"
+    },
+    {
+      "fieldName": "Headcount No Standard List Price",
+      "value": "0"
+    },
+    {
+      "fieldName": "Average Bill Rate",
+      "value": "$48.75"
+    },
+    {
+      "fieldName": "Discount Rate",
+      "value": "$4,268,421"
+    },
+    {
+      "fieldName": "Project Value",
+      "value": "$4,268,421"
+    },
+    {
+      "fieldName": "IRR",
+      "value": "0.00"
+    },
+    {
+      "fieldName": "Estimated Commissions",
+      "value": "$3,309,385"
+    },
+    {
+      "fieldName": "Commission Payroll Taxes",
+      "value": "$233,312"
+    },
+    {
+      "fieldName": "EVA Value:",
+      "value": "$1,980,919"
+    },
+    {
+      "fieldName": "EVA %:",
+      "value": "-97.00%"
+    }
+  ]
+}

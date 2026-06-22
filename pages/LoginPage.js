@@ -20,8 +20,8 @@ class LoginPage {
     console.log('Account selected');
 
     // // Wait until popup closes (important)
-    await popup.waitForEvent('close');
-    console.log('SSO popup closed');
+    // await popup.waitForEvent('close');
+    // console.log('SSO popup closed');
   }
 }
 

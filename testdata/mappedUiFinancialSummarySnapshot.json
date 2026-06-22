@@ -1,0 +1,271 @@
+{
+  "source": "UI_MAPPED",
+  "mappedAt": "2026-06-19T14:48:32.259Z",
+  "values": [
+    {
+      "key": "topFullyLoadedGrossProfit",
+      "fieldName": "Fully Loaded Gross Profit",
+      "value": "$3,102,259"
+    },
+    {
+      "key": "topReportedDirectGrossProfit",
+      "fieldName": "Reported Gross Profit",
+      "value": "$3,066,272"
+    },
+    {
+      "key": "contractRevenue",
+      "fieldName": "Contract Revenue",
+      "value": "$1,407,415"
+    },
+    {
+      "key": "laborRevenue",
+      "fieldName": "Labor Revenue",
+      "value": "$1,329,533"
+    },
+    {
+      "key": "billableExpensePassThrough",
+      "fieldName": "Billable Expense Pass Through",
+      "value": "$408"
+    },
+    {
+      "key": "fees",
+      "fieldName": "Fee",
+      "value": "$0"
+    },
+    {
+      "key": "feesAtRisk",
+      "fieldName": "Fee at Risk",
+      "value": "$0"
+    },
+    {
+      "key": "implementationFees",
+      "fieldName": "Implementation Fee",
+      "value": "$0"
+    },
+    {
+      "key": "managementFees",
+      "fieldName": "Management Fee",
+      "value": "$0"
+    },
+    {
+      "key": "volumeDiscount",
+      "fieldName": "Volume Discount",
+      "value": "$53,181"
+    },
+    {
+      "key": "earlyPayDiscount",
+      "fieldName": "Early Pay Discount",
+      "value": "$0"
+    },
+    {
+      "key": "innovationFunds",
+      "fieldName": "Innovation Fund",
+      "value": "$0"
+    },
+    {
+      "key": "revenueTotal",
+      "fieldName": "Total Revenue",
+      "value": "$1,276,760"
+    },
+    {
+      "key": "externalDirectLaborOnshore",
+      "fieldName": "External Direct Labor - Onshore",
+      "value": "$4,342,630"
+    },
+    {
+      "key": "externalProjectOhOnshore",
+      "fieldName": "External Project OH - Onshore",
+      "value": "$0"
+    },
+    {
+      "key": "externalDirectLaborOffshore",
+      "fieldName": "External Direct Labor - Offshore",
+      "value": "$0"
+    },
+    {
+      "key": "externalProjectOhOffshore",
+      "fieldName": "External Project OH - Offshore",
+      "value": "$0"
+    },
+    {
+      "key": "internalDirectLaborOnshore",
+      "fieldName": "Internal Direct Labor - Onshore",
+      "value": "$0"
+    },
+    {
+      "key": "internalProjectOhOnshore",
+      "fieldName": "Internal Project OH - Onshore",
+      "value": "$0"
+    },
+    {
+      "key": "laborStructureTotal",
+      "fieldName": "Total Labor Structure",
+      "value": "$4,342,630"
+    },
+    {
+      "key": "consultantSalariesAndWages",
+      "fieldName": "Consultant Salaries and Wages",
+      "value": "$4,159,296"
+    },
+    {
+      "key": "consultantPayrollTaxes",
+      "fieldName": "Consultant Payroll Taxes",
+      "value": "$175,618"
+    },
+    {
+      "key": "consultantBonuses",
+      "fieldName": "Consultant Bonuses",
+      "value": "$0"
+    },
+    {
+      "key": "workersCompInsurance",
+      "fieldName": "Workers Comp Insurance",
+      "value": "$5,349"
+    },
+    {
+      "key": "clinicalInsurance",
+      "fieldName": "Clinical Insurance",
+      "value": "$0"
+    },
+    {
+      "key": "medicalBenefits",
+      "fieldName": "Medical Benefits",
+      "value": "$2,368"
+    },
+    {
+      "key": "acaSubsidies",
+      "fieldName": "ACA Subsides",
+      "value": "$0"
+    },
+    {
+      "key": "internalPmPcSalariesAndWages",
+      "fieldName": "Internal PM/PC salaries and wages",
+      "value": "$0"
+    },
+    {
+      "key": "internalPayrollTaxesOnPmPcSalariesAndWages",
+      "fieldName": "Internal payroll taxes on PM/PC salaries and wages",
+      "value": "$0"
+    },
+    {
+      "key": "laborCostsTotal",
+      "fieldName": "Total Labor Costs",
+      "value": "$4,342,630"
+    },
+    {
+      "key": "facilityRentExpense",
+      "fieldName": "Facility Rent Expense",
+      "value": "$0"
+    },
+    {
+      "key": "capitalFacilityExpenses",
+      "fieldName": "Capital Facility Expense",
+      "value": "$0"
+    },
+    {
+      "key": "equipmentExpense",
+      "fieldName": "Equipment Expense",
+      "value": "$100"
+    },
+    {
+      "key": "softwareExpense",
+      "fieldName": "Software Expense",
+      "value": "$100"
+    },
+    {
+      "key": "morale",
+      "fieldName": "Morale",
+      "value": "$100"
+    },
+    {
+      "key": "travel",
+      "fieldName": "Travel",
+      "value": "$100"
+    },
+    {
+      "key": "vendorExpenses",
+      "fieldName": "vendor Expenses",
+      "value": "$0"
+    },
+    {
+      "key": "workingCapitalFinanceCost",
+      "fieldName": "Working Capital Finance Cost",
+      "value": "$35,988"
+    },
+    {
+      "key": "otherCosts",
+      "fieldName": "Other costs",
+      "value": "$0"
+    },
+    {
+      "key": "fxCosts",
+      "fieldName": "FX Costs",
+      "value": "$0"
+    },
+    {
+      "key": "licensingAndCertification",
+      "fieldName": "Licensing/Certification",
+      "value": "$0"
+    },
+    {
+      "key": "projectCostsTotal",
+      "fieldName": "Total Project Costs",
+      "value": "$36,388"
+    },
+    {
+      "key": "averageDiscount",
+      "fieldName": "Average Discount",
+      "value": "10"
+    },
+    {
+      "key": "maxHeadcount",
+      "fieldName": "Max Headcount",
+      "value": "3"
+    },
+    {
+      "key": "headcountNoStandardListPrice",
+      "fieldName": "Headcount No Standard List Price",
+      "value": "0"
+    },
+    {
+      "key": "averageBillRate",
+      "fieldName": "Average Bill Rate",
+      "value": "$49.39"
+    },
+    {
+      "key": "discountRate",
+      "fieldName": "Discount Rate",
+      "value": "$2,461,681"
+    },
+    {
+      "key": "projectValue",
+      "fieldName": "Project Value",
+      "value": "$2,461,681"
+    },
+    {
+      "key": "irr",
+      "fieldName": "IRR",
+      "value": "0.00"
+    },
+    {
+      "key": "estimatedCommissions",
+      "fieldName": "Estimated Commissions",
+      "value": "$1,303,953"
+    },
+    {
+      "key": "commissionPayrollTaxes",
+      "fieldName": "Commission Payroll Taxes",
+      "value": "$91,929"
+    },
+    {
+      "key": "eva",
+      "fieldName": "EVA Value:",
+      "value": "$1,706,377"
+    },
+    {
+      "key": "evaPercent",
+      "fieldName": "EVA %:",
+      "value": "-134.00%"
+    }
+  ]
+}

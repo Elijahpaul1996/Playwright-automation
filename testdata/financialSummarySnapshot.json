@@ -1,0 +1,597 @@
+{
+  "workbookPath": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3 r.xlsm",
+  "sheetName": "Financial Summary",
+  "savedAt": "2026-06-22T07:58:53.662Z",
+  "values": [
+    {
+      "key": "topRevenue",
+      "fieldName": "Revenue",
+      "rowNumber": 13,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B13",
+      "valueCell": "C13",
+      "value": "$16,922,811"
+    },
+    {
+      "key": "topFullyLoadedGrossProfit",
+      "fieldName": "Fully Loaded Gross Profit",
+      "rowNumber": 14,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B14",
+      "valueCell": "C14",
+      "value": "$1,859,961"
+    },
+    {
+      "key": "topFullyLoadedGrossProfitPercent",
+      "fieldName": "%",
+      "rowNumber": 15,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B15",
+      "valueCell": "C15",
+      "value": "11.0%"
+    },
+    {
+      "key": "topReportedDirectGrossProfit",
+      "fieldName": "Reported (Direct) Gross Profit",
+      "rowNumber": 17,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B17",
+      "valueCell": "C17",
+      "value": "$1,985,939"
+    },
+    {
+      "key": "topReportedDirectGrossProfitPercent",
+      "fieldName": "%",
+      "rowNumber": 18,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B18",
+      "valueCell": "C18",
+      "value": "11.7%"
+    },
+    {
+      "key": "contractRevenue",
+      "fieldName": "Contract Revenue (NTE + Pass-Through Revenue)",
+      "rowNumber": 20,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B20",
+      "valueCell": "C20",
+      "value": "$17,938,368"
+    },
+    {
+      "key": "revenueTotal",
+      "fieldName": "Revenue",
+      "rowNumber": 22,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B22",
+      "valueCell": "C22",
+      "value": "$16,922,811"
+    },
+    {
+      "key": "laborRevenue",
+      "fieldName": "Labor Revenue",
+      "rowNumber": 23,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B23",
+      "valueCell": "C23",
+      "value": "$16,784,658"
+    },
+    {
+      "key": "billableExpensePassThrough",
+      "fieldName": "Billable Expense Pass Through",
+      "rowNumber": 24,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B24",
+      "valueCell": "C24",
+      "value": "$306,000"
+    },
+    {
+      "key": "fees",
+      "fieldName": "Fees",
+      "rowNumber": 25,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B25",
+      "valueCell": "C25",
+      "value": "$0"
+    },
+    {
+      "key": "feesAtRisk",
+      "fieldName": "Fees at Risk",
+      "rowNumber": 26,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B26",
+      "valueCell": "C26",
+      "value": "$0"
+    },
+    {
+      "key": "implementationFees",
+      "fieldName": "Implementation Fees",
+      "rowNumber": 27,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B27",
+      "valueCell": "C27",
+      "value": "$0"
+    },
+    {
+      "key": "managementFees",
+      "fieldName": "Management Fees",
+      "rowNumber": 28,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B28",
+      "valueCell": "C28",
+      "value": "$0"
+    },
+    {
+      "key": "volumeDiscount",
+      "fieldName": "Volume Discount",
+      "rowNumber": 29,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B29",
+      "valueCell": "C29",
+      "value": "($167,847)"
+    },
+    {
+      "key": "earlyPayDiscount",
+      "fieldName": "Early Pay Discount",
+      "rowNumber": 30,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B30",
+      "valueCell": "C30",
+      "value": "$0"
+    },
+    {
+      "key": "innovationFunds",
+      "fieldName": "Innovation Funds",
+      "rowNumber": 31,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B31",
+      "valueCell": "C31",
+      "value": ""
+    },
+    {
+      "key": "laborStructureTotal",
+      "fieldName": "Labor Structure",
+      "rowNumber": 33,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B33",
+      "valueCell": "C33",
+      "value": "$14,636,873"
+    },
+    {
+      "key": "externalDirectLaborOnshore",
+      "fieldName": "External Direct Labor - Onshore",
+      "rowNumber": 34,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B34",
+      "valueCell": "C34",
+      "value": "$14,636,873"
+    },
+    {
+      "key": "externalProjectOhOnshore",
+      "fieldName": "External Project OH - Onshore",
+      "rowNumber": 35,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B35",
+      "valueCell": "C35",
+      "value": "$0"
+    },
+    {
+      "key": "externalDirectLaborOffshore",
+      "fieldName": "External Direct Labor - Offshore",
+      "rowNumber": 37,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B37",
+      "valueCell": "C37",
+      "value": "$0"
+    },
+    {
+      "key": "externalProjectOhOffshore",
+      "fieldName": "External Project OH - Offshore",
+      "rowNumber": 38,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B38",
+      "valueCell": "C38",
+      "value": "$0"
+    },
+    {
+      "key": "internalDirectLaborOnshore",
+      "fieldName": "Internal Direct Labor - Onshore",
+      "rowNumber": 40,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B40",
+      "valueCell": "C40",
+      "value": "$0"
+    },
+    {
+      "key": "internalProjectOhOnshore",
+      "fieldName": "Internal Project OH - Onshore",
+      "rowNumber": 41,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B41",
+      "valueCell": "C41",
+      "value": "$0"
+    },
+    {
+      "key": "laborCostsTotal",
+      "fieldName": "Labor Costs",
+      "rowNumber": 43,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B43",
+      "valueCell": "C43",
+      "value": "$14,636,873"
+    },
+    {
+      "key": "consultantSalariesAndWages",
+      "fieldName": "Consultant Salaries and Wages",
+      "rowNumber": 44,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B44",
+      "valueCell": "C44",
+      "value": "$12,977,600"
+    },
+    {
+      "key": "consultantPayrollTaxes",
+      "fieldName": "Consultant Payroll Taxes",
+      "rowNumber": 45,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B45",
+      "valueCell": "C45",
+      "value": "$1,631,467"
+    },
+    {
+      "key": "consultantBonuses",
+      "fieldName": "Consultant Bonuses",
+      "rowNumber": 46,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B46",
+      "valueCell": "C46",
+      "value": "$0"
+    },
+    {
+      "key": "workersCompInsurance",
+      "fieldName": "Workers Comp Insurance",
+      "rowNumber": 47,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B47",
+      "valueCell": "C47",
+      "value": "$16,689"
+    },
+    {
+      "key": "clinicalInsurance",
+      "fieldName": "Clinical Insurance",
+      "rowNumber": 48,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B48",
+      "valueCell": "C48",
+      "value": "$0"
+    },
+    {
+      "key": "medicalBenefits",
+      "fieldName": "Medical Benefits",
+      "rowNumber": 49,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B49",
+      "valueCell": "C49",
+      "value": "$11,117"
+    },
+    {
+      "key": "acaSubsidies",
+      "fieldName": "ACA Subsidies",
+      "rowNumber": 50,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B50",
+      "valueCell": "C50",
+      "value": "$0"
+    },
+    {
+      "key": "internalPmPcSalariesAndWages",
+      "fieldName": "Internal PM/PC (project management) Salaries and Wages",
+      "rowNumber": 51,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B51",
+      "valueCell": "C51",
+      "value": ""
+    },
+    {
+      "key": "internalPayrollTaxesOnPmPcSalariesAndWages",
+      "fieldName": "Internal Payroll Taxes on PM/PC salaries and wages",
+      "rowNumber": 52,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B52",
+      "valueCell": "C52",
+      "value": ""
+    },
+    {
+      "key": "projectCostsTotal",
+      "fieldName": "Project Costs",
+      "rowNumber": 54,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B54",
+      "valueCell": "C54",
+      "value": "$425,978"
+    },
+    {
+      "key": "facilityRentExpense",
+      "fieldName": "Facility Rent Expense",
+      "rowNumber": 55,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B55",
+      "valueCell": "C55",
+      "value": "$0"
+    },
+    {
+      "key": "capitalFacilityExpenses",
+      "fieldName": "Capital Facility Expenses",
+      "rowNumber": 56,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B56",
+      "valueCell": "C56",
+      "value": "$0"
+    },
+    {
+      "key": "equipmentExpense",
+      "fieldName": "Equipment Expense",
+      "rowNumber": 57,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B57",
+      "valueCell": "C57",
+      "value": "$120,000"
+    },
+    {
+      "key": "softwareExpense",
+      "fieldName": "Software Expense",
+      "rowNumber": 58,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B58",
+      "valueCell": "C58",
+      "value": "$0"
+    },
+    {
+      "key": "morale",
+      "fieldName": "Morale",
+      "rowNumber": 59,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B59",
+      "valueCell": "C59",
+      "value": "$300,000"
+    },
+    {
+      "key": "travel",
+      "fieldName": "Travel",
+      "rowNumber": 60,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B60",
+      "valueCell": "C60",
+      "value": "$0"
+    },
+    {
+      "key": "vendorExpenses",
+      "fieldName": "Vendor Expenses",
+      "rowNumber": 61,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B61",
+      "valueCell": "C61",
+      "value": "$0"
+    },
+    {
+      "key": "workingCapitalFinanceCost",
+      "fieldName": "Working Capital (Finance Cost)",
+      "rowNumber": 62,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B62",
+      "valueCell": "C62",
+      "value": "$5,978"
+    },
+    {
+      "key": "otherCosts",
+      "fieldName": "Other Costs",
+      "rowNumber": 63,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B63",
+      "valueCell": "C63",
+      "value": "$0"
+    },
+    {
+      "key": "fxCosts",
+      "fieldName": "FX Costs",
+      "rowNumber": 64,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B64",
+      "valueCell": "C64",
+      "value": "$0"
+    },
+    {
+      "key": "licensingAndCertification",
+      "fieldName": "Licensing and Certification",
+      "rowNumber": 65,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B65",
+      "valueCell": "C65",
+      "value": "$0"
+    },
+    {
+      "key": "bottomFullyLoadedGrossProfit",
+      "fieldName": "Fully Loaded Gross Profit",
+      "rowNumber": 67,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B67",
+      "valueCell": "C67",
+      "value": "$1,859,961"
+    },
+    {
+      "key": "bottomReportedDirectGrossProfit",
+      "fieldName": "Reported (Direct) Gross Profit",
+      "rowNumber": 68,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B68",
+      "valueCell": "C68",
+      "value": "$1,985,939"
+    },
+    {
+      "key": "compensationCostTotal",
+      "fieldName": "Compensation Cost",
+      "rowNumber": 70,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B70",
+      "valueCell": "C70",
+      "value": "$15,289"
+    },
+    {
+      "key": "estimatedCommissions",
+      "fieldName": "Estimated Commissions",
+      "rowNumber": 71,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B71",
+      "valueCell": "C71",
+      "value": "$14,282"
+    },
+    {
+      "key": "commissionPayrollTaxes",
+      "fieldName": "Commission Payroll Taxes",
+      "rowNumber": 72,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B72",
+      "valueCell": "C72",
+      "value": "$1,007"
+    },
+    {
+      "key": "eva",
+      "fieldName": "EVA",
+      "rowNumber": 74,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B74",
+      "valueCell": "C74",
+      "value": "$1,844,672"
+    },
+    {
+      "key": "evaPercent",
+      "fieldName": "%",
+      "rowNumber": 75,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B75",
+      "valueCell": "C75",
+      "value": "10.9%"
+    },
+    {
+      "key": "averageDiscount",
+      "fieldName": "Average Discount",
+      "rowNumber": 13,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K13",
+      "valueCell": "L13",
+      "value": "0%"
+    },
+    {
+      "key": "maxHeadcount",
+      "fieldName": "Max Headcount",
+      "rowNumber": 14,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K14",
+      "valueCell": "L14",
+      "value": "20"
+    },
+    {
+      "key": "headcountNoStandardListPrice",
+      "fieldName": "Headcount No Standard List Price",
+      "rowNumber": 15,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K15",
+      "valueCell": "L15",
+      "value": "0"
+    },
+    {
+      "key": "averageBillRate",
+      "fieldName": "Average Bill Rate",
+      "rowNumber": 16,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K16",
+      "valueCell": "L16",
+      "value": "$141.3"
+    },
+    {
+      "key": "discountRate",
+      "fieldName": "Discount Rate",
+      "rowNumber": 18,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K18",
+      "valueCell": "L18",
+      "value": "13.0%"
+    },
+    {
+      "key": "projectValue",
+      "fieldName": "Project Value",
+      "rowNumber": 19,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K19",
+      "valueCell": "L19",
+      "value": "1,425,484.27"
+    },
+    {
+      "key": "irr",
+      "fieldName": "IRR",
+      "rowNumber": 20,
+      "labelColumn": "K",
+      "valueColumn": "L",
+      "labelCell": "K20",
+      "valueCell": "L20",
+      "value": "183%"
+    }
+  ]
+}

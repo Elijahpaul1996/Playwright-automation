@@ -26,7 +26,7 @@ test.describe('Pricing tool E2E', () => {
     const login = new LoginPage(page);
     await login.loginWithMicrosoft();
 
-    await page.waitForTimeout(3000); // Wait for 2 seconds to ensure the page has fully loaded
+    await page.waitForTimeout(3000); // Wait for 3 seconds to ensure the page has fully loaded
 
     await expect(page).toHaveURL(/dashboard|projects/);
     console.log('Login successful, navigated to dashboard/projects');
