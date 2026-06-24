@@ -3,7 +3,7 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 const DEFAULT_WORKBOOK_PATH =
-  'C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3R inflation.xlsm';
+  'C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 6R inflation all.xlsm';
 
 class ReadInputDataPage {
   constructor(workbookPath = DEFAULT_WORKBOOK_PATH) {
@@ -87,7 +87,8 @@ class ReadInputDataPage {
           sickDays:        Number(row['Sick Days/year'])                || 0,
           holidays:        Number(row['Holiday/year'])                  || 0,
           crossBorder:     String(row['Cross Border?']).toLowerCase() === 'yes',
-          discount:        Number(row['Discount'])                      || 0,
+        //   discount:        Number(row['Discount'])                      || 0,
+          discount: Math.round((Number(row['Discount']) || 0) * 100),
         };
 
         console.log(`✓ Role ${index + 1}: ${role.roleType} | state: ${role.state} | payRate: ${role.payRate}`);
@@ -118,7 +119,8 @@ class ReadInputDataPage {
           quantity:       Number(row['Quantity'])                       || 0,
           frequency:      Number(row['Frequency'])                      || 0,
           unitRate:       Number(row['Contract Currency Unit Rate'])    || 0,
-          markup:         Number(row['Markup'])                         
+        //   markup:         Number(row['Markup'])                         || 0,
+          markup: Math.round((Number(row['Markup']) || 0) * 100),
         };
 
         console.log(`✓ Cost ${index + 1}: ${cost.costAccount} | type: ${cost.costType} | unitRate: ${cost.unitRate}`);

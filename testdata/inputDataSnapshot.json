@@ -1,11 +1,11 @@
 {
-  "workbookPath": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3R inflation.xlsm",
-  "savedAt": "2026-06-23T12:06:17.136Z",
+  "workbookPath": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 6R inflation all.xlsm",
+  "savedAt": "2026-06-24T08:43:48.259Z",
   "workItems": [
     {
       "name": "wk1",
-      "description": "CAD DESIGNER",
-      "role": "CAD DESIGNER",
+      "description": "MECHANICAL ENGINEER",
+      "role": "MECHANICAL ENGINEER",
       "col3Value": 5,
       "col8Value": 0,
       "startDate": 46023,
@@ -31,9 +31,27 @@
     },
     {
       "name": "wk4",
+      "description": "PROJECT MANAGER",
+      "role": "PROJECT MANAGER",
+      "col3Value": 1,
+      "col8Value": 0,
+      "startDate": 46023,
+      "endDate": 46357
+    },
+    {
+      "name": "wk5",
       "description": "GIS ANALYST",
       "role": "GIS ANALYST",
-      "col3Value": 1,
+      "col3Value": 2,
+      "col8Value": 0,
+      "startDate": 46023,
+      "endDate": 46357
+    },
+    {
+      "name": "wk6",
+      "description": "CAD DESIGNER",
+      "role": "CAD DESIGNER",
+      "col3Value": 2,
       "col8Value": 0,
       "startDate": 46023,
       "endDate": 46357
@@ -41,7 +59,7 @@
   ],
   "roles": [
     {
-      "roleType": "CAD DESIGNER",
+      "roleType": "MECHANICAL ENGINEER",
       "tenure": "Over 3 years - up to 5 years",
       "country": "United States",
       "employmentType": "W2",
@@ -95,7 +113,7 @@
       "discount": 0
     },
     {
-      "roleType": "GIS ANALYST",
+      "roleType": "PROJECT MANAGER",
       "tenure": "Over 5 years - up to 7 years",
       "country": "United States",
       "employmentType": "W2",
@@ -111,6 +129,42 @@
       "holidays": 0,
       "crossBorder": false,
       "discount": 0
+    },
+    {
+      "roleType": "GIS ANALYST",
+      "tenure": "Over 3 years - up to 5 years",
+      "country": "Brazil",
+      "employmentType": "EOR",
+      "state": "Any",
+      "metro": "Remote",
+      "workersCompRisk": "Standard",
+      "payRate": 45,
+      "fringeRate": 0,
+      "otPayFactor": 1.5,
+      "otBillFactor": 1.5,
+      "pto": 22,
+      "sickDays": 15,
+      "holidays": 22,
+      "crossBorder": false,
+      "discount": 2
+    },
+    {
+      "roleType": "CAD DESIGNER",
+      "tenure": "Over 5 years - up to 7 years",
+      "country": "India",
+      "employmentType": "AOR",
+      "state": "Any",
+      "metro": "Hyderabad",
+      "workersCompRisk": "Standard",
+      "payRate": 60,
+      "fringeRate": 0,
+      "otPayFactor": 1.5,
+      "otBillFactor": 1.5,
+      "pto": 0,
+      "sickDays": 0,
+      "holidays": 0,
+      "crossBorder": false,
+      "discount": 2
     }
   ],
   "projectCosts": [
@@ -123,7 +177,7 @@
       "quantity": 2,
       "frequency": 2,
       "unitRate": 25,
-      "markup": 0.02
+      "markup": 2
     },
     {
       "costAccount": "Equipment Expense",
@@ -134,7 +188,29 @@
       "quantity": 2,
       "frequency": 2,
       "unitRate": 25,
-      "markup": 0.02
+      "markup": 2
+    },
+    {
+      "costAccount": "Consultant Bonuses",
+      "description": "Consultant Bonuses",
+      "costType": "Pass-Through",
+      "country": "India",
+      "cashflowImpact": "Monthly",
+      "quantity": 1,
+      "frequency": 3,
+      "unitRate": 10,
+      "markup": 1
+    },
+    {
+      "costAccount": "Travel",
+      "description": "Travel",
+      "costType": "Pass-Through",
+      "country": "Brazil",
+      "cashflowImpact": "Yearly",
+      "quantity": 2,
+      "frequency": 1,
+      "unitRate": 60,
+      "markup": 1
     }
   ]
 }

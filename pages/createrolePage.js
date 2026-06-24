@@ -10,7 +10,7 @@ class CreateRolePage {
   }
 
   async navigateToProject() {
-    const projectBtn = this.page.getByText('Test inflation02');
+    const projectBtn = this.page.getByText('Test inflation 3Countries');
     await projectBtn.waitFor({ timeout: 30000 });
     console.log('Project button visible');
     await projectBtn.click();
@@ -104,9 +104,9 @@ class CreateRolePage {
 
     // Numeric fields
     //await this.fillNumericByLabel('Benchmark Rate', roleData.BenchmarkRate);
-    await this.fillNumericByLabel('PTO Days/year(Default=10)', roleData.pto);
-    await this.fillNumericByLabel('Sick Days/year(Default=0)', roleData.sickDays);
-    await this.fillNumericByLabel('Holidays/year(Default=0)', roleData.holidays);
+    await this.fillNumericByLabel('PTO Days/year', roleData.pto);
+    await this.fillNumericByLabel('Sick Days/year', roleData.sickDays);
+    await this.fillNumericByLabel('Holidays/year', roleData.holidays);
     console.log('Numeric values entered');
 
 
