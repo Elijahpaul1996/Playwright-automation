@@ -1,5 +1,6 @@
 const { expect } = require('@playwright/test');
 const { workitemLocators } = require('../Locators/workitemloc');
+const inputData = require('../testdata/inputDataSnapshot.json');
 
 class CreateWorkitemPage {
 
@@ -44,7 +45,8 @@ class CreateWorkitemPage {
     await this.page.waitForTimeout(3000);
   }
 
-  async createMultipleWorkItems(workItems) {
+  async createMultipleWorkItems() {
+    const workItems = inputData.workItems; // Assuming workItems is an array in your inputDataSnapshot.json 
     console.log('Entered Work Items Page');
 
     // Navigate once

@@ -1,0 +1,140 @@
+{
+  "workbookPath": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3R inflation.xlsm",
+  "savedAt": "2026-06-23T12:06:17.136Z",
+  "workItems": [
+    {
+      "name": "wk1",
+      "description": "CAD DESIGNER",
+      "role": "CAD DESIGNER",
+      "col3Value": 5,
+      "col8Value": 0,
+      "startDate": 46023,
+      "endDate": 46357
+    },
+    {
+      "name": "wk2",
+      "description": "CIVIL ENGINEER",
+      "role": "CIVIL ENGINEER",
+      "col3Value": 1,
+      "col8Value": 0,
+      "startDate": 46023,
+      "endDate": 46357
+    },
+    {
+      "name": "wk3",
+      "description": "ELECTRICAL ENGINEER",
+      "role": "ELECTRICAL ENGINEER",
+      "col3Value": 1,
+      "col8Value": 0,
+      "startDate": 46023,
+      "endDate": 46357
+    },
+    {
+      "name": "wk4",
+      "description": "GIS ANALYST",
+      "role": "GIS ANALYST",
+      "col3Value": 1,
+      "col8Value": 0,
+      "startDate": 46023,
+      "endDate": 46357
+    }
+  ],
+  "roles": [
+    {
+      "roleType": "CAD DESIGNER",
+      "tenure": "Over 3 years - up to 5 years",
+      "country": "United States",
+      "employmentType": "W2",
+      "state": "Remote",
+      "metro": "Remote",
+      "workersCompRisk": "Standard",
+      "payRate": 120,
+      "fringeRate": 0,
+      "otPayFactor": 1.5,
+      "otBillFactor": 1.5,
+      "pto": 10,
+      "sickDays": 0,
+      "holidays": 0,
+      "crossBorder": false,
+      "discount": 0
+    },
+    {
+      "roleType": "CIVIL ENGINEER",
+      "tenure": "Over 3 years - up to 5 years",
+      "country": "United States",
+      "employmentType": "W2",
+      "state": "Alabama",
+      "metro": "Birmingham-Hoover",
+      "workersCompRisk": "Standard",
+      "payRate": 80,
+      "fringeRate": 0,
+      "otPayFactor": 1.5,
+      "otBillFactor": 1.5,
+      "pto": 10,
+      "sickDays": 0,
+      "holidays": 0,
+      "crossBorder": false,
+      "discount": 0
+    },
+    {
+      "roleType": "ELECTRICAL ENGINEER",
+      "tenure": "Over 5 years - up to 7 years",
+      "country": "United States",
+      "employmentType": "W2",
+      "state": "California",
+      "metro": "Chico",
+      "workersCompRisk": "Standard",
+      "payRate": 70,
+      "fringeRate": 0,
+      "otPayFactor": 1.5,
+      "otBillFactor": 1.5,
+      "pto": 10,
+      "sickDays": 0,
+      "holidays": 0,
+      "crossBorder": false,
+      "discount": 0
+    },
+    {
+      "roleType": "GIS ANALYST",
+      "tenure": "Over 5 years - up to 7 years",
+      "country": "United States",
+      "employmentType": "W2",
+      "state": "Florida",
+      "metro": "Gainesville",
+      "workersCompRisk": "Standard",
+      "payRate": 90,
+      "fringeRate": 0,
+      "otPayFactor": 1.5,
+      "otBillFactor": 1.5,
+      "pto": 10,
+      "sickDays": 0,
+      "holidays": 0,
+      "crossBorder": false,
+      "discount": 0
+    }
+  ],
+  "projectCosts": [
+    {
+      "costAccount": "Morale",
+      "description": "Morale",
+      "costType": "Pass-Through",
+      "country": "United States",
+      "cashflowImpact": "Hourly",
+      "quantity": 2,
+      "frequency": 2,
+      "unitRate": 25,
+      "markup": 0.02
+    },
+    {
+      "costAccount": "Equipment Expense",
+      "description": "Equipment Cost",
+      "costType": "Pass-Through",
+      "country": "United States",
+      "cashflowImpact": "Quarterly",
+      "quantity": 2,
+      "frequency": 2,
+      "unitRate": 25,
+      "markup": 0.02
+    }
+  ]
+}

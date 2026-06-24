@@ -1,5 +1,6 @@
 const { expect } = require('@playwright/test');
 const { roleLocators } = require('../Locators/Rolesloc');
+const inputData = require('../testdata/inputDataSnapshot.json');
 
 class CreateRolePage {
 
@@ -8,17 +9,18 @@ class CreateRolePage {
     this.loc = roleLocators(page); // all locators loaded here
   }
 
-  // async navigateToProject() {
-  //   const projectBtn = this.page.getByText('Test Project01');
-  //   await projectBtn.waitFor({ timeout: 30000 });
-  //   console.log('Project button visible');
-  //   await projectBtn.click();
-  //   console.log('Project button clicked');
-  //   await this.page.waitForLoadState('networkidle');
-  // }
+  async navigateToProject() {
+    const projectBtn = this.page.getByText('Test inflation02');
+    await projectBtn.waitFor({ timeout: 30000 });
+    console.log('Project button visible');
+    await projectBtn.click();
+    console.log('Project button clicked');
+    await this.page.waitForLoadState('networkidle');
+  }
   
 
   async selectFromDropdownByIndex(index, valueText) {
+    valueText = String(valueText).trim();
     await this.loc.dropdown(index).waitFor();
     await this.loc.dropdown(index).click();
     await this.loc.dropdownOptionExact(valueText,{exact: true}).waitFor();
@@ -71,10 +73,14 @@ class CreateRolePage {
     await this.page.waitForTimeout(2000);
     await this.selectFromDropdownByIndex(2, roleData.country);
     await this.selectFromDropdownByIndex(3, roleData.employmentType);
+    console.log('Country and Employment Type selected:', roleData.country, roleData.employmentType);  
     await this.selectFromDropdownByIndex(4, roleData.state);
-    await this.selectFromDropdownByIndex(5, roleData.Metro);
-    await this.selectFromDropdownByIndex(6, roleData.workerscomprisk);
+    console.log('State selected:', roleData.state);
+    await this.page.waitForTimeout(2000);
+    await this.selectFromDropdownByIndex(5, roleData.metro);
+    await this.selectFromDropdownByIndex(6, roleData.workersCompRisk);
     console.log('All dropdowns selected');
+    
 
     // Bill Rate Type radio
     //  await this.loc.billRateLabel(roleData.workerscomprisk).check();
@@ -131,18 +137,31 @@ class CreateRolePage {
     await this.page.waitForTimeout(2000);
   }
 
-  async createMultipleRoles(rolesData) {
-    console.log('Creating', rolesData.length, 'roles...');
-      // await this.navigateToProject();
+  // async createMultipleRoles(rolesData) {
+  //   console.log('Creating', rolesData.length, 'roles...');
+  //     // await this.navigateToProject();
 
-    for (let i = 0; i < rolesData.length; i++) {
-      console.log('Creating role', i + 1, 'of', rolesData.length, ':', rolesData[i].roleType);
-      await this.fillRoleForm(rolesData[i]);
-      console.log('Role', i + 1, 'done');
-    }
+  //   for (let i = 0; i < rolesData.length; i++) {
+  //     console.log('Creating role', i + 1, 'of', rolesData.length, ':', rolesData[i].roleType);
+  //     await this.fillRoleForm(rolesData[i]);
+  //     console.log('Role', i + 1, 'done');
+  //   }
 
-    console.log('All', rolesData.length, 'roles created!');
+  //   console.log('All', rolesData.length, 'roles created!');
+  // }
+  async createMultipleRoles() {
+  const rolesData = inputData.roles;
+  console.log('Creating', rolesData.length, 'roles...');
+  await this.navigateToProject();
+
+  for (let i = 0; i < rolesData.length; i++) {
+    console.log('Creating role', i + 1, 'of', rolesData.length, ':', rolesData[i].roleType);
+    await this.fillRoleForm(rolesData[i]);
+    console.log('Role', i + 1, 'done');
   }
+
+  console.log('All', rolesData.length, 'roles created!');
+}
 }
 
 module.exports = CreateRolePage;

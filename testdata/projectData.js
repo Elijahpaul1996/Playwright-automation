@@ -3,7 +3,7 @@
 const projectData = {
   client:             'Insight Global',
   //opportunity:        'IG Consultant Support Solution',
-  projectName:        'Test Inflation3',
+  projectName:        'Test inflation02',
   projectDescription: 'Created for test',
   startDate:          '01012026',  
   endDate:            '12012026',

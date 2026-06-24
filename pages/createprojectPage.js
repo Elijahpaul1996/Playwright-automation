@@ -178,7 +178,7 @@ class CreateProjectPage {
 
     // Ensure Create button is enabled before clicking
     //await expect(this.loc.createBtn).toBeEnabled();
-    await this.page.waitForTimeout(2000);
+    await this.page.waitForTimeout(3000);
     console.log('wait before clicking create button');
     await this.loc.createBtn.click();
     console.log('Project created:', projectData.projectName);

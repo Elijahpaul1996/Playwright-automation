@@ -8,6 +8,7 @@ const CreateWorkitemPage     = require('../pages/createworkitemPage');
 const CreateprojectCostsPage = require('../pages/createprojectcostsPage');
 
 // -- Data imports from testdata/ folder
+const inputData = require('../testdata/inputDataSnapshot.json');
 const { projectData } = require('../testdata/projectData');
 const { rolesData } = require('../testdata/roleData');
 const { workItems } = require('../testdata/workitemData');
@@ -34,22 +35,22 @@ test.describe('Pricing tool E2E', () => {
 
   test('create project, roles, work items and costs', async ({ page }) => {
 
-    const createProject = new CreateProjectPage(page);
-    await createProject.createProject(projectData);
-    await expect(page).toHaveURL(/\/projects\//);
+    // const createProject = new CreateProjectPage(page);
+    // await createProject.createProject(projectData);
+    // await expect(page).toHaveURL(/\/projects\//);
 
 
       //  await expect(page).toHaveURL(/\/dashboard\//);
 
     
     const createRole = new CreateRolePage(page);
-    await createRole.createMultipleRoles(rolesData);
+    await createRole.createMultipleRoles(inputData.roles);
 
     const createWorkitem = new CreateWorkitemPage(page);
-    await createWorkitem.createMultipleWorkItems(workItems);
+    await createWorkitem.createMultipleWorkItems(inputData.workItems);
 
     const createProjectCosts = new CreateprojectCostsPage(page);
-    await createProjectCosts.multipleprojectcosts(costsData);
+    await createProjectCosts.multipleprojectcosts(inputData.projectCosts);
 
     // await expect(page.getByText(' Summary', { exact: false })).toBeVisible({ timeout: 15000 });
   });

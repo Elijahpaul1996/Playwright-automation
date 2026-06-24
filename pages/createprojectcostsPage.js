@@ -1,6 +1,7 @@
 const { expect } = require('@playwright/test');
 //const { projectCostsLocators } = require('../Locators/projectcostloc');
 const projectCostsLocators = require('../Locators/projectcostloc');
+const inputData = require('../testdata/inputDataSnapshot.json');
 
 
 class CreateprojectCostsPage {
@@ -75,7 +76,8 @@ async clickGenerateSummary() {
 
 
 
-  async multipleprojectcosts(costsData) {
+  async multipleprojectcosts() {
+    const costsData = inputData.projectCosts; // Assuming projectCosts is an array in your inputDataSnapshot.json 
     console.log('Creating', costsData.length, 'cost items...');
     // await this.navigateToProject();
     // console.log(' project selected');
