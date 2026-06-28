@@ -1,0 +1,16 @@
+
+── Financial Summary Comparison ────────────────────
+  Total            : 56
+  ✅ Matched        : 52
+  ❌ Mismatched     : 1
+  🔄 Roundoff       : 0
+  ⚠️  Missing Excel  : 0
+  ⚠️  Missing UI     : 3
+────────────────────────────────────────────────────
+
+Mismatched fields:
+  ❌ Discount Rate
+     Excel : 13.0% (normalized: 13)
+     UI    : -$863,608 (normalized: -863608)
+
+Report saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummaryComparisonReport.json

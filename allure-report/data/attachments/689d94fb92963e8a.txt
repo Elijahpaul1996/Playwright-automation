@@ -1,0 +1,6 @@
+Key            : workingCapitalFinanceCost
+Excel Value    : $312
+UI Value       : $312
+Normalized Excel: 312
+Normalized UI  : 312
+Status         : MATCHED

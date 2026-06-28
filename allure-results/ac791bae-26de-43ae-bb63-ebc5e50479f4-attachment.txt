@@ -1,0 +1,77 @@
+SSO popup opened
+Account selected
+Login completed
+Project button visible
+Project button clicked
+Project opened
+Financial Summary opened
+✓ Financial | Fully Loaded Gross Profit: -$905,946
+✓ Financial | Reported Gross Profit: -$905,636
+✓ Financial | Contract Revenue: $920,258
+✓ Financial | Labor Revenue: $875,821
+✓ Financial | Billable Expense Pass Through: $204
+✓ Financial | Fee: $0
+✓ Financial | Fee at Risk: $0
+✓ Financial | Implementation Fee: $0
+✓ Financial | Management Fee: $0
+✓ Financial | Volume Discount: -$8,758
+✓ Financial | Early Pay Discount: $0
+✓ Financial | Innovation Fund: $0
+✓ Financial | Total Revenue: $867,267
+✓ Financial | External Direct Labor - Onshore: $1,772,701
+✓ Financial | External Project OH - Onshore: $0
+✓ Financial | External Direct Labor - Offshore: $0
+✓ Financial | External Project OH - Offshore: $0
+✓ Financial | Internal Direct Labor - Onshore: $0
+✓ Financial | Internal Project OH - Onshore: $0
+✓ Financial | Total Labor Structure: $1,772,701
+✓ Financial | Consultant Salaries and Wages: $1,606,080
+✓ Financial | Consultant Payroll Taxes: $163,179
+✓ Financial | Consultant Bonuses: $0
+✓ Financial | Workers Comp Insurance: $2,065
+✓ Financial | Clinical Insurance: $0
+✓ Financial | Medical Benefits: $1,377
+✓ Financial | ACA Subsides: $0
+✓ Financial | Internal PM/PC salaries and wages: $0
+✓ Financial | Internal payroll taxes on PM/PC salaries and wages: $0
+✓ Financial | Total Labor Costs: $1,772,701
+✓ Financial | Facility Rent Expense: $0
+✓ Financial | Capital Facility Expense: $0
+✓ Financial | Equipment Expense: $100
+✓ Financial | Software Expense: $0
+✓ Financial | Morale: $100
+✓ Financial | Travel: $0
+✓ Financial | vendor Expenses: $0
+✓ Financial | Working Capital Finance Cost: $312
+✓ Financial | Other costs: $0
+✓ Financial | FX Costs: $0
+✓ Financial | Licensing/Certification: $0
+✓ Financial | Total Project Costs: $512
+✓ Financial | Average Discount: 0
+✓ Financial | Max Headcount: 8
+✓ Financial | Headcount No Standard List Price: 0
+✓ Financial | Average Bill Rate: $59.55
+✓ Financial | Discount Rate: 13
+✓ Financial | Project Value: -$863,608
+✓ Financial | IRR: 0.00
+✓ Financial | Estimated Commissions: -$378,369
+✓ Financial | Commission Payroll Taxes: -$26,675
+✓ Financial | EVA Value:: -$500,902
+✓ Financial | EVA %:: -58.00
+Monthly P&L opened
+✓ Monthly P&L | Gross Sales: $875,821
+✓ Monthly P&L | Billable Expense (Pass Thru): $204
+✓ Monthly P&L | Volume Rebates: -$8,758
+✓ Monthly P&L | Early Pay Discount: $0
+✓ Monthly P&L | Net Revenue: $867,267
+✓ Monthly P&L | Salaries & Wages: $1,606,080
+✓ Monthly P&L | Payroll Taxes: $163,179
+✓ Monthly P&L | Non-Billable Expense: $0
+✓ Monthly P&L | Billable Expense (Pass Thru): $200
+✓ Monthly P&L | Workers Comp Insurance: $2,065
+✓ Monthly P&L | Clinical Insurance: $0
+✓ Monthly P&L | Medical benefits: $1,377
+✓ Monthly P&L | ACA cost: $0
+✓ Monthly P&L | COS: $1,772,901
+✓ Monthly P&L | Gross Margin: -$905,636
+✓ Monthly P&L | %: -104.42%

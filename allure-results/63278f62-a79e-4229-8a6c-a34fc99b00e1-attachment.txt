@@ -1,0 +1,11 @@
+⚠️  Field not found: Headcount | Error: expect(locator).toBeVisible() failed
+
+Locator: locator('//span[normalize-space()=\'Headcount\']/following-sibling::*').filter({ visible: true }).first()
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for locator('//span[normalize-space()=\'Headcount\']/following-sibling::*').filter({ visible: true }).first()
+

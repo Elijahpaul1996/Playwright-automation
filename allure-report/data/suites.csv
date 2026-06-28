@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","409","Compare Financial Summary — Excel vs UI","chromium","2026-06-25","passed","2026-06-25","","Financial Summary","",""
+"","9","Map UI values to keys","chromium","2026-06-25","passed","2026-06-25","","MapUiFinancialValues.spec.js","",""
+"","7099","Read Excel and overwrite snapshot","chromium","2026-06-25","passed","2026-06-25","","ReadExceldata.spec.js","",""
+"","31516","read financial summary values from UI project","chromium","2026-06-25","passed","2026-06-25","","financial.spec.js","",""

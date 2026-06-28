@@ -1,0 +1,4 @@
+⚠️ FAILED: select role type MECHANICAL ENGINEER | locator.waitFor: Test ended.
+Call log:
+  - waiting for getByRole('option', { name: 'MECHANICAL ENGINEER', exact: true }) to be visible
+

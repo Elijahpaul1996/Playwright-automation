@@ -1,0 +1,26 @@
+✓ Work Item 1: wk1 | role: MECHANICAL ENGINEER | start: 46023
+✓ Work Item 2: wk2 | role: CIVIL ENGINEER | start: 46023
+✓ Work Item 3: wk3 | role: ELECTRICAL ENGINEER | start: 46023
+✓ Work Item 4: wk4 | role: PROJECT MANAGER | start: 46023
+✓ Work Item 5: wk5 | role: GIS ANALYST | start: 46023
+✓ Work Item 6: wk6 | role: CAD DESIGNER | start: 46023
+✓ Role 1: MECHANICAL ENGINEER | state: Remote | payRate: 120
+✓ Role 2: CIVIL ENGINEER | state: Alabama | payRate: 80
+✓ Role 3: ELECTRICAL ENGINEER | state: California | payRate: 70
+✓ Role 4: PROJECT MANAGER | state: Florida | payRate: 90
+✓ Role 5: GIS ANALYST | state: Any | payRate: 45
+✓ Role 6: CAD DESIGNER | state: Any | payRate: 60
+✓ Cost 1: Morale | type: Pass-Through | unitRate: 25
+✓ Cost 2: Equipment Expense | type: Pass-Through | unitRate: 25
+✓ Cost 3: Consultant Bonuses | type: Pass-Through | unitRate: 10
+✓ Cost 4: Travel | type: Pass-Through | unitRate: 60
+
+Snapshot saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\inputDataSnapshot.json
+  Work Items    : 6
+  Roles         : 6
+  Project Costs : 4
+
+Snapshot summary:
+  Work Items    : 6 records
+  Roles         : 6 records
+  Project Costs : 4 records

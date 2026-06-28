@@ -1,0 +1,6 @@
+Key            : laborRevenue
+Excel Value    : $875,821
+UI Value       : $875,821
+Normalized Excel: 875821
+Normalized UI  : 875821
+Status         : MATCHED

@@ -2,7 +2,13 @@
   "name": "playwright-test",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "compare": "playwright test tests/compareFinancialSummary.spec.js",
+    "report": "allure generate allure-results -o allure-report --clean && allure open allure-report",
+    "compare:report": "playwright test tests/compareFinancialSummary.spec.js && allure generate allure-results -o allure-report --clean && allure open allure-report",
+    "Readinputdata": "playwright test tests/ReadInputsnapshot.spec.js && playwright test tests/e2etest.spec.js" ,  
+    "Readsummarydata": "playwright test tests/ReadExceldata.spec.js && playwright test tests/financial.spec.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,9 +16,13 @@
   "devDependencies": {
     "@playwright/mcp": "^0.0.69",
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.0"
+    "@types/node": "^25.3.0",
+    "allure-js-commons": "^3.10.1",
+    "allure-playwright": "^3.10.1"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
   }
+
+  
 }

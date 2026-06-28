@@ -1,7 +1,7 @@
 {
-  "workbookPath": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3 r.xlsm",
+  "workbookPath": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3R inflation.xlsm",
   "sheetName": "Financial Summary",
-  "savedAt": "2026-06-22T07:58:53.662Z",
+  "savedAt": "2026-06-25T16:45:32.576Z",
   "values": [
     {
       "key": "topRevenue",
@@ -11,57 +11,7 @@
       "valueColumn": "C",
       "labelCell": "B13",
       "valueCell": "C13",
-      "value": "$16,922,811"
-    },
-    {
-      "key": "topFullyLoadedGrossProfit",
-      "fieldName": "Fully Loaded Gross Profit",
-      "rowNumber": 14,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B14",
-      "valueCell": "C14",
-      "value": "$1,859,961"
-    },
-    {
-      "key": "topFullyLoadedGrossProfitPercent",
-      "fieldName": "%",
-      "rowNumber": 15,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B15",
-      "valueCell": "C15",
-      "value": "11.0%"
-    },
-    {
-      "key": "topReportedDirectGrossProfit",
-      "fieldName": "Reported (Direct) Gross Profit",
-      "rowNumber": 17,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B17",
-      "valueCell": "C17",
-      "value": "$1,985,939"
-    },
-    {
-      "key": "topReportedDirectGrossProfitPercent",
-      "fieldName": "%",
-      "rowNumber": 18,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B18",
-      "valueCell": "C18",
-      "value": "11.7%"
-    },
-    {
-      "key": "contractRevenue",
-      "fieldName": "Contract Revenue (NTE + Pass-Through Revenue)",
-      "rowNumber": 20,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B20",
-      "valueCell": "C20",
-      "value": "$17,938,368"
+      "value": "$867,267"
     },
     {
       "key": "revenueTotal",
@@ -71,7 +21,47 @@
       "valueColumn": "C",
       "labelCell": "B22",
       "valueCell": "C22",
-      "value": "$16,922,811"
+      "value": "$867,267"
+    },
+    {
+      "key": "FullyLoadedGrossProfit",
+      "fieldName": "Fully Loaded Gross Profit",
+      "rowNumber": 14,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B14",
+      "valueCell": "C14",
+      "value": "($905,946)"
+    },
+    {
+      "key": "FullyLoadedGrossProfitPercent",
+      "fieldName": "%",
+      "rowNumber": 15,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B15",
+      "valueCell": "C15",
+      "value": "-104.5%"
+    },
+    {
+      "key": "reportedGrossProfit",
+      "fieldName": "Reported (Direct) Gross Profit",
+      "rowNumber": 17,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B17",
+      "valueCell": "C17",
+      "value": "($905,636)"
+    },
+    {
+      "key": "contractRevenue",
+      "fieldName": "Contract Revenue (NTE + Pass-Through Revenue)",
+      "rowNumber": 20,
+      "labelColumn": "B",
+      "valueColumn": "C",
+      "labelCell": "B20",
+      "valueCell": "C20",
+      "value": "$920,258"
     },
     {
       "key": "laborRevenue",
@@ -81,7 +71,7 @@
       "valueColumn": "C",
       "labelCell": "B23",
       "valueCell": "C23",
-      "value": "$16,784,658"
+      "value": "$875,821"
     },
     {
       "key": "billableExpensePassThrough",
@@ -91,7 +81,7 @@
       "valueColumn": "C",
       "labelCell": "B24",
       "valueCell": "C24",
-      "value": "$306,000"
+      "value": "$204"
     },
     {
       "key": "fees",
@@ -141,7 +131,7 @@
       "valueColumn": "C",
       "labelCell": "B29",
       "valueCell": "C29",
-      "value": "($167,847)"
+      "value": "($8,758)"
     },
     {
       "key": "earlyPayDiscount",
@@ -171,7 +161,7 @@
       "valueColumn": "C",
       "labelCell": "B33",
       "valueCell": "C33",
-      "value": "$14,636,873"
+      "value": "$1,772,701"
     },
     {
       "key": "externalDirectLaborOnshore",
@@ -181,7 +171,7 @@
       "valueColumn": "C",
       "labelCell": "B34",
       "valueCell": "C34",
-      "value": "$14,636,873"
+      "value": "$1,772,701"
     },
     {
       "key": "externalProjectOhOnshore",
@@ -241,7 +231,7 @@
       "valueColumn": "C",
       "labelCell": "B43",
       "valueCell": "C43",
-      "value": "$14,636,873"
+      "value": "$1,772,701"
     },
     {
       "key": "consultantSalariesAndWages",
@@ -251,7 +241,7 @@
       "valueColumn": "C",
       "labelCell": "B44",
       "valueCell": "C44",
-      "value": "$12,977,600"
+      "value": "$1,606,080"
     },
     {
       "key": "consultantPayrollTaxes",
@@ -261,7 +251,7 @@
       "valueColumn": "C",
       "labelCell": "B45",
       "valueCell": "C45",
-      "value": "$1,631,467"
+      "value": "$163,179"
     },
     {
       "key": "consultantBonuses",
@@ -281,7 +271,7 @@
       "valueColumn": "C",
       "labelCell": "B47",
       "valueCell": "C47",
-      "value": "$16,689"
+      "value": "$2,065"
     },
     {
       "key": "clinicalInsurance",
@@ -301,7 +291,7 @@
       "valueColumn": "C",
       "labelCell": "B49",
       "valueCell": "C49",
-      "value": "$11,117"
+      "value": "$1,377"
     },
     {
       "key": "acaSubsidies",
@@ -341,7 +331,7 @@
       "valueColumn": "C",
       "labelCell": "B54",
       "valueCell": "C54",
-      "value": "$425,978"
+      "value": "$512"
     },
     {
       "key": "facilityRentExpense",
@@ -371,7 +361,7 @@
       "valueColumn": "C",
       "labelCell": "B57",
       "valueCell": "C57",
-      "value": "$120,000"
+      "value": "$100"
     },
     {
       "key": "softwareExpense",
@@ -391,7 +381,7 @@
       "valueColumn": "C",
       "labelCell": "B59",
       "valueCell": "C59",
-      "value": "$300,000"
+      "value": "$100"
     },
     {
       "key": "travel",
@@ -421,7 +411,7 @@
       "valueColumn": "C",
       "labelCell": "B62",
       "valueCell": "C62",
-      "value": "$5,978"
+      "value": "$312"
     },
     {
       "key": "otherCosts",
@@ -454,26 +444,6 @@
       "value": "$0"
     },
     {
-      "key": "bottomFullyLoadedGrossProfit",
-      "fieldName": "Fully Loaded Gross Profit",
-      "rowNumber": 67,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B67",
-      "valueCell": "C67",
-      "value": "$1,859,961"
-    },
-    {
-      "key": "bottomReportedDirectGrossProfit",
-      "fieldName": "Reported (Direct) Gross Profit",
-      "rowNumber": 68,
-      "labelColumn": "B",
-      "valueColumn": "C",
-      "labelCell": "B68",
-      "valueCell": "C68",
-      "value": "$1,985,939"
-    },
-    {
       "key": "compensationCostTotal",
       "fieldName": "Compensation Cost",
       "rowNumber": 70,
@@ -481,7 +451,7 @@
       "valueColumn": "C",
       "labelCell": "B70",
       "valueCell": "C70",
-      "value": "$15,289"
+      "value": "($405,044)"
     },
     {
       "key": "estimatedCommissions",
@@ -491,7 +461,7 @@
       "valueColumn": "C",
       "labelCell": "B71",
       "valueCell": "C71",
-      "value": "$14,282"
+      "value": "($378,369)"
     },
     {
       "key": "commissionPayrollTaxes",
@@ -501,7 +471,7 @@
       "valueColumn": "C",
       "labelCell": "B72",
       "valueCell": "C72",
-      "value": "$1,007"
+      "value": "($26,675)"
     },
     {
       "key": "eva",
@@ -511,7 +481,7 @@
       "valueColumn": "C",
       "labelCell": "B74",
       "valueCell": "C74",
-      "value": "$1,844,672"
+      "value": "($500,902)"
     },
     {
       "key": "evaPercent",
@@ -521,7 +491,7 @@
       "valueColumn": "C",
       "labelCell": "B75",
       "valueCell": "C75",
-      "value": "10.9%"
+      "value": "-57.8%"
     },
     {
       "key": "averageDiscount",
@@ -541,7 +511,7 @@
       "valueColumn": "L",
       "labelCell": "K14",
       "valueCell": "L14",
-      "value": "20"
+      "value": "8"
     },
     {
       "key": "headcountNoStandardListPrice",
@@ -561,7 +531,7 @@
       "valueColumn": "L",
       "labelCell": "K16",
       "valueCell": "L16",
-      "value": "$141.3"
+      "value": "$59.5"
     },
     {
       "key": "discountRate",
@@ -581,7 +551,7 @@
       "valueColumn": "L",
       "labelCell": "K19",
       "valueCell": "L19",
-      "value": "1,425,484.27"
+      "value": "(863,607.92)"
     },
     {
       "key": "irr",
@@ -591,7 +561,7 @@
       "valueColumn": "L",
       "labelCell": "K20",
       "valueCell": "L20",
-      "value": "183%"
+      "value": "0%"
     }
   ]
 }

@@ -1,0 +1,6 @@
+Key            : compensationCostTotal
+Excel Value    : ($405,044)
+UI Value       : 
+Normalized Excel: -405044
+Normalized UI  : 0
+Status         : MISSING_IN_UI

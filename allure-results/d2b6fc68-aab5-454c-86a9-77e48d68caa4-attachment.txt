@@ -1,0 +1,334 @@
+SSO popup opened
+Account selected
+Login completed
+Current URL: https://pricing-tool-dev.test.insightglobal.com/
+FIELDS =
+[
+  'Fully Loaded Gross Profit',
+  'Reported Gross Profit',
+  'Contract Revenue',
+  'Labor Revenue',
+  'Billable Expense Pass Through',
+  'Fee',
+  'Fee at Risk',
+  'Implementation Fee',
+  'Management Fee',
+  'Volume Discount',
+  'Early Pay Discount',
+  'Innovation Fund',
+  'Total Revenue',
+  'External Direct Labor - Onshore',
+  'External Project OH - Onshore',
+  'External Direct Labor - Offshore',
+  'External Project OH - Offshore',
+  'Internal Direct Labor - Onshore',
+  'Internal Project OH - Onshore',
+  'Total Labor Structure',
+  'Consultant Salaries and Wages',
+  'Consultant Payroll Taxes',
+  'Consultant Bonuses',
+  'Workers Comp Insurance',
+  'Clinical Insurance',
+  'Medical Benefits',
+  'ACA Subsides',
+  'Internal PM/PC salaries and wages',
+  'Internal payroll taxes on PM/PC salaries and wages',
+  'Total Labor Costs',
+  'Facility Rent Expense',
+  'Capital Facility Expense',
+  'Equipment Expense',
+  'Software Expense',
+  'Morale',
+  'Travel',
+  'vendor Expenses',
+  'Working Capital Finance Cost',
+  'Other costs',
+  'FX Costs',
+  'Licensing/Certification',
+  'Total Project Costs',
+  'Average Discount',
+  'Max Headcount',
+  'Headcount No Standard List Price',
+  'Average Bill Rate',
+  'Discount Rate',
+  'Project Value',
+  'IRR',
+  'Estimated Commissions',
+  'Commission Payroll Taxes',
+  'EVA Value:',
+  'EVA %:'
+]
+Project button visible
+Project button clicked
+Project opened
+Financial Summary button clicked
+Financial Summary opened
+✓ Field: Fully Loaded Gross Profit | Value: $905,946
+✓ Field: Reported Gross Profit | Value: $905,636
+✓ Field: Contract Revenue | Value: $920,258
+✓ Field: Labor Revenue | Value: $875,821
+✓ Field: Billable Expense Pass Through | Value: $204
+✓ Field: Fee | Value: $0
+✓ Field: Fee at Risk | Value: $0
+✓ Field: Implementation Fee | Value: $0
+✓ Field: Management Fee | Value: $0
+✓ Field: Volume Discount | Value: $8,758
+✓ Field: Early Pay Discount | Value: $0
+✓ Field: Innovation Fund | Value: $0
+✓ Field: Total Revenue | Value: $867,267
+✓ Field: External Direct Labor - Onshore | Value: $1,772,701
+✓ Field: External Project OH - Onshore | Value: $0
+✓ Field: External Direct Labor - Offshore | Value: $0
+✓ Field: External Project OH - Offshore | Value: $0
+✓ Field: Internal Direct Labor - Onshore | Value: $0
+✓ Field: Internal Project OH - Onshore | Value: $0
+✓ Field: Total Labor Structure | Value: $1,772,701
+✓ Field: Consultant Salaries and Wages | Value: $1,606,080
+✓ Field: Consultant Payroll Taxes | Value: $163,179
+✓ Field: Consultant Bonuses | Value: $0
+✓ Field: Workers Comp Insurance | Value: $2,065
+✓ Field: Clinical Insurance | Value: $0
+✓ Field: Medical Benefits | Value: $1,377
+✓ Field: ACA Subsides | Value: $0
+✓ Field: Internal PM/PC salaries and wages | Value: $0
+✓ Field: Internal payroll taxes on PM/PC salaries and wages | Value: $0
+✓ Field: Total Labor Costs | Value: $1,772,701
+✓ Field: Facility Rent Expense | Value: $0
+✓ Field: Capital Facility Expense | Value: $0
+✓ Field: Equipment Expense | Value: $100
+✓ Field: Software Expense | Value: $0
+✓ Field: Morale | Value: $100
+✓ Field: Travel | Value: $0
+✓ Field: vendor Expenses | Value: $0
+✓ Field: Working Capital Finance Cost | Value: $312
+✓ Field: Other costs | Value: $0
+✓ Field: FX Costs | Value: $0
+✓ Field: Licensing/Certification | Value: $0
+✓ Field: Total Project Costs | Value: $512
+✓ Field: Average Discount | Value: 0
+✓ Field: Max Headcount | Value: 8
+✓ Field: Headcount No Standard List Price | Value: 0
+✓ Field: Average Bill Rate | Value: $59.55
+✓ Field: Discount Rate | Value: $863,608
+✓ Field: Project Value | Value: $863,608
+✓ Field: IRR | Value: 0.00
+✓ Field: Estimated Commissions | Value: $378,369
+✓ Field: Commission Payroll Taxes | Value: $26,675
+✓ Field: EVA Value: | Value: $500,902
+✓ Field: EVA %: | Value: -58.00%
+C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\uiFinancialSummarySnapshot.json
+Financial Summary Snapshot Saved
+[
+  {
+    "fieldName": "Fully Loaded Gross Profit",
+    "value": "$905,946"
+  },
+  {
+    "fieldName": "Reported Gross Profit",
+    "value": "$905,636"
+  },
+  {
+    "fieldName": "Contract Revenue",
+    "value": "$920,258"
+  },
+  {
+    "fieldName": "Labor Revenue",
+    "value": "$875,821"
+  },
+  {
+    "fieldName": "Billable Expense Pass Through",
+    "value": "$204"
+  },
+  {
+    "fieldName": "Fee",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Fee at Risk",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Implementation Fee",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Management Fee",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Volume Discount",
+    "value": "$8,758"
+  },
+  {
+    "fieldName": "Early Pay Discount",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Innovation Fund",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Total Revenue",
+    "value": "$867,267"
+  },
+  {
+    "fieldName": "External Direct Labor - Onshore",
+    "value": "$1,772,701"
+  },
+  {
+    "fieldName": "External Project OH - Onshore",
+    "value": "$0"
+  },
+  {
+    "fieldName": "External Direct Labor - Offshore",
+    "value": "$0"
+  },
+  {
+    "fieldName": "External Project OH - Offshore",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Internal Direct Labor - Onshore",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Internal Project OH - Onshore",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Total Labor Structure",
+    "value": "$1,772,701"
+  },
+  {
+    "fieldName": "Consultant Salaries and Wages",
+    "value": "$1,606,080"
+  },
+  {
+    "fieldName": "Consultant Payroll Taxes",
+    "value": "$163,179"
+  },
+  {
+    "fieldName": "Consultant Bonuses",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Workers Comp Insurance",
+    "value": "$2,065"
+  },
+  {
+    "fieldName": "Clinical Insurance",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Medical Benefits",
+    "value": "$1,377"
+  },
+  {
+    "fieldName": "ACA Subsides",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Internal PM/PC salaries and wages",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Internal payroll taxes on PM/PC salaries and wages",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Total Labor Costs",
+    "value": "$1,772,701"
+  },
+  {
+    "fieldName": "Facility Rent Expense",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Capital Facility Expense",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Equipment Expense",
+    "value": "$100"
+  },
+  {
+    "fieldName": "Software Expense",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Morale",
+    "value": "$100"
+  },
+  {
+    "fieldName": "Travel",
+    "value": "$0"
+  },
+  {
+    "fieldName": "vendor Expenses",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Working Capital Finance Cost",
+    "value": "$312"
+  },
+  {
+    "fieldName": "Other costs",
+    "value": "$0"
+  },
+  {
+    "fieldName": "FX Costs",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Licensing/Certification",
+    "value": "$0"
+  },
+  {
+    "fieldName": "Total Project Costs",
+    "value": "$512"
+  },
+  {
+    "fieldName": "Average Discount",
+    "value": "0"
+  },
+  {
+    "fieldName": "Max Headcount",
+    "value": "8"
+  },
+  {
+    "fieldName": "Headcount No Standard List Price",
+    "value": "0"
+  },
+  {
+    "fieldName": "Average Bill Rate",
+    "value": "$59.55"
+  },
+  {
+    "fieldName": "Discount Rate",
+    "value": "$863,608"
+  },
+  {
+    "fieldName": "Project Value",
+    "value": "$863,608"
+  },
+  {
+    "fieldName": "IRR",
+    "value": "0.00"
+  },
+  {
+    "fieldName": "Estimated Commissions",
+    "value": "$378,369"
+  },
+  {
+    "fieldName": "Commission Payroll Taxes",
+    "value": "$26,675"
+  },
+  {
+    "fieldName": "EVA Value:",
+    "value": "$500,902"
+  },
+  {
+    "fieldName": "EVA %:",
+    "value": "-58.00%"
+  }
+]

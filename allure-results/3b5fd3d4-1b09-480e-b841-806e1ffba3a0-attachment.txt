@@ -1,0 +1,334 @@
+SSO popup opened
+Account selected
+Login completed
+Current URL: https://pricing-tool-dev.test.insightglobal.com/
+FIELDS =
+[
+  'Fully Loaded Gross Profit',
+  'Reported Gross Profit',
+  'Contract Revenue',
+  'Labor Revenue',
+  'Billable Expense Pass Through',
+  'Fee',
+  'Fee at Risk',
+  'Implementation Fee',
+  'Management Fee',
+  'Volume Discount',
+  'Early Pay Discount',
+  'Innovation Fund',
+  'Total Revenue',
+  'External Direct Labor - Onshore',
+  'External Project OH - Onshore',
+  'External Direct Labor - Offshore',
+  'External Project OH - Offshore',
+  'Internal Direct Labor - Onshore',
+  'Internal Project OH - Onshore',
+  'Total Labor Structure',
+  'Consultant Salaries and Wages',
+  'Consultant Payroll Taxes',
+  'Consultant Bonuses',
+  'Workers Comp Insurance',
+  'Clinical Insurance',
+  'Medical Benefits',
+  'ACA Subsides',
+  'Internal PM/PC salaries and wages',
+  'Internal payroll taxes on PM/PC salaries and wages',
+  'Total Labor Costs',
+  'Facility Rent Expense',
+  'Capital Facility Expense',
+  'Equipment Expense',
+  'Software Expense',
+  'Morale',
+  'Travel',
+  'vendor Expenses',
+  'Working Capital Finance Cost',
+  'Other costs',
+  'FX Costs',
+  'Licensing/Certification',
+  'Total Project Costs',
+  'Average Discount',
+  'Max Headcount',
+  'Headcount No Standard List Price',
+  'Average Bill Rate',
+  'Discount Rate',
+  'Project Value',
+  'IRR',
+  'Estimated Commissions',
+  'Commission Payroll Taxes',
+  'EVA Value:',
+  'EVA %:'
+]
+Project button visible
+Project button clicked
+Project opened
+Financial Summary button clicked
+Financial Summary opened
+Field object: "Fully Loaded Gross Profit"
+✓ Field: undefined | Value: -$905,946
+Field object: "Reported Gross Profit"
+✓ Field: undefined | Value: -$905,636
+Field object: "Contract Revenue"
+✓ Field: undefined | Value: $920,258
+Field object: "Labor Revenue"
+✓ Field: undefined | Value: $875,821
+Field object: "Billable Expense Pass Through"
+✓ Field: undefined | Value: $204
+Field object: "Fee"
+✓ Field: undefined | Value: $0
+Field object: "Fee at Risk"
+✓ Field: undefined | Value: $0
+Field object: "Implementation Fee"
+✓ Field: undefined | Value: $0
+Field object: "Management Fee"
+✓ Field: undefined | Value: $0
+Field object: "Volume Discount"
+✓ Field: undefined | Value: -$8,758
+Field object: "Early Pay Discount"
+✓ Field: undefined | Value: $0
+Field object: "Innovation Fund"
+✓ Field: undefined | Value: $0
+Field object: "Total Revenue"
+✓ Field: undefined | Value: $867,267
+Field object: "External Direct Labor - Onshore"
+✓ Field: undefined | Value: $1,772,701
+Field object: "External Project OH - Onshore"
+✓ Field: undefined | Value: $0
+Field object: "External Direct Labor - Offshore"
+✓ Field: undefined | Value: $0
+Field object: "External Project OH - Offshore"
+✓ Field: undefined | Value: $0
+Field object: "Internal Direct Labor - Onshore"
+✓ Field: undefined | Value: $0
+Field object: "Internal Project OH - Onshore"
+✓ Field: undefined | Value: $0
+Field object: "Total Labor Structure"
+✓ Field: undefined | Value: $1,772,701
+Field object: "Consultant Salaries and Wages"
+✓ Field: undefined | Value: $1,606,080
+Field object: "Consultant Payroll Taxes"
+✓ Field: undefined | Value: $163,179
+Field object: "Consultant Bonuses"
+✓ Field: undefined | Value: $0
+Field object: "Workers Comp Insurance"
+✓ Field: undefined | Value: $2,065
+Field object: "Clinical Insurance"
+✓ Field: undefined | Value: $0
+Field object: "Medical Benefits"
+✓ Field: undefined | Value: $1,377
+Field object: "ACA Subsides"
+✓ Field: undefined | Value: $0
+Field object: "Internal PM/PC salaries and wages"
+✓ Field: undefined | Value: $0
+Field object: "Internal payroll taxes on PM/PC salaries and wages"
+✓ Field: undefined | Value: $0
+Field object: "Total Labor Costs"
+✓ Field: undefined | Value: $1,772,701
+Field object: "Facility Rent Expense"
+✓ Field: undefined | Value: $0
+Field object: "Capital Facility Expense"
+✓ Field: undefined | Value: $0
+Field object: "Equipment Expense"
+✓ Field: undefined | Value: $100
+Field object: "Software Expense"
+✓ Field: undefined | Value: $0
+Field object: "Morale"
+✓ Field: undefined | Value: $100
+Field object: "Travel"
+✓ Field: undefined | Value: $0
+Field object: "vendor Expenses"
+✓ Field: undefined | Value: $0
+Field object: "Working Capital Finance Cost"
+✓ Field: undefined | Value: $312
+Field object: "Other costs"
+✓ Field: undefined | Value: $0
+Field object: "FX Costs"
+✓ Field: undefined | Value: $0
+Field object: "Licensing/Certification"
+✓ Field: undefined | Value: $0
+Field object: "Total Project Costs"
+✓ Field: undefined | Value: $512
+Field object: "Average Discount"
+✓ Field: undefined | Value: 0
+Field object: "Max Headcount"
+✓ Field: undefined | Value: 8
+Field object: "Headcount No Standard List Price"
+✓ Field: undefined | Value: 0
+Field object: "Average Bill Rate"
+✓ Field: undefined | Value: $59.55
+Field object: "Discount Rate"
+✓ Field: undefined | Value: -$863,608
+Field object: "Project Value"
+✓ Field: undefined | Value: -$863,608
+Field object: "IRR"
+✓ Field: undefined | Value: 0.00
+Field object: "Estimated Commissions"
+✓ Field: undefined | Value: -$378,369
+Field object: "Commission Payroll Taxes"
+✓ Field: undefined | Value: -$26,675
+Field object: "EVA Value:"
+✓ Field: undefined | Value: -$500,902
+Field object: "EVA %:"
+✓ Field: undefined | Value: -58.00
+C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\uiFinancialSummarySnapshot.json
+Financial Summary Snapshot Saved
+[
+  {
+    "value": "-$905,946"
+  },
+  {
+    "value": "-$905,636"
+  },
+  {
+    "value": "$920,258"
+  },
+  {
+    "value": "$875,821"
+  },
+  {
+    "value": "$204"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "-$8,758"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$867,267"
+  },
+  {
+    "value": "$1,772,701"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$1,772,701"
+  },
+  {
+    "value": "$1,606,080"
+  },
+  {
+    "value": "$163,179"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$2,065"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$1,377"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$1,772,701"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$100"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$100"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$312"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$512"
+  },
+  {
+    "value": "0"
+  },
+  {
+    "value": "8"
+  },
+  {
+    "value": "0"
+  },
+  {
+    "value": "$59.55"
+  },
+  {
+    "value": "-$863,608"
+  },
+  {
+    "value": "-$863,608"
+  },
+  {
+    "value": "0.00"
+  },
+  {
+    "value": "-$378,369"
+  },
+  {
+    "value": "-$26,675"
+  },
+  {
+    "value": "-$500,902"
+  },
+  {
+    "value": "-58.00"
+  }
+]

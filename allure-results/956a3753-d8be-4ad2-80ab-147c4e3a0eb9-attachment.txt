@@ -1,0 +1,98 @@
+SSO popup opened
+Account selected
+Login successful, navigated to dashboard/projects
+Entered Work Items Page
+Project button visible
+Project button clicked
+Work Items section opened
+Creating work item 1 of 6
+Add Work Item clicked
+Work item name filled: wk1
+Description filled
+Checkbox checked for: MECHANICAL ENGINEER
+All fields filled
+Work item saved: wk1
+Work item 1 done
+Creating work item 2 of 6
+Add Work Item clicked
+Work item name filled: wk2
+Description filled
+Checkbox checked for: CIVIL ENGINEER
+All fields filled
+Work item saved: wk2
+Work item 2 done
+Creating work item 3 of 6
+Add Work Item clicked
+Work item name filled: wk3
+Description filled
+Checkbox checked for: ELECTRICAL ENGINEER
+All fields filled
+Work item saved: wk3
+Work item 3 done
+Creating work item 4 of 6
+Add Work Item clicked
+Work item name filled: wk4
+Description filled
+Checkbox checked for: PROJECT MANAGER
+All fields filled
+Work item saved: wk4
+Work item 4 done
+Creating work item 5 of 6
+Add Work Item clicked
+Work item name filled: wk5
+Description filled
+Checkbox checked for: GIS ANALYST
+All fields filled
+Work item saved: wk5
+Work item 5 done
+Creating work item 6 of 6
+Add Work Item clicked
+Work item name filled: wk6
+Description filled
+Checkbox checked for: CAD DESIGNER
+All fields filled
+Work item saved: wk6
+Work item 6 done
+All 6 work items created!
+Creating 4 cost items...
+Creating cost item 1 of 4 : Pass-Through
+Cost description filled: Morale
+Cost account selected: Morale
+All dropdowns selected
+Quantity filled: 2
+Frequency filled: 2
+Unit rate filled: 25
+Markup filled: 2
+Cost item saved: Pass-Through
+Cost item 1 done
+Creating cost item 2 of 4 : Pass-Through
+Cost description filled: Equipment Cost
+Cost account selected: Equipment Expense
+All dropdowns selected
+Quantity filled: 2
+Frequency filled: 2
+Unit rate filled: 25
+Markup filled: 2
+Cost item saved: Pass-Through
+Cost item 2 done
+Creating cost item 3 of 4 : Pass-Through
+Cost description filled: Consultant Bonuses
+Cost account selected: Consultant Bonuses
+All dropdowns selected
+Quantity filled: 1
+Frequency filled: 3
+Unit rate filled: 10
+Markup filled: 1
+Cost item saved: Pass-Through
+Cost item 3 done
+Creating cost item 4 of 4 : Pass-Through
+Cost description filled: Travel
+Cost account selected: Travel
+All dropdowns selected
+Quantity filled: 2
+Frequency filled: 1
+Unit rate filled: 60
+Markup filled: 1
+Cost item saved: Pass-Through
+Cost item 4 done
+All 4 cost items created!

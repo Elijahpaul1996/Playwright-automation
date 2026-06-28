@@ -10,7 +10,7 @@ class CreateRolePage {
   }
 
   async navigateToProject() {
-    const projectBtn = this.page.getByText('Test inflation 3Countries');
+    const projectBtn = this.page.getByText('test 5');
     await projectBtn.waitFor({ timeout: 30000 });
     console.log('Project button visible');
     await projectBtn.click();
@@ -39,14 +39,32 @@ class CreateRolePage {
     await this.loc.checkbox(labelText).waitFor({ state: 'visible', timeout: 3000 });
     await this.loc.checkbox(labelText).check();
   }
+async safeAction(stepName, action) {   // to identify the step and take screenshot on failure
+  try {
+    await action();
+    console.log(`✅ ${stepName}`);
+  } catch (error) {
+    console.warn(`⚠️ FAILED: ${stepName} | ${error.message}`);
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    await this.page.screenshot({
+      path: `test-results/failed-${stepName.replace(/\s+/g, '-')}-${timestamp}.png`,
+      fullPage: false,
+    });
+  }
+}
+
 
   async fillRoleForm(roleData) {
-
-    await this.page.waitForLoadState('networkidle');
+await this.page.waitForLoadState('networkidle');
     await this.loc.rolesBtn.click();
-    await this.loc.addRoleBtn.click();
-    await this.page.waitForLoadState('networkidle');
 
+await this.safeAction('click add role button', async () => {
+  await this.loc.addRoleBtn.click();
+      await this.page.waitForLoadState('networkidle');
+});
+
+
+   
 
 // await this.page.getByLabel('Custom').check();
 // await this.page.getByLabel
@@ -59,21 +77,32 @@ class CreateRolePage {
     //   await this.page.waitForTimeout(1000);
     // }
     // Dropdowns
-    await this.selectFromDropdownByIndex(0, roleData.roleType);   // comment for Custom role selection
-    console.log('Role selected:', roleData.roleType);
+    await this.safeAction(`select role type ${roleData.roleType}`, async () => {
+  await this.selectFromDropdownByIndex(0, roleData.roleType);
+});
 
     await this.page.waitForTimeout(1000);
-    await this.selectFromDropdownByIndex(1, roleData.tenure);   
-    console.log('Tenure selected:', roleData.tenure);
 
+
+      await this.safeAction(`select tenure: ${roleData.tenure}`, async () => {
+    await this.selectFromDropdownByIndex(1, roleData.tenure);
+  });
+
+     await this.page
+  .locator("//span[contains(.,'Standard')]/preceding-sibling::input[@type='radio' and not(@disabled)]")
+  .check(); 
+  console.log('Standard radio button checked');
 
 
 
 
     await this.page.waitForTimeout(2000);
+      await this.safeAction(`select country: ${roleData.country}`, async () => {
     await this.selectFromDropdownByIndex(2, roleData.country);
+  });
     await this.selectFromDropdownByIndex(3, roleData.employmentType);
     console.log('Country and Employment Type selected:', roleData.country, roleData.employmentType);  
+
     await this.selectFromDropdownByIndex(4, roleData.state);
     console.log('State selected:', roleData.state);
     await this.page.waitForTimeout(2000);
@@ -127,9 +156,7 @@ class CreateRolePage {
 // standard radio button for skillset
     // await this.page.locator("//span[contains(.,'Standard')]/preceding-sibling::input[@type='radio']").check();
     // console.log('skillset selected');
-    await this.page
-  .locator("//span[contains(.,'Standard')]/preceding-sibling::input[@type='radio' and not(@disabled)]")
-  .check();
+   
 
     // Save
     await this.loc.saveBtn.click();

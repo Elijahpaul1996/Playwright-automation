@@ -1,0 +1,6 @@
+Key            : FullyLoadedGrossProfitPercent
+Excel Value    : -104.5%
+UI Value       : 
+Normalized Excel: -104
+Normalized UI  : 0
+Status         : MISSING_IN_UI

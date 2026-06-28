@@ -1,0 +1,6 @@
+Key            : discountRate
+Excel Value    : 13.0%
+UI Value       : 13
+Normalized Excel: 13
+Normalized UI  : 13
+Status         : MATCHED

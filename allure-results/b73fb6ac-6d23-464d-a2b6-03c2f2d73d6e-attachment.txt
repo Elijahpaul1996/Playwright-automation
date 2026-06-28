@@ -1,0 +1,6 @@
+Key            : consultantSalariesAndWages
+Excel Value    : $1,606,080
+UI Value       : $1,606,080
+Normalized Excel: 1606080
+Normalized UI  : 1606080
+Status         : MATCHED

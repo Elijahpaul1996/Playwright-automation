@@ -1,0 +1,8 @@
+SSO popup opened
+Account selected
+Login successful, navigated to dashboard/projects
+Creating 6 roles...
+Project button visible
+Project button clicked
+Creating role 1 of 6 : MECHANICAL ENGINEER
+✅ click add role button

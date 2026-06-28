@@ -1,0 +1,18 @@
+
+── Financial Summary Comparison ────────────────────
+  Total            : 56
+  ✅ Matched        : 52
+  ❌ Mismatched     : 1
+  🔄 Roundoff       : 0
+  ⚠️  Missing Excel  : 0
+  ⚠️  Missing UI     : 3
+────────────────────────────────────────────────────
+
+Mismatched fields:
+  ❌ IRR
+     Excel : 0% (normalized: 0)
+     UI    : 10.00 (normalized: 10)
+
+Report saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummaryComparisonReport.json
+
+✅ Comparison complete — 52 matched, 0 roundoff, 1 mismatched

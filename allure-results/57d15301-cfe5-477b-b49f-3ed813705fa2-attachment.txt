@@ -1,0 +1,37 @@
+
+── Financial Summary Comparison ────────────────────
+  Total            : 56
+  ✅ Matched        : 45
+  ❌ Mismatched     : 8
+  🔄 Roundoff       : 0
+  ⚠️  Missing Excel  : 0
+  ⚠️  Missing UI     : 3
+────────────────────────────────────────────────────
+
+Mismatched fields:
+  ❌ Fully Loaded Gross Profit
+     Excel : ($905,946) (normalized: -905946)
+     UI    : $905,946 (normalized: 905946)
+  ❌ Reported (Direct) Gross Profit
+     Excel : ($905,636) (normalized: -905636)
+     UI    : $905,636 (normalized: 905636)
+  ❌ Volume Discount
+     Excel : ($8,758) (normalized: -8758)
+     UI    : $8,758 (normalized: 8758)
+  ❌ Estimated Commissions
+     Excel : ($378,369) (normalized: -378369)
+     UI    : $378,369 (normalized: 378369)
+  ❌ Commission Payroll Taxes
+     Excel : ($26,675) (normalized: -26675)
+     UI    : $26,675 (normalized: 26675)
+  ❌ EVA
+     Excel : ($500,902) (normalized: -500902)
+     UI    : $500,902 (normalized: 500902)
+  ❌ Discount Rate
+     Excel : 13.0% (normalized: 13)
+     UI    : $863,608 (normalized: 863608)
+  ❌ Project Value
+     Excel : (863,607.92) (normalized: -863608)
+     UI    : $863,608 (normalized: 863608)
+
+Report saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummaryComparisonReport.json

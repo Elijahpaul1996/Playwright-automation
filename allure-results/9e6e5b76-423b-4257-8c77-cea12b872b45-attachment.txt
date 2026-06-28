@@ -1,0 +1,6 @@
+Key            : projectCostsTotal
+Excel Value    : $512
+UI Value       : $512
+Normalized Excel: 512
+Normalized UI  : 512
+Status         : MATCHED

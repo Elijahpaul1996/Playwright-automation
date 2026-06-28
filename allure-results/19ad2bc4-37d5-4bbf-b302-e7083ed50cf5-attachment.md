@@ -1,0 +1,461 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Logo FinSight" [ref=e7] [cursor=pointer]:
+          - /url: /dashboard
+          - img "Logo" [ref=e8]
+          - generic [ref=e9]: FinSight
+        - navigation [ref=e14]:
+          - link "Home" [ref=e16] [cursor=pointer]:
+            - /url: /dashboard
+            - generic [ref=e17]: Home
+          - link "Comparison" [ref=e19] [cursor=pointer]:
+            - /url: /project-comparison
+            - img [ref=e20]
+            - generic [ref=e22]: Comparison
+          - link "Approvals Queue" [ref=e24] [cursor=pointer]:
+            - /url: /approval-workflow
+            - img [ref=e25]
+            - generic [ref=e28]: Approvals Queue
+          - generic [ref=e29]:
+            - link "Projects" [ref=e30] [cursor=pointer]:
+              - /url: /view-all-projects
+              - generic [ref=e31]: Projects
+            - button [ref=e32] [cursor=pointer]:
+              - img [ref=e33]
+          - button "Manage" [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]: Manage
+            - img [ref=e38]
+          - button "EP Elijah Super Admin" [ref=e40] [cursor=pointer]:
+            - generic [ref=e41]: EP
+            - generic [ref=e42]:
+              - generic [ref=e43]: Elijah
+              - generic [ref=e44]: Super Admin
+          - button "Sign Out" [ref=e45] [cursor=pointer]:
+            - img [ref=e46]
+    - main [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - button "Collapse" [ref=e54] [cursor=pointer]:
+                  - img [ref=e55]
+                - heading "Test inflation02" [level=1] [ref=e57]
+                - generic [ref=e59]: Draft
+              - generic [ref=e60]:
+                - heading "IG Care Center" [level=4] [ref=e62]
+                - generic [ref=e63]: "Revenue: $867,267"
+                - generic [ref=e64]: "Hours: 15,296"
+                - generic [ref=e65]: "Discount: 0.00%"
+                - generic [ref=e66]: "Gross Margin: -104.42%"
+            - tablist "Summary views" [ref=e67]:
+              - generic [ref=e68]:
+                - button [active] [ref=e69] [cursor=pointer]:
+                  - img [ref=e70]
+                - generic [ref=e73]: Financial Summary
+              - generic [ref=e74]:
+                - button [ref=e75] [cursor=pointer]:
+                  - img [ref=e76]
+                - generic [ref=e78]: Monthly P&L
+              - generic [ref=e79]:
+                - button [ref=e80] [cursor=pointer]:
+                  - img [ref=e81]
+                - generic [ref=e84]: Spread Margin
+              - generic [ref=e85]:
+                - button [ref=e86] [cursor=pointer]:
+                  - img [ref=e87]
+                - generic [ref=e89]: Weekly Spread
+              - generic [ref=e90]:
+                - button [ref=e91] [cursor=pointer]:
+                  - img [ref=e92]
+                - generic [ref=e93]: Project Plan
+              - generic [ref=e94]:
+                - button [ref=e95] [cursor=pointer]:
+                  - img [ref=e96]
+                - generic [ref=e99]: Billing Schedule
+              - button "Regenerate Summary" [ref=e100] [cursor=pointer]:
+                - text: Regenerate
+                - text: Summary
+          - generic [ref=e101]: "Note: If you make any changes to the project, click on Regenerate Summary to get the latest summaries."
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - button "Overview" [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+                - generic [ref=e108]: Overview
+              - button "Roles" [ref=e109] [cursor=pointer]:
+                - img [ref=e110]
+                - generic [ref=e112]: Roles
+              - button "Work Items" [ref=e113] [cursor=pointer]:
+                - img [ref=e114]
+                - generic [ref=e117]: Work Items
+              - button "$ Project Costs" [ref=e118] [cursor=pointer]:
+                - text: $
+                - generic [ref=e119]: Project Costs
+            - generic [ref=e120]:
+              - button "Project Settings" [ref=e121] [cursor=pointer]:
+                - img [ref=e122]
+              - button "Collaborate on project" [ref=e125] [cursor=pointer]:
+                - img [ref=e126]
+              - button "Submit/Check Approvals" [ref=e129] [cursor=pointer]:
+                - img [ref=e130]
+                - generic [ref=e133]: Submit/Check Approvals
+        - generic [ref=e134]:
+          - combobox [ref=e136]:
+            - option "Canadian Dollar (CAD) — 1.3943"
+            - option "Chilean Peso (CLP) — 941.8801"
+            - option "Indian Rupee (INR) — 88.40"
+            - option "Polish Zloty (PLN) — 3.6563"
+            - option "United States Dollar (USD)" [selected]
+          - tabpanel [ref=e137]:
+            - main [ref=e139]:
+              - generic [ref=e141]:
+                - heading "Financial Summary" [level=1] [ref=e145]
+                - generic [ref=e146]:
+                  - main [ref=e148]:
+                    - heading [level=1]
+                    - generic [ref=e150]:
+                      - generic [ref=e151]:
+                        - generic [ref=e152] [cursor=pointer]:
+                          - generic [ref=e153]:
+                            - generic [ref=e155]: "%"
+                            - generic [ref=e156]:
+                              - heading "Gross Profit" [level=3] [ref=e157]
+                              - paragraph [ref=e158]: Total:-$905,946
+                          - img [ref=e159]
+                        - generic [ref=e161]:
+                          - generic [ref=e162]:
+                            - generic [ref=e163]: Fully Loaded Gross Profit
+                            - generic [ref=e164]: "-$905,946"
+                          - generic [ref=e165]:
+                            - generic [ref=e166]: "%"
+                            - generic [ref=e167]: "-104.46%"
+                          - generic [ref=e168]:
+                            - generic [ref=e169]: Reported Gross Profit
+                            - generic [ref=e170]: "-$905,636"
+                          - generic [ref=e171]:
+                            - generic [ref=e172]: "%"
+                            - generic [ref=e173]: "-104.42%"
+                          - generic [ref=e174]:
+                            - generic [ref=e175]: Contract Revenue
+                            - generic [ref=e176]: $920,258
+                      - generic [ref=e177]:
+                        - generic [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]:
+                            - img [ref=e181]
+                            - generic [ref=e183]:
+                              - heading "Revenue" [level=3] [ref=e184]
+                              - paragraph [ref=e185]: Total:$867,267
+                          - img [ref=e186]
+                        - generic [ref=e188]:
+                          - generic [ref=e189]:
+                            - generic [ref=e190]:
+                              - generic [ref=e191]: Labor Revenue
+                              - generic [ref=e192]: $875,821
+                            - generic [ref=e193]:
+                              - generic [ref=e194]: Billable Expense Pass Through
+                              - generic [ref=e195]: $204
+                            - generic [ref=e196]:
+                              - generic [ref=e197]: Fee
+                              - generic [ref=e198]: $0
+                            - generic [ref=e199]:
+                              - generic [ref=e200]: Fee at Risk
+                              - generic [ref=e201]: $0
+                            - generic [ref=e202]:
+                              - generic [ref=e203]: Implementation Fee
+                              - generic [ref=e204]: $0
+                            - generic [ref=e205]:
+                              - generic [ref=e206]: Management Fee
+                              - generic [ref=e207]: $0
+                            - generic [ref=e208]:
+                              - generic [ref=e209]: Volume Discount
+                              - generic [ref=e210]: "-$8,758"
+                            - generic [ref=e211]:
+                              - generic [ref=e212]: Early Pay Discount
+                              - generic [ref=e213]: $0
+                            - generic [ref=e214]:
+                              - generic [ref=e215]: Innovation Fund
+                              - generic [ref=e216]: $0
+                          - generic [ref=e218]:
+                            - generic [ref=e219]: Total Revenue
+                            - generic [ref=e220]: $867,267
+                      - generic [ref=e221]:
+                        - generic [ref=e222]:
+                          - generic [ref=e223] [cursor=pointer]:
+                            - generic [ref=e224]:
+                              - img [ref=e226]
+                              - generic [ref=e231]:
+                                - heading "Labor Structure" [level=3] [ref=e232]
+                                - paragraph [ref=e233]: Total:$1,772,701
+                            - img [ref=e234]
+                          - generic [ref=e236]:
+                            - generic [ref=e237]:
+                              - generic [ref=e238]: External Direct Labor - Onshore
+                              - generic [ref=e239]: $1,772,701
+                            - generic [ref=e240]:
+                              - generic [ref=e241]: External Project OH - Onshore
+                              - generic [ref=e242]: $0
+                            - generic [ref=e243]:
+                              - generic [ref=e244]: External Direct Labor - Offshore
+                              - generic [ref=e245]: $0
+                            - generic [ref=e246]:
+                              - generic [ref=e247]: External Project OH - Offshore
+                              - generic [ref=e248]: $0
+                            - generic [ref=e249]:
+                              - generic [ref=e250]: Internal Direct Labor - Onshore
+                              - generic [ref=e251]: $0
+                            - generic [ref=e252]:
+                              - generic [ref=e253]: Internal Project OH - Onshore
+                              - generic [ref=e254]: $0
+                            - generic [ref=e255]:
+                              - generic [ref=e256]: Total Labor Structure
+                              - generic [ref=e257]: $1,772,701
+                        - generic [ref=e258]:
+                          - generic [ref=e259] [cursor=pointer]:
+                            - generic [ref=e260]:
+                              - img [ref=e262]
+                              - generic [ref=e267]:
+                                - heading "Labor Costs" [level=3] [ref=e268]
+                                - paragraph [ref=e269]: "Total: $1,772,701"
+                            - img [ref=e270]
+                          - generic [ref=e272]:
+                            - generic [ref=e273]:
+                              - heading "Consultant Costs" [level=4] [ref=e274]
+                              - generic [ref=e275]:
+                                - generic [ref=e276]:
+                                  - generic [ref=e277]: Consultant Salaries and Wages
+                                  - generic [ref=e278]: $1,606,080
+                                - generic [ref=e279]:
+                                  - generic [ref=e280]: Consultant Payroll Taxes
+                                  - generic [ref=e281]: $163,179
+                                - generic [ref=e282]:
+                                  - generic [ref=e283]: Consultant Bonuses
+                                  - generic [ref=e284]: $0
+                                - generic [ref=e285]:
+                                  - generic [ref=e286]: Workers Comp Insurance
+                                  - generic [ref=e287]: $2,065
+                                - generic [ref=e288]:
+                                  - generic [ref=e289]: Clinical Insurance
+                                  - generic [ref=e290]: $0
+                                - generic [ref=e291]:
+                                  - generic [ref=e292]: Medical Benefits
+                                  - generic [ref=e293]: $1,377
+                                - generic [ref=e294]:
+                                  - generic [ref=e295]: ACA Subsides
+                                  - generic [ref=e296]: $0
+                            - generic [ref=e297]:
+                              - heading "Internal Management" [level=4] [ref=e298]
+                              - generic [ref=e299]:
+                                - generic [ref=e300]:
+                                  - generic [ref=e301]: Internal PM/PC salaries and wages
+                                  - generic [ref=e302]: $0
+                                - generic [ref=e303]:
+                                  - generic [ref=e304]: Internal payroll taxes on PM/PC salaries and wages
+                                  - generic [ref=e305]: $0
+                            - generic [ref=e307]:
+                              - generic [ref=e308]: Total Labor Costs
+                              - generic [ref=e309]: $1,772,701
+                      - generic [ref=e310]:
+                        - generic [ref=e311] [cursor=pointer]:
+                          - generic [ref=e312]:
+                            - img [ref=e314]
+                            - generic [ref=e317]:
+                              - heading "Project Costs" [level=3] [ref=e318]
+                              - paragraph [ref=e319]: Total:$512
+                          - img [ref=e320]
+                        - generic [ref=e322]:
+                          - generic [ref=e323]:
+                            - generic [ref=e324]:
+                              - generic [ref=e325]: Facility Rent Expense
+                              - generic [ref=e326]: $0
+                            - generic [ref=e327]:
+                              - generic [ref=e328]: Capital Facility Expense
+                              - generic [ref=e329]: $0
+                            - generic [ref=e330]:
+                              - generic [ref=e331]: Equipment Expense
+                              - generic [ref=e332]: $100
+                            - generic [ref=e333]:
+                              - generic [ref=e334]: Software Expense
+                              - generic [ref=e335]: $0
+                            - generic [ref=e336]:
+                              - generic [ref=e337]: Morale
+                              - generic [ref=e338]: $100
+                            - generic [ref=e339]:
+                              - generic [ref=e340]: Travel
+                              - generic [ref=e341]: $0
+                            - generic [ref=e342]:
+                              - generic [ref=e343]: vendor Expenses
+                              - generic [ref=e344]: $0
+                            - generic [ref=e345]:
+                              - generic [ref=e346]: Working Capital Finance Cost
+                              - generic [ref=e347]: $312
+                            - generic [ref=e348]:
+                              - generic [ref=e349]: Other costs
+                              - generic [ref=e350]: $0
+                            - generic [ref=e351]:
+                              - generic [ref=e352]: FX Costs
+                              - generic [ref=e353]: $0
+                            - generic [ref=e354]:
+                              - generic [ref=e355]: Licensing/Certification
+                              - generic [ref=e356]: $0
+                          - generic [ref=e358]:
+                            - generic [ref=e359]: Total Project Costs
+                            - generic [ref=e360]: $512
+                  - generic [ref=e361]:
+                    - generic [ref=e362]:
+                      - generic [ref=e364]:
+                        - generic [ref=e365]: Average Discount
+                        - generic [ref=e366]: 0%
+                        - generic [ref=e367]: Max Headcount
+                        - generic [ref=e368]: "8"
+                        - generic [ref=e369]: Headcount No Standard List Price
+                        - generic [ref=e370]: "0"
+                        - generic [ref=e371]: Average Bill Rate
+                        - generic [ref=e372]: $59.55
+                      - generic [ref=e374]:
+                        - generic [ref=e375]:
+                          - generic [ref=e376]: Discount Rate
+                          - spinbutton [ref=e379]: "13"
+                          - generic [ref=e380]: Project Value
+                          - generic [ref=e381]: "-$863,608"
+                          - generic [ref=e382]: IRR
+                          - generic [ref=e383]: 0.00%
+                        - button "Generate" [ref=e385] [cursor=pointer]
+                    - generic [ref=e386]:
+                      - generic [ref=e387]:
+                        - heading "Net Cashflow" [level=4] [ref=e388]
+                        - generic [ref=e389]:
+                          - button "Chart Settings" [ref=e391] [cursor=pointer]:
+                            - img [ref=e392]
+                            - generic [ref=e395]: Chart Settings
+                          - button "Expand chart" [ref=e396] [cursor=pointer]:
+                            - img [ref=e397]
+                      - application [ref=e409]:
+                        - generic [ref=e602]:
+                          - generic [ref=e603]:
+                            - generic [ref=e605]: 1-10-2026
+                            - generic [ref=e607]: 1-31-2026
+                            - generic [ref=e609]: 2-21-2026
+                            - generic [ref=e611]: 3-7-2026
+                            - generic [ref=e613]: 3-25-2026
+                            - generic [ref=e615]: 4-11-2026
+                            - generic [ref=e617]: 5-2-2026
+                            - generic [ref=e619]: 5-23-2026
+                            - generic [ref=e621]: 6-6-2026
+                            - generic [ref=e623]: 6-25-2026
+                            - generic [ref=e625]: 7-11-2026
+                            - generic [ref=e627]: 8-1-2026
+                            - generic [ref=e629]: 8-22-2026
+                            - generic [ref=e631]: 9-5-2026
+                            - generic [ref=e633]: 9-25-2026
+                            - generic [ref=e635]: 10-10-2026
+                            - generic [ref=e637]: 10-25-2026
+                            - generic [ref=e639]: 11-14-2026
+                            - generic [ref=e641]: 11-28-2026
+                            - generic [ref=e643]: 1-25-2027
+                          - generic [ref=e644]:
+                            - generic [ref=e646]: "-$1,200,000"
+                            - generic [ref=e648]: "-$900,000"
+                            - generic [ref=e650]: "-$600,000"
+                            - generic [ref=e652]: "-$300,000"
+                            - generic [ref=e654]: $0
+                      - generic [ref=e655]:
+                        - generic [ref=e656]:
+                          - generic [ref=e657]: "-$14,806"
+                          - generic [ref=e658]: Max Positive
+                        - generic [ref=e659]:
+                          - generic [ref=e660]: "-$1,013,865"
+                          - generic [ref=e661]: Max Negative
+                    - generic [ref=e662]:
+                      - generic [ref=e663]:
+                        - heading "Net Revenue and Gross Margin" [level=4] [ref=e664]
+                        - generic [ref=e665]:
+                          - button "Chart Settings" [ref=e667] [cursor=pointer]:
+                            - img [ref=e668]
+                            - text: Chart Settings
+                          - button "Expand chart" [ref=e671] [cursor=pointer]:
+                            - img [ref=e672]
+                      - generic [ref=e684]:
+                        - list [ref=e686]:
+                          - listitem [ref=e687]:
+                            - img "Gross Margin (%) legend icon" [ref=e688]
+                            - text: Gross Margin (%)
+                          - listitem [ref=e690]:
+                            - img "Net Revenue ($ ) legend icon" [ref=e691]
+                            - text: Net Revenue ($ )
+                        - application [ref=e693]:
+                          - generic [ref=e742]:
+                            - generic [ref=e743]:
+                              - generic [ref=e745]: 1-1-2026
+                              - generic [ref=e747]: 3-1-2026
+                              - generic [ref=e749]: 5-1-2026
+                              - generic [ref=e751]: 7-1-2026
+                              - generic [ref=e753]: 9-1-2026
+                              - generic [ref=e755]: 11-1-2026
+                            - generic [ref=e756]:
+                              - generic [ref=e758]: $0
+                              - generic [ref=e760]: $25,000
+                              - generic [ref=e762]: $50,000
+                              - generic [ref=e764]: $75,000
+                              - generic [ref=e766]: $100,000
+                            - generic [ref=e767]:
+                              - generic [ref=e769]: "-102%"
+                              - generic [ref=e771]: "-101.8%"
+                              - generic [ref=e773]: "-101.6%"
+                              - generic [ref=e775]: "-101.4%"
+                              - generic [ref=e777]: "-101.2%"
+                      - generic [ref=e778]:
+                        - generic [ref=e779]:
+                          - generic [ref=e780]: $3,690
+                          - generic [ref=e781]: Latest Revenue
+                        - generic [ref=e782]:
+                          - generic [ref=e783]: "-101.28%"
+                          - generic [ref=e784]: Latest Margin
+                    - generic [ref=e785]:
+                      - generic [ref=e786]:
+                        - img [ref=e788]
+                        - generic [ref=e791]:
+                          - heading "Compensation Cost" [level=3] [ref=e792]
+                          - generic [ref=e793]: "-$405,044"
+                      - generic [ref=e795]:
+                        - generic [ref=e796]:
+                          - generic [ref=e797]: Estimated Commissions
+                          - generic [ref=e798]: "-$378,369"
+                        - generic [ref=e799]:
+                          - generic [ref=e800]: Commission Payroll Taxes
+                          - generic [ref=e801]: "-$26,675"
+                        - generic [ref=e802]:
+                          - generic [ref=e803]: Total Compensation Cost
+                          - generic [ref=e804]: "-$405,044"
+                    - generic [ref=e805]:
+                      - generic [ref=e806]:
+                        - img [ref=e808]
+                        - generic [ref=e811]:
+                          - heading "Economic Value Added" [level=3] [ref=e812]
+                          - generic [ref=e813]:
+                            - generic [ref=e814]:
+                              - generic [ref=e815]: "EVA Value:"
+                              - generic [ref=e816]: "-$500,902"
+                            - generic [ref=e817]:
+                              - generic [ref=e818]: "EVA %:"
+                              - generic [ref=e819]: "-58.00%"
+                      - generic [ref=e820]:
+                        - generic [ref=e821]:
+                          - img [ref=e822]
+                          - generic [ref=e825]: Negative EVA – Value Destruction
+                        - paragraph [ref=e826]: This project destroys economic value as returns are below the cost of capital. Consider optimization or restructuring.
+                    - generic [ref=e827]: No headcount data available
+      - region "Notifications Alt+T"
+    - contentinfo [ref=e828]:
+      - generic [ref=e830]:
+        - paragraph [ref=e831]: © 2026 Insight Global, Inc. All rights reserved.
+        - generic [ref=e832]:
+          - link "Privacy Policy" [ref=e833] [cursor=pointer]:
+            - /url: https://insightglobal.com/privacy-policy/
+          - button "Feedback" [ref=e834] [cursor=pointer]
+  - generic [ref=e835]: "-102%"
+```

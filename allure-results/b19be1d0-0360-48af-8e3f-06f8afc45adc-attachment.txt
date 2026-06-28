@@ -1,0 +1,306 @@
+SSO popup opened
+Account selected
+Login completed
+Current URL: https://pricing-tool-dev.test.insightglobal.com/
+FIELDS =
+[
+  {
+    key: 'FullyLoadedGrossProfit',
+    fieldName: 'Fully Loaded Gross Profit',
+    occurrence: 1
+  },
+  {
+    key: 'reportedGrossProfit',
+    fieldName: 'Reported Gross Profit',
+    occurrence: 1
+  },
+  {
+    key: 'contractRevenue',
+    fieldName: 'Contract Revenue',
+    occurrence: 1
+  },
+  { key: 'laborRevenue', fieldName: 'Labor Revenue', occurrence: 1 },
+  {
+    key: 'billableExpensePassThrough',
+    fieldName: 'Billable Expense Pass Through',
+    occurrence: 1
+  },
+  { key: 'fees', fieldName: 'Fee', occurrence: 1 },
+  { key: 'feesAtRisk', fieldName: 'Fee at Risk', occurrence: 1 },
+  {
+    key: 'implementationFees',
+    fieldName: 'Implementation Fee',
+    occurrence: 1
+  },
+  { key: 'managementFees', fieldName: 'Management Fee', occurrence: 1 },
+  {
+    key: 'volumeDiscount',
+    fieldName: 'Volume Discount',
+    occurrence: 1
+  },
+  {
+    key: 'earlyPayDiscount',
+    fieldName: 'Early Pay Discount',
+    occurrence: 1
+  },
+  {
+    key: 'innovationFunds',
+    fieldName: 'Innovation Fund',
+    occurrence: 1
+  },
+  { key: 'topRevenue', fieldName: 'Total Revenue', occurrence: 1 },
+  {
+    key: 'externalDirectLaborOnshore',
+    fieldName: 'External Direct Labor - Onshore',
+    occurrence: 1
+  },
+  {
+    key: 'externalProjectOhOnshore',
+    fieldName: 'External Project OH - Onshore',
+    occurrence: 1
+  },
+  {
+    key: 'externalDirectLaborOffshore',
+    fieldName: 'External Direct Labor - Offshore',
+    occurrence: 1
+  },
+  {
+    key: 'externalProjectOhOffshore',
+    fieldName: 'External Project OH - Offshore',
+    occurrence: 1
+  },
+  {
+    key: 'internalDirectLaborOnshore',
+    fieldName: 'Internal Direct Labor - Onshore',
+    occurrence: 1
+  },
+  {
+    key: 'internalProjectOhOnshore',
+    fieldName: 'Internal Project OH - Onshore',
+    occurrence: 1
+  },
+  {
+    key: 'laborStructureTotal',
+    fieldName: 'Total Labor Structure',
+    occurrence: 1
+  },
+  {
+    key: 'consultantSalariesAndWages',
+    fieldName: 'Consultant Salaries and Wages',
+    occurrence: 1
+  },
+  {
+    key: 'consultantPayrollTaxes',
+    fieldName: 'Consultant Payroll Taxes',
+    occurrence: 1
+  },
+  {
+    key: 'consultantBonuses',
+    fieldName: 'Consultant Bonuses',
+    occurrence: 1
+  },
+  {
+    key: 'workersCompInsurance',
+    fieldName: 'Workers Comp Insurance',
+    occurrence: 1
+  },
+  {
+    key: 'clinicalInsurance',
+    fieldName: 'Clinical Insurance',
+    occurrence: 1
+  },
+  {
+    key: 'medicalBenefits',
+    fieldName: 'Medical Benefits',
+    occurrence: 1
+  },
+  { key: 'acaSubsidies', fieldName: 'ACA Subsides', occurrence: 1 },
+  {
+    key: 'internalPmPcSalariesAndWages',
+    fieldName: 'Internal PM/PC salaries and wages',
+    occurrence: 1
+  },
+  {
+    key: 'internalPayrollTaxesOnPmPcSalariesAndWages',
+    fieldName: 'Internal payroll taxes on PM/PC salaries and wages',
+    occurrence: 1
+  },
+  {
+    key: 'laborCostsTotal',
+    fieldName: 'Total Labor Costs',
+    occurrence: 1
+  },
+  {
+    key: 'facilityRentExpense',
+    fieldName: 'Facility Rent Expense',
+    occurrence: 1
+  },
+  {
+    key: 'capitalFacilityExpenses',
+    fieldName: 'Capital Facility Expense',
+    occurrence: 1
+  },
+  {
+    key: 'equipmentExpense',
+    fieldName: 'Equipment Expense',
+    occurrence: 1
+  },
+  {
+    key: 'softwareExpense',
+    fieldName: 'Software Expense',
+    occurrence: 1
+  },
+  { key: 'morale', fieldName: 'Morale', occurrence: 1 },
+  { key: 'travel', fieldName: 'Travel', occurrence: 1 },
+  {
+    key: 'vendorExpenses',
+    fieldName: 'vendor Expenses',
+    occurrence: 1
+  },
+  {
+    key: 'workingCapitalFinanceCost',
+    fieldName: 'Working Capital Finance Cost',
+    occurrence: 1
+  },
+  { key: 'otherCosts', fieldName: 'Other costs', occurrence: 1 },
+  { key: 'fxCosts', fieldName: 'FX Costs', occurrence: 1 },
+  {
+    key: 'licensingAndCertification',
+    fieldName: 'Licensing/Certification',
+    occurrence: 1
+  },
+  {
+    key: 'projectCostsTotal',
+    fieldName: 'Total Project Costs',
+    occurrence: 1
+  },
+  {
+    key: 'averageDiscount',
+    fieldName: 'Average Discount',
+    occurrence: 1
+  },
+  { key: 'maxHeadcount', fieldName: 'Max Headcount', occurrence: 1 },
+  {
+    key: 'headcountNoStandardListPrice',
+    fieldName: 'Headcount No Standard List Price',
+    occurrence: 1
+  },
+  {
+    key: 'averageBillRate',
+    fieldName: 'Average Bill Rate',
+    occurrence: 1
+  },
+  { key: 'discountRate', fieldName: 'Discount Rate', occurrence: 1 },
+  { key: 'projectValue', fieldName: 'Project Value', occurrence: 1 },
+  { key: 'irr', fieldName: 'IRR', occurrence: 1 },
+  {
+    key: 'estimatedCommissions',
+    fieldName: 'Estimated Commissions',
+    occurrence: 1
+  },
+  {
+    key: 'commissionPayrollTaxes',
+    fieldName: 'Commission Payroll Taxes',
+    occurrence: 1
+  },
+  { key: 'eva', fieldName: 'EVA Value:', occurrence: 1 },
+  { key: 'evaPercent', fieldName: 'EVA %:', occurrence: 1 }
+]
+Project button visible
+Project button clicked
+Project opened
+Financial Summary button clicked
+Financial Summary opened
+Field object: {"key":"FullyLoadedGrossProfit","fieldName":"Fully Loaded Gross Profit","occurrence":1}
+✓ Field: Fully Loaded Gross Profit | Value: -$905,946
+Field object: {"key":"reportedGrossProfit","fieldName":"Reported Gross Profit","occurrence":1}
+✓ Field: Reported Gross Profit | Value: -$905,636
+Field object: {"key":"contractRevenue","fieldName":"Contract Revenue","occurrence":1}
+✓ Field: Contract Revenue | Value: $920,258
+Field object: {"key":"laborRevenue","fieldName":"Labor Revenue","occurrence":1}
+✓ Field: Labor Revenue | Value: $875,821
+Field object: {"key":"billableExpensePassThrough","fieldName":"Billable Expense Pass Through","occurrence":1}
+✓ Field: Billable Expense Pass Through | Value: $204
+Field object: {"key":"fees","fieldName":"Fee","occurrence":1}
+✓ Field: Fee | Value: $0
+Field object: {"key":"feesAtRisk","fieldName":"Fee at Risk","occurrence":1}
+✓ Field: Fee at Risk | Value: $0
+Field object: {"key":"implementationFees","fieldName":"Implementation Fee","occurrence":1}
+✓ Field: Implementation Fee | Value: $0
+Field object: {"key":"managementFees","fieldName":"Management Fee","occurrence":1}
+✓ Field: Management Fee | Value: $0
+Field object: {"key":"volumeDiscount","fieldName":"Volume Discount","occurrence":1}
+✓ Field: Volume Discount | Value: -$8,758
+Field object: {"key":"earlyPayDiscount","fieldName":"Early Pay Discount","occurrence":1}
+✓ Field: Early Pay Discount | Value: $0
+Field object: {"key":"innovationFunds","fieldName":"Innovation Fund","occurrence":1}
+✓ Field: Innovation Fund | Value: $0
+Field object: {"key":"topRevenue","fieldName":"Total Revenue","occurrence":1}
+✓ Field: Total Revenue | Value: $867,267
+Field object: {"key":"externalDirectLaborOnshore","fieldName":"External Direct Labor - Onshore","occurrence":1}
+✓ Field: External Direct Labor - Onshore | Value: $1,772,701
+Field object: {"key":"externalProjectOhOnshore","fieldName":"External Project OH - Onshore","occurrence":1}
+✓ Field: External Project OH - Onshore | Value: $0
+Field object: {"key":"externalDirectLaborOffshore","fieldName":"External Direct Labor - Offshore","occurrence":1}
+✓ Field: External Direct Labor - Offshore | Value: $0
+Field object: {"key":"externalProjectOhOffshore","fieldName":"External Project OH - Offshore","occurrence":1}
+✓ Field: External Project OH - Offshore | Value: $0
+Field object: {"key":"internalDirectLaborOnshore","fieldName":"Internal Direct Labor - Onshore","occurrence":1}
+✓ Field: Internal Direct Labor - Onshore | Value: $0
+Field object: {"key":"internalProjectOhOnshore","fieldName":"Internal Project OH - Onshore","occurrence":1}
+✓ Field: Internal Project OH - Onshore | Value: $0
+Field object: {"key":"laborStructureTotal","fieldName":"Total Labor Structure","occurrence":1}
+✓ Field: Total Labor Structure | Value: $1,772,701
+Field object: {"key":"consultantSalariesAndWages","fieldName":"Consultant Salaries and Wages","occurrence":1}
+✓ Field: Consultant Salaries and Wages | Value: $1,606,080
+Field object: {"key":"consultantPayrollTaxes","fieldName":"Consultant Payroll Taxes","occurrence":1}
+✓ Field: Consultant Payroll Taxes | Value: $163,179
+Field object: {"key":"consultantBonuses","fieldName":"Consultant Bonuses","occurrence":1}
+✓ Field: Consultant Bonuses | Value: $0
+Field object: {"key":"workersCompInsurance","fieldName":"Workers Comp Insurance","occurrence":1}
+✓ Field: Workers Comp Insurance | Value: $2,065
+Field object: {"key":"clinicalInsurance","fieldName":"Clinical Insurance","occurrence":1}
+✓ Field: Clinical Insurance | Value: $0
+Field object: {"key":"medicalBenefits","fieldName":"Medical Benefits","occurrence":1}
+✓ Field: Medical Benefits | Value: $1,377
+Field object: {"key":"acaSubsidies","fieldName":"ACA Subsides","occurrence":1}
+✓ Field: ACA Subsides | Value: $0
+Field object: {"key":"internalPmPcSalariesAndWages","fieldName":"Internal PM/PC salaries and wages","occurrence":1}
+✓ Field: Internal PM/PC salaries and wages | Value: $0
+Field object: {"key":"internalPayrollTaxesOnPmPcSalariesAndWages","fieldName":"Internal payroll taxes on PM/PC salaries and wages","occurrence":1}
+✓ Field: Internal payroll taxes on PM/PC salaries and wages | Value: $0
+Field object: {"key":"laborCostsTotal","fieldName":"Total Labor Costs","occurrence":1}
+✓ Field: Total Labor Costs | Value: $1,772,701
+Field object: {"key":"facilityRentExpense","fieldName":"Facility Rent Expense","occurrence":1}
+✓ Field: Facility Rent Expense | Value: $0
+Field object: {"key":"capitalFacilityExpenses","fieldName":"Capital Facility Expense","occurrence":1}
+✓ Field: Capital Facility Expense | Value: $0
+Field object: {"key":"equipmentExpense","fieldName":"Equipment Expense","occurrence":1}
+✓ Field: Equipment Expense | Value: $100
+Field object: {"key":"softwareExpense","fieldName":"Software Expense","occurrence":1}
+✓ Field: Software Expense | Value: $0
+Field object: {"key":"morale","fieldName":"Morale","occurrence":1}
+✓ Field: Morale | Value: $100
+Field object: {"key":"travel","fieldName":"Travel","occurrence":1}
+✓ Field: Travel | Value: $0
+Field object: {"key":"vendorExpenses","fieldName":"vendor Expenses","occurrence":1}
+✓ Field: vendor Expenses | Value: $0
+Field object: {"key":"workingCapitalFinanceCost","fieldName":"Working Capital Finance Cost","occurrence":1}
+✓ Field: Working Capital Finance Cost | Value: $312
+Field object: {"key":"otherCosts","fieldName":"Other costs","occurrence":1}
+✓ Field: Other costs | Value: $0
+Field object: {"key":"fxCosts","fieldName":"FX Costs","occurrence":1}
+✓ Field: FX Costs | Value: $0
+Field object: {"key":"licensingAndCertification","fieldName":"Licensing/Certification","occurrence":1}
+✓ Field: Licensing/Certification | Value: $0
+Field object: {"key":"projectCostsTotal","fieldName":"Total Project Costs","occurrence":1}
+✓ Field: Total Project Costs | Value: $512
+Field object: {"key":"averageDiscount","fieldName":"Average Discount","occurrence":1}
+✓ Field: Average Discount | Value: 0
+Field object: {"key":"maxHeadcount","fieldName":"Max Headcount","occurrence":1}
+✓ Field: Max Headcount | Value: 8
+Field object: {"key":"headcountNoStandardListPrice","fieldName":"Headcount No Standard List Price","occurrence":1}
+✓ Field: Headcount No Standard List Price | Value: 0
+Field object: {"key":"averageBillRate","fieldName":"Average Bill Rate","occurrence":1}
+✓ Field: Average Bill Rate | Value: $59.55
+Field object: {"key":"discountRate","fieldName":"Discount Rate","occurrence":1}

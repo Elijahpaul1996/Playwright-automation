@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 const LoginPage = require('../pages/LoginPage');
-const FinancialSummaryPage = require('../pages/FinancialSummaryPage');
+const FinancialSummaryPage = require('../pages/readFinancialSummaryPage');
 const { getBaseUrl } = require('../env/baseenv');
 
 test.setTimeout(300000);

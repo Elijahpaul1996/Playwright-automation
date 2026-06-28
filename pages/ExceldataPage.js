@@ -3,34 +3,40 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 const DEFAULT_WORKBOOK_PATH =
-  'C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3 r.xlsm';
+  'C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3R inflation.xlsm';
 
-// ─── Financial Summary field definitions ─────────────────────────────────────
+// ─── Financial Summary field definitions ──────────────────────────────────────
 
 const FINANCIAL_SUMMARY_FIELDS = [
-  { key: 'topRevenue', fieldName: 'Revenue', occurrence: 1 },
-  { key: 'topFullyLoadedGrossProfit', fieldName: 'Fully Loaded Gross Profit', occurrence: 1 },
-  { key: 'topFullyLoadedGrossProfitPercent', fieldName: '%', occurrence: 1 },
-  { key: 'topReportedDirectGrossProfit', fieldName: 'Reported (Direct) Gross Profit', occurrence: 1 },
-  { key: 'topReportedDirectGrossProfitPercent', fieldName: '%', occurrence: 2 },
-  { key: 'contractRevenue', fieldName: 'Contract Revenue (NTE + Pass-Through Revenue)', occurrence: 1 },
+  // FIX: was duplicate key 'Total Revenue' for both occurrences
+  // occurrence 1 = top summary row, occurrence 2 = detail section row
+  { key: 'topRevenue',    fieldName: 'Revenue', occurrence: 1 },
+  { key: 'revenueTotal',  fieldName: 'Revenue', occurrence: 2 },
 
-  { key: 'revenueTotal', fieldName: 'Revenue', occurrence: 2 },
-  { key: 'laborRevenue', fieldName: 'Labor Revenue', occurrence: 1 },
-  { key: 'billableExpensePassThrough', fieldName: 'Billable Expense Pass Through', occurrence: 1 },
-  { key: 'fees', fieldName: 'Fees', occurrence: 1 },
-  { key: 'feesAtRisk', fieldName: 'Fees at Risk', occurrence: 1 },
-  { key: 'implementationFees', fieldName: 'Implementation Fees', occurrence: 1 },
-  { key: 'managementFees', fieldName: 'Management Fees', occurrence: 1 },
-  { key: 'volumeDiscount', fieldName: 'Volume Discount', occurrence: 1 },
-  { key: 'earlyPayDiscount', fieldName: 'Early Pay Discount', occurrence: 1 },
-  { key: 'innovationFunds', fieldName: 'Innovation Funds', occurrence: 1 },
-  { key: 'laborStructureTotal', fieldName: 'Labor Structure', occurrence: 1 },
-  { key: 'externalDirectLaborOnshore', fieldName: 'External Direct Labor - Onshore', occurrence: 1 },
-  { key: 'externalProjectOhOnshore', fieldName: 'External Project OH - Onshore', occurrence: 1 },
-  { key: 'externalDirectLaborOffshore', fieldName: 'External Direct Labor - Offshore', occurrence: 1 },
-  { key: 'externalProjectOhOffshore', fieldName: 'External Project OH - Offshore', occurrence: 1 },
-  { key: 'internalDirectLaborOnshore', fieldName: 'Internal Direct Labor - Onshore', occurrence: 1 },
+  { key: 'FullyLoadedGrossProfit',        fieldName: 'Fully Loaded Gross Profit',            occurrence: 1 },
+  { key: 'FullyLoadedGrossProfitPercent', fieldName: '%',                                    occurrence: 1 },
+  { key: 'reportedGrossProfit',           fieldName: 'Reported (Direct) Gross Profit',       occurrence: 1 },
+
+  // Commented out — no matching key in UI fields yet.
+  // Uncomment and add to UI_FINANCIAL_FIELDS if UI displays this percentage.
+  // { key: 'ReportedDirectGrossProfitPercent', fieldName: '%', occurrence: 2 },
+
+  { key: 'contractRevenue',            fieldName: 'Contract Revenue (NTE + Pass-Through Revenue)', occurrence: 1 },
+  { key: 'laborRevenue',               fieldName: 'Labor Revenue',                                 occurrence: 1 },
+  { key: 'billableExpensePassThrough', fieldName: 'Billable Expense Pass Through',                 occurrence: 1 },
+  { key: 'fees',                       fieldName: 'Fees',                                          occurrence: 1 },
+  { key: 'feesAtRisk',                 fieldName: 'Fees at Risk',                                  occurrence: 1 },
+  { key: 'implementationFees',         fieldName: 'Implementation Fees',                           occurrence: 1 },
+  { key: 'managementFees',             fieldName: 'Management Fees',                               occurrence: 1 },
+  { key: 'volumeDiscount',             fieldName: 'Volume Discount',                               occurrence: 1 },
+  { key: 'earlyPayDiscount',           fieldName: 'Early Pay Discount',                            occurrence: 1 },
+  { key: 'innovationFunds',            fieldName: 'Innovation Funds',                              occurrence: 1 },
+  { key: 'laborStructureTotal',        fieldName: 'Labor Structure',                               occurrence: 1 },
+  { key: 'externalDirectLaborOnshore', fieldName: 'External Direct Labor - Onshore',               occurrence: 1 },
+  { key: 'externalProjectOhOnshore',   fieldName: 'External Project OH - Onshore',                 occurrence: 1 },
+  { key: 'externalDirectLaborOffshore',fieldName: 'External Direct Labor - Offshore',              occurrence: 1 },
+  { key: 'externalProjectOhOffshore',  fieldName: 'External Project OH - Offshore',                occurrence: 1 },
+  { key: 'internalDirectLaborOnshore', fieldName: 'Internal Direct Labor - Onshore',               occurrence: 1 },
   {
     key: 'internalProjectOhOnshore',
     fieldName: 'Internal Project OH - Onshore',
@@ -38,45 +44,43 @@ const FINANCIAL_SUMMARY_FIELDS = [
     occurrence: 1,
   },
 
-  { key: 'laborCostsTotal', fieldName: 'Labor Costs', occurrence: 1 },
-  { key: 'consultantSalariesAndWages', fieldName: 'Consultant Salaries and Wages', occurrence: 1 },
-  { key: 'consultantPayrollTaxes', fieldName: 'Consultant Payroll Taxes', occurrence: 1 },
-  { key: 'consultantBonuses', fieldName: 'Consultant Bonuses', occurrence: 1 },
-  { key: 'workersCompInsurance', fieldName: 'Workers Comp Insurance', occurrence: 1 },
-  { key: 'clinicalInsurance', fieldName: 'Clinical Insurance', occurrence: 1 },
-  { key: 'medicalBenefits', fieldName: 'Medical Benefits', occurrence: 1 },
-  { key: 'acaSubsidies', fieldName: 'ACA Subsidies', occurrence: 1 },
-  { key: 'internalPmPcSalariesAndWages', fieldName: 'Internal PM/PC (project management) Salaries and Wages', occurrence: 1 },
-  { key: 'internalPayrollTaxesOnPmPcSalariesAndWages', fieldName: 'Internal Payroll Taxes on PM/PC salaries and wages', occurrence: 1 },
+  { key: 'laborCostsTotal',                            fieldName: 'Labor Costs',                                          occurrence: 1 },
+  { key: 'consultantSalariesAndWages',                 fieldName: 'Consultant Salaries and Wages',                        occurrence: 1 },
+  { key: 'consultantPayrollTaxes',                     fieldName: 'Consultant Payroll Taxes',                             occurrence: 1 },
+  { key: 'consultantBonuses',                          fieldName: 'Consultant Bonuses',                                   occurrence: 1 },
+  { key: 'workersCompInsurance',                       fieldName: 'Workers Comp Insurance',                               occurrence: 1 },
+  { key: 'clinicalInsurance',                          fieldName: 'Clinical Insurance',                                   occurrence: 1 },
+  { key: 'medicalBenefits',                            fieldName: 'Medical Benefits',                                     occurrence: 1 },
+  { key: 'acaSubsidies',                               fieldName: 'ACA Subsidies',                                        occurrence: 1 },
+  { key: 'internalPmPcSalariesAndWages',               fieldName: 'Internal PM/PC (project management) Salaries and Wages', occurrence: 1 },
+  { key: 'internalPayrollTaxesOnPmPcSalariesAndWages', fieldName: 'Internal Payroll Taxes on PM/PC salaries and wages',   occurrence: 1 },
 
-  { key: 'projectCostsTotal', fieldName: 'Project Costs', occurrence: 1 },
-  { key: 'facilityRentExpense', fieldName: 'Facility Rent Expense', occurrence: 1 },
-  { key: 'capitalFacilityExpenses', fieldName: 'Capital Facility Expenses', occurrence: 1 },
-  { key: 'equipmentExpense', fieldName: 'Equipment Expense', occurrence: 1 },
-  { key: 'softwareExpense', fieldName: 'Software Expense', occurrence: 1 },
-  { key: 'morale', fieldName: 'Morale', occurrence: 1 },
-  { key: 'travel', fieldName: 'Travel', occurrence: 1 },
-  { key: 'vendorExpenses', fieldName: 'Vendor Expenses', occurrence: 1 },
+  { key: 'projectCostsTotal',         fieldName: 'Project Costs',                  occurrence: 1 },
+  { key: 'facilityRentExpense',       fieldName: 'Facility Rent Expense',          occurrence: 1 },
+  { key: 'capitalFacilityExpenses',   fieldName: 'Capital Facility Expenses',      occurrence: 1 },
+  { key: 'equipmentExpense',          fieldName: 'Equipment Expense',              occurrence: 1 },
+  { key: 'softwareExpense',           fieldName: 'Software Expense',               occurrence: 1 },
+  { key: 'morale',                    fieldName: 'Morale',                         occurrence: 1 },
+  { key: 'travel',                    fieldName: 'Travel',                         occurrence: 1 },
+  { key: 'vendorExpenses',            fieldName: 'Vendor Expenses',                occurrence: 1 },
   { key: 'workingCapitalFinanceCost', fieldName: 'Working Capital (Finance Cost)', occurrence: 1 },
-  { key: 'otherCosts', fieldName: 'Other Costs', occurrence: 1 },
-  { key: 'fxCosts', fieldName: 'FX Costs', occurrence: 1 },
-  { key: 'licensingAndCertification', fieldName: 'Licensing and Certification', occurrence: 1 },
-  { key: 'bottomFullyLoadedGrossProfit', fieldName: 'Fully Loaded Gross Profit', occurrence: 2 },
-  { key: 'bottomReportedDirectGrossProfit', fieldName: 'Reported (Direct) Gross Profit', occurrence: 2 },
-  { key: 'compensationCostTotal', fieldName: 'Compensation Cost', occurrence: 1 },
-  { key: 'estimatedCommissions', fieldName: 'Estimated Commissions', occurrence: 1 },
-  { key: 'commissionPayrollTaxes', fieldName: 'Commission Payroll Taxes', occurrence: 1 },
-  { key: 'eva', fieldName: 'EVA', occurrence: 1 },
-  { key: 'evaPercent', fieldName: '%', occurrence: 3 },
+  { key: 'otherCosts',                fieldName: 'Other Costs',                    occurrence: 1 },
+  { key: 'fxCosts',                   fieldName: 'FX Costs',                       occurrence: 1 },
+  { key: 'licensingAndCertification', fieldName: 'Licensing and Certification',    occurrence: 1 },
 
-  { key: 'averageDiscount', fieldName: 'Average Discount', occurrence: 1 },
-  { key: 'maxHeadcount', fieldName: 'Max Headcount', occurrence: 1 },
+  { key: 'compensationCostTotal',   fieldName: 'Compensation Cost',        occurrence: 1 },
+  { key: 'estimatedCommissions',    fieldName: 'Estimated Commissions',    occurrence: 1 },
+  { key: 'commissionPayrollTaxes',  fieldName: 'Commission Payroll Taxes', occurrence: 1 },
+  { key: 'eva',                     fieldName: 'EVA',                      occurrence: 1 },
+  { key: 'evaPercent',              fieldName: '%',                        occurrence: 3 },
+
+  { key: 'averageDiscount',              fieldName: 'Average Discount',               occurrence: 1 },
+  { key: 'maxHeadcount',                 fieldName: 'Max Headcount',                  occurrence: 1 },
   { key: 'headcountNoStandardListPrice', fieldName: 'Headcount No Standard List Price', occurrence: 1 },
-  { key: 'averageBillRate', fieldName: 'Average Bill Rate', occurrence: 1 },
-
-  { key: 'discountRate', fieldName: 'Discount Rate', occurrence: 1 },
-  { key: 'projectValue', fieldName: 'Project Value', occurrence: 1 },
-  { key: 'irr', fieldName: 'IRR', occurrence: 1 },
+  { key: 'averageBillRate',              fieldName: 'Average Bill Rate',              occurrence: 1 },
+  { key: 'discountRate',                 fieldName: 'Discount Rate',                  occurrence: 1 },
+  { key: 'projectValue',                 fieldName: 'Project Value',                  occurrence: 1 },
+  { key: 'irr',                          fieldName: 'IRR',                            occurrence: 1 },
 ];
 
 // Fields whose label/value live in columns K/L instead of the default B/C.
@@ -91,23 +95,13 @@ const FINANCIAL_SUMMARY_SPECIAL_COLUMN_FIELDS = [
 ];
 
 // ─── Monthly P&L field definitions ───────────────────────────────────────────
-//
-// Layout:
-//   Row 15 : "Project" label | "All" (C15) — the totals column
-//   Row 16 : month headers starting at column E  (Jan 2026, Feb 2026 …)
-//   Column B : field label
-//   Column C : program-total value  ← what we snapshot as "value"
-//   Columns E+ : per-month values   ← captured in monthlyValues
 
 const MONTHLY_PNL_FIELDS = [
-  // ── Revenue section ────────────────────────────────────────────────────────
   { key: 'grossSales',                     fieldName: 'Gross Sales',                  occurrence: 1 },
   { key: 'billableExpensePassThruRevenue', fieldName: 'Billable Expense (Pass Thru)', occurrence: 1 },
   { key: 'volumeRebates',                  fieldName: 'Volume Rebates',               occurrence: 1 },
   { key: 'earlyPayDiscount',               fieldName: 'Early Pay Discount',           occurrence: 1 },
   { key: 'netRevenue',                     fieldName: 'Net Revenue',                  occurrence: 1 },
-
-  // ── Cost section ───────────────────────────────────────────────────────────
   { key: 'salariesAndWages',               fieldName: 'Salaries & Wages',             occurrence: 1 },
   { key: 'payrollTaxes',                   fieldName: 'Payroll Taxes',                occurrence: 1 },
   { key: 'nonBillableExpense',             fieldName: 'Non-Billable Expense',         occurrence: 1 },
@@ -117,12 +111,8 @@ const MONTHLY_PNL_FIELDS = [
   { key: 'medicalBenefits',               fieldName: 'Medical Benefits',             occurrence: 1 },
   { key: 'acaCost',                        fieldName: 'ACA Cost',                     occurrence: 1 },
   { key: 'cos',                            fieldName: 'COS',                          occurrence: 1 },
-
-  // ── Margin / summary ──────────────────────────────────────────────────────
   { key: 'grossMargin',                    fieldName: 'Gross Margin',                 occurrence: 1 },
   { key: 'grossMarginPercent',             fieldName: '%',                            occurrence: 1 },
-
-  // ── Headcount / rates ─────────────────────────────────────────────────────
   { key: 'headcount',                      fieldName: 'Headcount',                    occurrence: 1 },
   { key: 'avgBillRate',                    fieldName: 'Avg. Bill Rate',               occurrence: 1 },
 ];
@@ -227,10 +217,9 @@ class ExcelDataPage {
     const normalizedSearchNames = searchNames.map((name) => this.normalizeText(name));
     let matchCount = 0;
 
-    // Special fields have their labels in column K (index 10) instead of column B (index 1).
     const searchColumn = FINANCIAL_SUMMARY_SPECIAL_COLUMN_FIELDS.includes(field.fieldName)
-      ? 10 // K
-      : 1; // B
+      ? 10  // K
+      : 1;  // B
 
     for (let rowIndex = range.s.r; rowIndex <= range.e.r; rowIndex++) {
       const cellAddr = XLSX.utils.encode_cell({ r: rowIndex, c: searchColumn });
@@ -240,7 +229,7 @@ class ExcelDataPage {
         matchCount += 1;
 
         if (matchCount === (field.occurrence || 1)) {
-          return rowIndex + 1; // 1-based row number
+          return rowIndex + 1;
         }
       }
     }
@@ -266,16 +255,11 @@ class ExcelDataPage {
 
   // ── Monthly P&L ────────────────────────────────────────────────────────────
 
-  /**
-   * Reads the month-header row (row 16, index 15) and returns a map of
-   * { columnIndex (0-based) -> "Jan 2026" } for every non-empty header
-   * found at or after column E (index 4).
-   */
   _getMonthlyPAndLHeaderMap(sheet) {
-    const HEADER_ROW_INDEX = 15; // row 16 in Excel (0-based)
-    const FIRST_MONTH_COL = 4;   // column E (0-based)
+    const HEADER_ROW_INDEX = 15;
+    const FIRST_MONTH_COL = 4;
 
-    const range = XLSX.utils.decode_range(sheet['!ref']); // search all the columns
+    const range = XLSX.utils.decode_range(sheet['!ref']);
     const headerMap = {};
 
     for (let colIndex = FIRST_MONTH_COL; colIndex <= range.e.c; colIndex++) {
@@ -290,11 +274,6 @@ class ExcelDataPage {
     return headerMap;
   }
 
-  /**
-   * Finds the 1-based row number for a Monthly P&L field.
-   * All labels live in column B (index 1). occurrence handles duplicates
-   * e.g. "Billable Expense (Pass Thru)" appears on both revenue and COS sides.
-   */
   findMonthlyPAndLRow(sheet, field) {
     const range = XLSX.utils.decode_range(sheet['!ref']);
     const searchNames = field.searchNames || [field.fieldName];
@@ -302,14 +281,14 @@ class ExcelDataPage {
     let matchCount = 0;
 
     for (let rowIndex = range.s.r; rowIndex <= range.e.r; rowIndex++) {
-      const cellAddr = XLSX.utils.encode_cell({ r: rowIndex, c: 1 }); // column B
+      const cellAddr = XLSX.utils.encode_cell({ r: rowIndex, c: 1 });
       const label = this.normalizeText(this.getCellDisplayValue(sheet, cellAddr));
 
       if (normalizedSearchNames.includes(label)) {
         matchCount += 1;
 
         if (matchCount === (field.occurrence || 1)) {
-          return rowIndex + 1; // 1-based row number
+          return rowIndex + 1;
         }
       }
     }
@@ -317,13 +296,6 @@ class ExcelDataPage {
     throw new Error(`Field not found in Monthly P&L: ${field.fieldName}`);
   }
 
-  /**
-   * Returns an array of field snapshots from the Monthly P&L sheet.
-   * Each entry includes:
-   *   key, fieldName, rowNumber, labelCell, valueCell
-   *   value         -> program total (column C, the "All" column)
-   *   monthlyValues -> { "Jan 2026": "137673.73", "Feb 2026": "125157.93", ... }
-   */
   getMonthlyPAndLValues() {
     const sheet = this.getSheet('Monthly P&L');
     const headerMap = this._getMonthlyPAndLHeaderMap(sheet);
@@ -332,24 +304,20 @@ class ExcelDataPage {
       const rowNumber = this.findMonthlyPAndLRow(sheet, field);
 
       const labelCell = `B${rowNumber}`;
-      const valueCell = `C${rowNumber}`; // program total ("All" column)
-
+      const valueCell = `C${rowNumber}`;
       const totalValue = this.getCellDisplayValue(sheet, valueCell);
 
-      // Collect per-month values keyed by month name e.g. "Jan 2026"
       const monthlyValues = {};
 
       for (const [colIndex, monthName] of Object.entries(headerMap)) {
         const monthCellAddr = XLSX.utils.encode_cell({
-          r: rowNumber - 1, // back to 0-based
+          r: rowNumber - 1,
           c: Number(colIndex),
         });
         monthlyValues[monthName] = this.getCellDisplayValue(sheet, monthCellAddr);
       }
 
-      console.log(
-        `Monthly P&L | ${field.fieldName} -> ${labelCell} -> ${valueCell} | total: ${totalValue}`
-      );
+      console.log(`Monthly P&L | ${field.fieldName} -> ${labelCell} -> ${valueCell} | total: ${totalValue}`);
 
       return {
         key: field.key,
@@ -357,8 +325,8 @@ class ExcelDataPage {
         rowNumber,
         labelCell,
         valueCell,
-        value: totalValue,   // program total — use this for UI comparisons
-        monthlyValues,       // full per-month breakdown
+        value: totalValue,
+        monthlyValues,
       };
     });
   }

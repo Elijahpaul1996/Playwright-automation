@@ -1,0 +1,574 @@
+{
+  "comparedAt": "2026-06-25T12:02:34.274Z",
+  "excelSource": "C:\\Users\\Elijah.Paul\\OneDrive - Insight Global, LLC\\Desktop\\Pricing Tool\\Pavan IG\\6.19\\6.19 3R inflation.xlsm",
+  "summary": {
+    "total": 56,
+    "matched": 53,
+    "mismatched": 0,
+    "roundoff": 0,
+    "missingInExcel": 0,
+    "missingInUi": 3
+  },
+  "results": [
+    {
+      "key": "revenueTotal",
+      "fieldName": "Revenue",
+      "excelValue": "$867,267",
+      "uiValue": "",
+      "normalizedExcel": 867267,
+      "normalizedUi": 0,
+      "status": "MISSING_IN_UI",
+      "note": ""
+    },
+    {
+      "key": "FullyLoadedGrossProfitPercent",
+      "fieldName": "%",
+      "excelValue": "-104.5%",
+      "uiValue": "",
+      "normalizedExcel": -104,
+      "normalizedUi": 0,
+      "status": "MISSING_IN_UI",
+      "note": ""
+    },
+    {
+      "key": "compensationCostTotal",
+      "fieldName": "Compensation Cost",
+      "excelValue": "($405,044)",
+      "uiValue": "",
+      "normalizedExcel": -405044,
+      "normalizedUi": 0,
+      "status": "MISSING_IN_UI",
+      "note": ""
+    },
+    {
+      "key": "topRevenue",
+      "fieldName": "Revenue",
+      "excelValue": "$867,267",
+      "uiValue": "$867,267",
+      "normalizedExcel": 867267,
+      "normalizedUi": 867267,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "FullyLoadedGrossProfit",
+      "fieldName": "Fully Loaded Gross Profit",
+      "excelValue": "($905,946)",
+      "uiValue": "-$905,946",
+      "normalizedExcel": -905946,
+      "normalizedUi": -905946,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "reportedGrossProfit",
+      "fieldName": "Reported (Direct) Gross Profit",
+      "excelValue": "($905,636)",
+      "uiValue": "-$905,636",
+      "normalizedExcel": -905636,
+      "normalizedUi": -905636,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "contractRevenue",
+      "fieldName": "Contract Revenue (NTE + Pass-Through Revenue)",
+      "excelValue": "$920,258",
+      "uiValue": "$920,258",
+      "normalizedExcel": 920258,
+      "normalizedUi": 920258,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "laborRevenue",
+      "fieldName": "Labor Revenue",
+      "excelValue": "$875,821",
+      "uiValue": "$875,821",
+      "normalizedExcel": 875821,
+      "normalizedUi": 875821,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "billableExpensePassThrough",
+      "fieldName": "Billable Expense Pass Through",
+      "excelValue": "$204",
+      "uiValue": "$204",
+      "normalizedExcel": 204,
+      "normalizedUi": 204,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "fees",
+      "fieldName": "Fees",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "feesAtRisk",
+      "fieldName": "Fees at Risk",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "implementationFees",
+      "fieldName": "Implementation Fees",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "managementFees",
+      "fieldName": "Management Fees",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "volumeDiscount",
+      "fieldName": "Volume Discount",
+      "excelValue": "($8,758)",
+      "uiValue": "-$8,758",
+      "normalizedExcel": -8758,
+      "normalizedUi": -8758,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "earlyPayDiscount",
+      "fieldName": "Early Pay Discount",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "innovationFunds",
+      "fieldName": "Innovation Funds",
+      "excelValue": "",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "laborStructureTotal",
+      "fieldName": "Labor Structure",
+      "excelValue": "$1,772,701",
+      "uiValue": "$1,772,701",
+      "normalizedExcel": 1772701,
+      "normalizedUi": 1772701,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "externalDirectLaborOnshore",
+      "fieldName": "External Direct Labor - Onshore",
+      "excelValue": "$1,772,701",
+      "uiValue": "$1,772,701",
+      "normalizedExcel": 1772701,
+      "normalizedUi": 1772701,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "externalProjectOhOnshore",
+      "fieldName": "External Project OH - Onshore",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "externalDirectLaborOffshore",
+      "fieldName": "External Direct Labor - Offshore",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "externalProjectOhOffshore",
+      "fieldName": "External Project OH - Offshore",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "internalDirectLaborOnshore",
+      "fieldName": "Internal Direct Labor - Onshore",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "internalProjectOhOnshore",
+      "fieldName": "Internal Project OH - Onshore",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "laborCostsTotal",
+      "fieldName": "Labor Costs",
+      "excelValue": "$1,772,701",
+      "uiValue": "$1,772,701",
+      "normalizedExcel": 1772701,
+      "normalizedUi": 1772701,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "consultantSalariesAndWages",
+      "fieldName": "Consultant Salaries and Wages",
+      "excelValue": "$1,606,080",
+      "uiValue": "$1,606,080",
+      "normalizedExcel": 1606080,
+      "normalizedUi": 1606080,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "consultantPayrollTaxes",
+      "fieldName": "Consultant Payroll Taxes",
+      "excelValue": "$163,179",
+      "uiValue": "$163,179",
+      "normalizedExcel": 163179,
+      "normalizedUi": 163179,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "consultantBonuses",
+      "fieldName": "Consultant Bonuses",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "workersCompInsurance",
+      "fieldName": "Workers Comp Insurance",
+      "excelValue": "$2,065",
+      "uiValue": "$2,065",
+      "normalizedExcel": 2065,
+      "normalizedUi": 2065,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "clinicalInsurance",
+      "fieldName": "Clinical Insurance",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "medicalBenefits",
+      "fieldName": "Medical Benefits",
+      "excelValue": "$1,377",
+      "uiValue": "$1,377",
+      "normalizedExcel": 1377,
+      "normalizedUi": 1377,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "acaSubsidies",
+      "fieldName": "ACA Subsidies",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "internalPmPcSalariesAndWages",
+      "fieldName": "Internal PM/PC (project management) Salaries and Wages",
+      "excelValue": "",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "internalPayrollTaxesOnPmPcSalariesAndWages",
+      "fieldName": "Internal Payroll Taxes on PM/PC salaries and wages",
+      "excelValue": "",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "projectCostsTotal",
+      "fieldName": "Project Costs",
+      "excelValue": "$512",
+      "uiValue": "$512",
+      "normalizedExcel": 512,
+      "normalizedUi": 512,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "facilityRentExpense",
+      "fieldName": "Facility Rent Expense",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "capitalFacilityExpenses",
+      "fieldName": "Capital Facility Expenses",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "equipmentExpense",
+      "fieldName": "Equipment Expense",
+      "excelValue": "$100",
+      "uiValue": "$100",
+      "normalizedExcel": 100,
+      "normalizedUi": 100,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "softwareExpense",
+      "fieldName": "Software Expense",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "morale",
+      "fieldName": "Morale",
+      "excelValue": "$100",
+      "uiValue": "$100",
+      "normalizedExcel": 100,
+      "normalizedUi": 100,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "travel",
+      "fieldName": "Travel",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "vendorExpenses",
+      "fieldName": "Vendor Expenses",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "workingCapitalFinanceCost",
+      "fieldName": "Working Capital (Finance Cost)",
+      "excelValue": "$312",
+      "uiValue": "$312",
+      "normalizedExcel": 312,
+      "normalizedUi": 312,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "otherCosts",
+      "fieldName": "Other Costs",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "fxCosts",
+      "fieldName": "FX Costs",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "licensingAndCertification",
+      "fieldName": "Licensing and Certification",
+      "excelValue": "$0",
+      "uiValue": "$0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "estimatedCommissions",
+      "fieldName": "Estimated Commissions",
+      "excelValue": "($378,369)",
+      "uiValue": "-$378,369",
+      "normalizedExcel": -378369,
+      "normalizedUi": -378369,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "commissionPayrollTaxes",
+      "fieldName": "Commission Payroll Taxes",
+      "excelValue": "($26,675)",
+      "uiValue": "-$26,675",
+      "normalizedExcel": -26675,
+      "normalizedUi": -26675,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "eva",
+      "fieldName": "EVA",
+      "excelValue": "($500,902)",
+      "uiValue": "-$500,902",
+      "normalizedExcel": -500902,
+      "normalizedUi": -500902,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "evaPercent",
+      "fieldName": "%",
+      "excelValue": "-57.8%",
+      "uiValue": "-58.00",
+      "normalizedExcel": -58,
+      "normalizedUi": -58,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "averageDiscount",
+      "fieldName": "Average Discount",
+      "excelValue": "0%",
+      "uiValue": "0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "maxHeadcount",
+      "fieldName": "Max Headcount",
+      "excelValue": "8",
+      "uiValue": "8",
+      "normalizedExcel": 8,
+      "normalizedUi": 8,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "headcountNoStandardListPrice",
+      "fieldName": "Headcount No Standard List Price",
+      "excelValue": "0",
+      "uiValue": "0",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "averageBillRate",
+      "fieldName": "Average Bill Rate",
+      "excelValue": "$59.5",
+      "uiValue": "$59.55",
+      "normalizedExcel": 60,
+      "normalizedUi": 60,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "discountRate",
+      "fieldName": "Discount Rate",
+      "excelValue": "13.0%",
+      "uiValue": "13",
+      "normalizedExcel": 13,
+      "normalizedUi": 13,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "projectValue",
+      "fieldName": "Project Value",
+      "excelValue": "(863,607.92)",
+      "uiValue": "-$863,608",
+      "normalizedExcel": -863608,
+      "normalizedUi": -863608,
+      "status": "MATCHED",
+      "note": ""
+    },
+    {
+      "key": "irr",
+      "fieldName": "IRR",
+      "excelValue": "0%",
+      "uiValue": "0.00",
+      "normalizedExcel": 0,
+      "normalizedUi": 0,
+      "status": "MATCHED",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Key            : irr
+Excel Value    : 0%
+UI Value       : 10.00
+Normalized Excel: 0
+Normalized UI  : 10
+Status         : MISMATCHED

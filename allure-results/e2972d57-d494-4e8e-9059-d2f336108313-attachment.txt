@@ -1,0 +1,6 @@
+Key            : reportedGrossProfit
+Excel Value    : ($905,636)
+UI Value       : -$905,636
+Normalized Excel: -905636
+Normalized UI  : -905636
+Status         : MATCHED

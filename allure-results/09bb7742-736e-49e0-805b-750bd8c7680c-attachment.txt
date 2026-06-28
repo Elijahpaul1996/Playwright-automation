@@ -1,0 +1,4 @@
+❌ MISMATCHED — IRR | Excel: "0%" | UI: "10.00"
+⚠️  MISSING IN UI — Revenue | Excel: "$867,267"
+⚠️  MISSING IN UI — % | Excel: "-104.5%"
+⚠️  MISSING IN UI — Compensation Cost | Excel: "($405,044)"

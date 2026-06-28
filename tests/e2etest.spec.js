@@ -43,8 +43,8 @@ test.describe('Pricing tool E2E', () => {
       //  await expect(page).toHaveURL(/\/dashboard\//);
 
     
-    const createRole = new CreateRolePage(page);
-    await createRole.createMultipleRoles(inputData.roles);
+    // const createRole = new CreateRolePage(page);
+    // await createRole.createMultipleRoles(inputData.roles);
 
     const createWorkitem = new CreateWorkitemPage(page);
     await createWorkitem.createMultipleWorkItems(inputData.workItems);

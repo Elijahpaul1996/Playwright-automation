@@ -73,7 +73,8 @@ class ReadInputDataPage {
       .map((row, index) => {
         const role = {
           roleType:        String(row['Standard Role'] ?? '').toUpperCase(),
-          tenure:          row['Tenure'],
+        //   tenure:          row['Tenure'],
+          tenure:          String(row['Tenure'] ?? '').replace(', up to', ' - up to'),  // ← changed
           country:         row['Country of Resource Origin'],
           employmentType:  row['Employment Type'],
           state:           row['Work State'],

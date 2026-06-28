@@ -9,6 +9,15 @@ class CreateWorkitemPage {
     this.loc = workitemLocators(page); // all locators loaded here
   }
 
+    async navigateToProject() {
+    const projectBtn = this.page.getByText('test 5');
+    await projectBtn.waitFor({ timeout: 30000 });
+    console.log('Project button visible');
+    await projectBtn.click();
+    console.log('Project button clicked');
+    await this.page.waitForLoadState('networkidle');
+  }
+
   async fillWorkItemForm(name, description, rowName, col3Value, col8Value) {
 
     await this.loc.addWorkItemBtn.click();
@@ -50,7 +59,7 @@ class CreateWorkitemPage {
     console.log('Entered Work Items Page');
 
     // Navigate once
-   
+    await this.navigateToProject();
 
     await this.loc.workItemsBtn.click();
     console.log('Work Items section opened');

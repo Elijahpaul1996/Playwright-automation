@@ -1,0 +1,6 @@
+Key            : clinicalInsurance
+Excel Value    : $0
+UI Value       : $0
+Normalized Excel: 0
+Normalized UI  : 0
+Status         : MATCHED

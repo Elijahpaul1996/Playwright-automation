@@ -1,0 +1,6 @@
+Key            : laborStructureTotal
+Excel Value    : $1,772,701
+UI Value       : $1,772,701
+Normalized Excel: 1772701
+Normalized UI  : 1772701
+Status         : MATCHED

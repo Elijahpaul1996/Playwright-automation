@@ -1,0 +1,6 @@
+Key            : workersCompInsurance
+Excel Value    : $2,065
+UI Value       : $2,065
+Normalized Excel: 2065
+Normalized UI  : 2065
+Status         : MATCHED

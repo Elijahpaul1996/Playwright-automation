@@ -1,0 +1,11 @@
+
+── Financial Summary Comparison ────────────────────
+  Total            : 56
+  ✅ Matched        : 53
+  ❌ Mismatched     : 0
+  🔄 Roundoff       : 0
+  ⚠️  Missing Excel  : 0
+  ⚠️  Missing UI     : 3
+────────────────────────────────────────────────────
+
+Report saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummaryComparisonReport.json

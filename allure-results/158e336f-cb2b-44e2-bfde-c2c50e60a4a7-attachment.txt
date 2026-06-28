@@ -1,0 +1,18 @@
+SSO popup opened
+Account selected
+Login successful, navigated to dashboard/projects
+Creating 6 roles...
+Project button visible
+Project button clicked
+Creating role 1 of 6 : MECHANICAL ENGINEER
+Role selected: MECHANICAL ENGINEER
+Tenure selected: Over 3 years - up to 5 years
+Country and Employment Type selected: United States W2
+State selected: Remote
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 0
+Role saved: MECHANICAL ENGINEER
+Role 1 done
+Creating role 2 of 6 : CIVIL ENGINEER

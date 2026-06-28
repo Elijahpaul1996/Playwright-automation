@@ -1,0 +1,18 @@
+
+── Financial Summary Comparison ────────────────────
+  Total            : 56
+  ✅ Matched        : 53
+  ❌ Mismatched     : 0
+  🔄 Roundoff       : 0
+  ⚠️  Missing Excel  : 0
+  ⚠️  Missing UI     : 3
+────────────────────────────────────────────────────
+
+Report saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummaryComparisonReport.json
+
+⚠️  Missing in UI:
+  ⚠️  Revenue (key: revenueTotal) | Excel: $867,267
+  ⚠️  % (key: FullyLoadedGrossProfitPercent) | Excel: -104.5%
+  ⚠️  Compensation Cost (key: compensationCostTotal) | Excel: ($405,044)
+
+✅ Comparison complete — 53 matched, 0 roundoff, 0 mismatched

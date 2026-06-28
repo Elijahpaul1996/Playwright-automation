@@ -1,218 +1,271 @@
 {
   "source": "UI",
-  "savedAt": "2026-06-22T07:31:29.166Z",
+  "savedAt": "2026-06-25T16:46:08.191Z",
   "values": [
     {
+      "key": "FullyLoadedGrossProfit",
       "fieldName": "Fully Loaded Gross Profit",
-      "value": "$5,523,616"
+      "value": "-$905,946"
     },
     {
+      "key": "reportedGrossProfit",
       "fieldName": "Reported Gross Profit",
-      "value": "$5,466,115"
+      "value": "-$905,636"
     },
     {
+      "key": "contractRevenue",
       "fieldName": "Contract Revenue",
-      "value": "$2,250,892"
+      "value": "$920,258"
     },
     {
+      "key": "laborRevenue",
       "fieldName": "Labor Revenue",
-      "value": "$2,124,348"
+      "value": "$875,821"
     },
     {
+      "key": "billableExpensePassThrough",
       "fieldName": "Billable Expense Pass Through",
-      "value": "$408"
+      "value": "$204"
     },
     {
+      "key": "fees",
       "fieldName": "Fee",
       "value": "$0"
     },
     {
+      "key": "feesAtRisk",
       "fieldName": "Fee at Risk",
       "value": "$0"
     },
     {
+      "key": "implementationFees",
       "fieldName": "Implementation Fee",
       "value": "$0"
     },
     {
+      "key": "managementFees",
       "fieldName": "Management Fee",
       "value": "$0"
     },
     {
+      "key": "volumeDiscount",
       "fieldName": "Volume Discount",
-      "value": "$84,974"
+      "value": "-$8,758"
     },
     {
+      "key": "earlyPayDiscount",
       "fieldName": "Early Pay Discount",
       "value": "$0"
     },
     {
+      "key": "innovationFunds",
       "fieldName": "Innovation Fund",
       "value": "$0"
     },
     {
+      "key": "topRevenue",
       "fieldName": "Total Revenue",
-      "value": "$2,039,782"
+      "value": "$867,267"
     },
     {
+      "key": "externalDirectLaborOnshore",
       "fieldName": "External Direct Labor - Onshore",
-      "value": "$7,505,495"
+      "value": "$1,772,701"
     },
     {
+      "key": "externalProjectOhOnshore",
       "fieldName": "External Project OH - Onshore",
       "value": "$0"
     },
     {
+      "key": "externalDirectLaborOffshore",
       "fieldName": "External Direct Labor - Offshore",
       "value": "$0"
     },
     {
+      "key": "externalProjectOhOffshore",
       "fieldName": "External Project OH - Offshore",
       "value": "$0"
     },
     {
+      "key": "internalDirectLaborOnshore",
       "fieldName": "Internal Direct Labor - Onshore",
       "value": "$0"
     },
     {
+      "key": "internalProjectOhOnshore",
       "fieldName": "Internal Project OH - Onshore",
       "value": "$0"
     },
     {
+      "key": "laborStructureTotal",
       "fieldName": "Total Labor Structure",
-      "value": "$7,505,495"
+      "value": "$1,772,701"
     },
     {
+      "key": "consultantSalariesAndWages",
       "fieldName": "Consultant Salaries and Wages",
-      "value": "$6,959,164"
+      "value": "$1,606,080"
     },
     {
+      "key": "consultantPayrollTaxes",
       "fieldName": "Consultant Payroll Taxes",
-      "value": "$533,354"
+      "value": "$163,179"
     },
     {
+      "key": "consultantBonuses",
       "fieldName": "Consultant Bonuses",
       "value": "$0"
     },
     {
+      "key": "workersCompInsurance",
       "fieldName": "Workers Comp Insurance",
-      "value": "$9,106"
+      "value": "$2,065"
     },
     {
+      "key": "clinicalInsurance",
       "fieldName": "Clinical Insurance",
       "value": "$0"
     },
     {
+      "key": "medicalBenefits",
       "fieldName": "Medical Benefits",
-      "value": "$3,871"
+      "value": "$1,377"
     },
     {
+      "key": "acaSubsidies",
       "fieldName": "ACA Subsides",
       "value": "$0"
     },
     {
+      "key": "internalPmPcSalariesAndWages",
       "fieldName": "Internal PM/PC salaries and wages",
       "value": "$0"
     },
     {
+      "key": "internalPayrollTaxesOnPmPcSalariesAndWages",
       "fieldName": "Internal payroll taxes on PM/PC salaries and wages",
       "value": "$0"
     },
     {
+      "key": "laborCostsTotal",
       "fieldName": "Total Labor Costs",
-      "value": "$7,505,495"
+      "value": "$1,772,701"
     },
     {
+      "key": "facilityRentExpense",
       "fieldName": "Facility Rent Expense",
       "value": "$0"
     },
     {
+      "key": "capitalFacilityExpenses",
       "fieldName": "Capital Facility Expense",
       "value": "$0"
     },
     {
+      "key": "equipmentExpense",
       "fieldName": "Equipment Expense",
       "value": "$100"
     },
     {
+      "key": "softwareExpense",
       "fieldName": "Software Expense",
-      "value": "$100"
+      "value": "$0"
     },
     {
+      "key": "morale",
       "fieldName": "Morale",
       "value": "$100"
     },
     {
+      "key": "travel",
       "fieldName": "Travel",
-      "value": "$100"
+      "value": "$0"
     },
     {
+      "key": "vendorExpenses",
       "fieldName": "vendor Expenses",
       "value": "$0"
     },
     {
+      "key": "workingCapitalFinanceCost",
       "fieldName": "Working Capital Finance Cost",
-      "value": "$57,503"
+      "value": "$312"
     },
     {
+      "key": "otherCosts",
       "fieldName": "Other costs",
       "value": "$0"
     },
     {
+      "key": "fxCosts",
       "fieldName": "FX Costs",
       "value": "$0"
     },
     {
+      "key": "licensingAndCertification",
       "fieldName": "Licensing/Certification",
       "value": "$0"
     },
     {
+      "key": "projectCostsTotal",
       "fieldName": "Total Project Costs",
-      "value": "$57,903"
+      "value": "$512"
     },
     {
+      "key": "averageDiscount",
       "fieldName": "Average Discount",
-      "value": "10"
+      "value": "0"
     },
     {
+      "key": "maxHeadcount",
       "fieldName": "Max Headcount",
-      "value": "3"
+      "value": "8"
     },
     {
+      "key": "headcountNoStandardListPrice",
       "fieldName": "Headcount No Standard List Price",
       "value": "0"
     },
     {
+      "key": "averageBillRate",
       "fieldName": "Average Bill Rate",
-      "value": "$48.75"
+      "value": "$59.55"
     },
     {
+      "key": "discountRate",
       "fieldName": "Discount Rate",
-      "value": "$4,268,421"
+      "value": "13"
     },
     {
+      "key": "projectValue",
       "fieldName": "Project Value",
-      "value": "$4,268,421"
+      "value": "-$863,608"
     },
     {
+      "key": "irr",
       "fieldName": "IRR",
       "value": "0.00"
     },
     {
+      "key": "estimatedCommissions",
       "fieldName": "Estimated Commissions",
-      "value": "$3,309,385"
+      "value": "-$378,369"
     },
     {
+      "key": "commissionPayrollTaxes",
       "fieldName": "Commission Payroll Taxes",
-      "value": "$233,312"
+      "value": "-$26,675"
     },
     {
+      "key": "eva",
       "fieldName": "EVA Value:",
-      "value": "$1,980,919"
+      "value": "-$500,902"
     },
     {
+      "key": "evaPercent",
       "fieldName": "EVA %:",
-      "value": "-97.00%"
+      "value": "-58.00"
     }
   ]
 }

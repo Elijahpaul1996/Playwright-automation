@@ -1,0 +1,281 @@
+SSO popup opened
+Account selected
+Login completed
+Current URL: https://pricing-tool-dev.test.insightglobal.com/
+FIELDS =
+[
+  'Fully Loaded Gross Profit',
+  'Reported Gross Profit',
+  'Contract Revenue',
+  'Labor Revenue',
+  'Billable Expense Pass Through',
+  'Fee',
+  'Fee at Risk',
+  'Implementation Fee',
+  'Management Fee',
+  'Volume Discount',
+  'Early Pay Discount',
+  'Innovation Fund',
+  'Total Revenue',
+  'External Direct Labor - Onshore',
+  'External Project OH - Onshore',
+  'External Direct Labor - Offshore',
+  'External Project OH - Offshore',
+  'Internal Direct Labor - Onshore',
+  'Internal Project OH - Onshore',
+  'Total Labor Structure',
+  'Consultant Salaries and Wages',
+  'Consultant Payroll Taxes',
+  'Consultant Bonuses',
+  'Workers Comp Insurance',
+  'Clinical Insurance',
+  'Medical Benefits',
+  'ACA Subsides',
+  'Internal PM/PC salaries and wages',
+  'Internal payroll taxes on PM/PC salaries and wages',
+  'Total Labor Costs',
+  'Facility Rent Expense',
+  'Capital Facility Expense',
+  'Equipment Expense',
+  'Software Expense',
+  'Morale',
+  'Travel',
+  'vendor Expenses',
+  'Working Capital Finance Cost',
+  'Other costs',
+  'FX Costs',
+  'Licensing/Certification',
+  'Total Project Costs',
+  'Average Discount',
+  'Max Headcount',
+  'Headcount No Standard List Price',
+  'Average Bill Rate',
+  'Discount Rate',
+  'Project Value',
+  'IRR',
+  'Estimated Commissions',
+  'Commission Payroll Taxes',
+  'EVA Value:',
+  'EVA %:'
+]
+Project button visible
+Project button clicked
+Project opened
+Financial Summary button clicked
+Financial Summary opened
+✓ Field: undefined | Value: -$905,946
+✓ Field: undefined | Value: -$905,636
+✓ Field: undefined | Value: $920,258
+✓ Field: undefined | Value: $875,821
+✓ Field: undefined | Value: $204
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: -$8,758
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $867,267
+✓ Field: undefined | Value: $1,772,701
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $1,772,701
+✓ Field: undefined | Value: $1,606,080
+✓ Field: undefined | Value: $163,179
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $2,065
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $1,377
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $1,772,701
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $100
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $100
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $312
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $0
+✓ Field: undefined | Value: $512
+✓ Field: undefined | Value: 0
+✓ Field: undefined | Value: 8
+✓ Field: undefined | Value: 0
+✓ Field: undefined | Value: $59.55
+✓ Field: undefined | Value: -$863,608
+✓ Field: undefined | Value: -$863,608
+✓ Field: undefined | Value: 0.00
+✓ Field: undefined | Value: -$378,369
+✓ Field: undefined | Value: -$26,675
+✓ Field: undefined | Value: -$500,902
+✓ Field: undefined | Value: -58.00
+C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\uiFinancialSummarySnapshot.json
+Financial Summary Snapshot Saved
+[
+  {
+    "value": "-$905,946"
+  },
+  {
+    "value": "-$905,636"
+  },
+  {
+    "value": "$920,258"
+  },
+  {
+    "value": "$875,821"
+  },
+  {
+    "value": "$204"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "-$8,758"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$867,267"
+  },
+  {
+    "value": "$1,772,701"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$1,772,701"
+  },
+  {
+    "value": "$1,606,080"
+  },
+  {
+    "value": "$163,179"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$2,065"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$1,377"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$1,772,701"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$100"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$100"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$312"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$0"
+  },
+  {
+    "value": "$512"
+  },
+  {
+    "value": "0"
+  },
+  {
+    "value": "8"
+  },
+  {
+    "value": "0"
+  },
+  {
+    "value": "$59.55"
+  },
+  {
+    "value": "-$863,608"
+  },
+  {
+    "value": "-$863,608"
+  },
+  {
+    "value": "0.00"
+  },
+  {
+    "value": "-$378,369"
+  },
+  {
+    "value": "-$26,675"
+  },
+  {
+    "value": "-$500,902"
+  },
+  {
+    "value": "-58.00"
+  }
+]

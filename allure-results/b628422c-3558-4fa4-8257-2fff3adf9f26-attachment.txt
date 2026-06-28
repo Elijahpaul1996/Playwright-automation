@@ -1,0 +1,6 @@
+Key            : projectValue
+Excel Value    : (863,607.92)
+UI Value       : -$863,608
+Normalized Excel: -863608
+Normalized UI  : -863608
+Status         : MATCHED

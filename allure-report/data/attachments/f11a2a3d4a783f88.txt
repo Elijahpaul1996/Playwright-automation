@@ -1,0 +1,6 @@
+Key            : equipmentExpense
+Excel Value    : $100
+UI Value       : $100
+Normalized Excel: 100
+Normalized UI  : 100
+Status         : MATCHED

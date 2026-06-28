@@ -1,0 +1,6 @@
+Key            : FullyLoadedGrossProfit
+Excel Value    : ($905,946)
+UI Value       : -$905,946
+Normalized Excel: -905946
+Normalized UI  : -905946
+Status         : MATCHED

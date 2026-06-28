@@ -1,0 +1,45 @@
+
+── Financial Summary Comparison ──────────────────
+  Total          : 56
+  ✅ Passed       : 42
+  ❌ Failed       : 11
+  ⚠️  Missing Excel: 0
+  ⚠️  Missing UI   : 3
+──────────────────────────────────────────────────
+
+Failed fields:
+  ❌ Fully Loaded Gross Profit
+     Excel : ($905,946) (normalized: -905946)
+     UI    : $905,946 (normalized: 905946)
+  ❌ Reported (Direct) Gross Profit
+     Excel : ($905,636) (normalized: -905636)
+     UI    : $905,636 (normalized: 905636)
+  ❌ Volume Discount
+     Excel : ($8,758) (normalized: -8758)
+     UI    : $8,758 (normalized: 8758)
+  ❌ Estimated Commissions
+     Excel : ($378,369) (normalized: -378369)
+     UI    : $378,369 (normalized: 378369)
+  ❌ Commission Payroll Taxes
+     Excel : ($26,675) (normalized: -26675)
+     UI    : $26,675 (normalized: 26675)
+  ❌ EVA
+     Excel : ($500,902) (normalized: -500902)
+     UI    : $500,902 (normalized: 500902)
+  ❌ %
+     Excel : -57.8% (normalized: -57.8)
+     UI    : -58.00% (normalized: -58)
+  ❌ Average Bill Rate
+     Excel : $59.5 (normalized: 59.5)
+     UI    : $59.55 (normalized: 59.55)
+  ❌ Discount Rate
+     Excel : 13.0% (normalized: 13)
+     UI    : $863,608 (normalized: 863608)
+  ❌ Project Value
+     Excel : 392,652.43 (normalized: 392652.43)
+     UI    : $863,608 (normalized: 863608)
+  ❌ IRR
+     Excel : 251% (normalized: 251)
+     UI    : 0.00 (normalized: 0)
+
+Report saved → C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummaryComparisonReport.json

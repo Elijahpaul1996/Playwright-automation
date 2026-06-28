@@ -1,0 +1,129 @@
+SSO popup opened
+Account selected
+Login successful, navigated to dashboard/projects
+Creating 6 roles...
+Project button visible
+Project button clicked
+Creating role 1 of 6 : MECHANICAL ENGINEER
+✅ click add role button
+✅ select role type MECHANICAL ENGINEER
+✅ select tenure: Over 3 years - up to 5 years
+Standard radio button checked
+✅ select country: United States
+Country and Employment Type selected: United States W2
+State selected: Remote
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 0
+Role saved: MECHANICAL ENGINEER
+Role 1 done
+Creating role 2 of 6 : CIVIL ENGINEER
+✅ click add role button
+✅ select role type CIVIL ENGINEER
+✅ select tenure: Over 3 years - up to 5 years
+Standard radio button checked
+✅ select country: United States
+Country and Employment Type selected: United States W2
+State selected: Alabama
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 0
+Role saved: CIVIL ENGINEER
+Role 2 done
+Creating role 3 of 6 : ELECTRICAL ENGINEER
+✅ click add role button
+✅ select role type ELECTRICAL ENGINEER
+✅ select tenure: Over 5 years - up to 7 years
+Standard radio button checked
+✅ select country: United States
+Country and Employment Type selected: United States W2
+State selected: California
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 0
+Role saved: ELECTRICAL ENGINEER
+Role 3 done
+Creating role 4 of 6 : PROJECT MANAGER
+✅ click add role button
+✅ select role type PROJECT MANAGER
+✅ select tenure: Over 5 years - up to 7 years
+Standard radio button checked
+✅ select country: United States
+Country and Employment Type selected: United States W2
+State selected: Florida
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 0
+Role saved: PROJECT MANAGER
+Role 4 done
+Creating role 5 of 6 : GIS ANALYST
+✅ click add role button
+✅ select role type GIS ANALYST
+✅ select tenure: Over 3 years - up to 5 years
+Standard radio button checked
+✅ select country: Brazil
+Country and Employment Type selected: Brazil EOR
+State selected: Any
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 2
+Role saved: GIS ANALYST
+Role 5 done
+Creating role 6 of 6 : CAD DESIGNER
+✅ click add role button
+✅ select role type CAD DESIGNER
+✅ select tenure: Over 5 years - up to 7 years
+Standard radio button checked
+✅ select country: India
+Country and Employment Type selected: India AOR
+State selected: Any
+All dropdowns selected
+Decimal values entered
+Numeric values entered
+Discount: 2
+Role saved: CAD DESIGNER
+Role 6 done
+All 6 roles created!
+Entered Work Items Page
+Work Items section opened
+Creating work item 1 of 6
+Add Work Item clicked
+Work item name filled: wk1
+Description filled
+Checkbox checked for: MECHANICAL ENGINEER
+All fields filled
+Work item saved: wk1
+Work item 1 done
+Creating work item 2 of 6
+Add Work Item clicked
+Work item name filled: wk2
+Description filled
+Checkbox checked for: CIVIL ENGINEER
+All fields filled
+Work item saved: wk2
+Work item 2 done
+Creating work item 3 of 6
+Add Work Item clicked
+Work item name filled: wk3
+Description filled
+Checkbox checked for: ELECTRICAL ENGINEER
+All fields filled
+Work item saved: wk3
+Work item 3 done
+Creating work item 4 of 6
+Add Work Item clicked
+Work item name filled: wk4
+Description filled
+Checkbox checked for: PROJECT MANAGER
+All fields filled
+Work item saved: wk4
+Work item 4 done
+Creating work item 5 of 6
+Add Work Item clicked
+Work item name filled: wk5
+Description filled

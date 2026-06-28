@@ -1,0 +1,82 @@
+Loaded sheet: Financial Summary from workbook: C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\Pricing Tool\Pavan IG\6.19\6.19 3R inflation.xlsm
+Revenue -> B13 -> C13
+Revenue -> B22 -> C22
+Fully Loaded Gross Profit -> B14 -> C14
+% -> B15 -> C15
+Reported (Direct) Gross Profit -> B17 -> C17
+Contract Revenue (NTE + Pass-Through Revenue) -> B20 -> C20
+Labor Revenue -> B23 -> C23
+Billable Expense Pass Through -> B24 -> C24
+Fees -> B25 -> C25
+Fees at Risk -> B26 -> C26
+Implementation Fees -> B27 -> C27
+Management Fees -> B28 -> C28
+Volume Discount -> B29 -> C29
+Early Pay Discount -> B30 -> C30
+Innovation Funds -> B31 -> C31
+Labor Structure -> B33 -> C33
+External Direct Labor - Onshore -> B34 -> C34
+External Project OH - Onshore -> B35 -> C35
+External Direct Labor - Offshore -> B37 -> C37
+External Project OH - Offshore -> B38 -> C38
+Internal Direct Labor - Onshore -> B40 -> C40
+Internal Project OH - Onshore -> B41 -> C41
+Labor Costs -> B43 -> C43
+Consultant Salaries and Wages -> B44 -> C44
+Consultant Payroll Taxes -> B45 -> C45
+Consultant Bonuses -> B46 -> C46
+Workers Comp Insurance -> B47 -> C47
+Clinical Insurance -> B48 -> C48
+Medical Benefits -> B49 -> C49
+ACA Subsidies -> B50 -> C50
+Internal PM/PC (project management) Salaries and Wages -> B51 -> C51
+Internal Payroll Taxes on PM/PC salaries and wages -> B52 -> C52
+Project Costs -> B54 -> C54
+Facility Rent Expense -> B55 -> C55
+Capital Facility Expenses -> B56 -> C56
+Equipment Expense -> B57 -> C57
+Software Expense -> B58 -> C58
+Morale -> B59 -> C59
+Travel -> B60 -> C60
+Vendor Expenses -> B61 -> C61
+Working Capital (Finance Cost) -> B62 -> C62
+Other Costs -> B63 -> C63
+FX Costs -> B64 -> C64
+Licensing and Certification -> B65 -> C65
+Compensation Cost -> B70 -> C70
+Estimated Commissions -> B71 -> C71
+Commission Payroll Taxes -> B72 -> C72
+EVA -> B74 -> C74
+% -> B75 -> C75
+Average Discount -> K13 -> L13
+Max Headcount -> K14 -> L14
+Headcount No Standard List Price -> K15 -> L15
+Average Bill Rate -> K16 -> L16
+Discount Rate -> K18 -> L18
+Project Value -> K19 -> L19
+IRR -> K20 -> L20
+Financial Summary snapshot updated successfully
+Snapshot Path: C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\financialSummarySnapshot.json
+Records: 56
+Loaded sheet: Monthly P&L from workbook: C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\Pricing Tool\Pavan IG\6.19\6.19 3R inflation.xlsm
+Monthly P&L | Gross Sales -> B17 -> C17 | total: 875,821.02
+Monthly P&L | Billable Expense (Pass Thru) -> B18 -> C18 | total: 204.00
+Monthly P&L | Volume Rebates -> B19 -> C19 | total: (8,758.21)
+Monthly P&L | Early Pay Discount -> B20 -> C20 | total: 0.00
+Monthly P&L | Net Revenue -> B21 -> C21 | total: 867,266.81
+Monthly P&L | Salaries & Wages -> B23 -> C23 | total: 1,606,080.00
+Monthly P&L | Payroll Taxes -> B24 -> C24 | total: 163,178.68
+Monthly P&L | Non-Billable Expense -> B25 -> C25 | total: 0.00
+Monthly P&L | Billable Expense (Pass Thru) -> B26 -> C26 | total: 200.38
+Monthly P&L | Workers Comp Insurance -> B27 -> C27 | total: 2,065.42
+Monthly P&L | Clinical Insurance -> B28 -> C28 | total: 0.00
+Monthly P&L | Medical Benefits -> B29 -> C29 | total: 1,376.64
+Monthly P&L | ACA Cost -> B30 -> C30 | total: 0.00
+Monthly P&L | COS -> B31 -> C31 | total: 1,772,901.12
+Monthly P&L | Gross Margin -> B33 -> C33 | total: (905,636.32)
+Monthly P&L | % -> B34 -> C34 | total: (104.4%)
+Monthly P&L | Headcount -> B36 -> C36 | total: 8
+Monthly P&L | Avg. Bill Rate -> B37 -> C37 | total: 59.5485
+Monthly P&L snapshot updated successfully
+Snapshot Path: C:\Users\Elijah.Paul\OneDrive - Insight Global, LLC\Desktop\playwright test\testdata\monthlyPAndLSnapshot.json
+Records: 18

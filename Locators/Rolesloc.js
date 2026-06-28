@@ -14,6 +14,8 @@ const roleLocators = (page) => ({
   dropdownOption: (valueText) => page.getByRole('option', { name: valueText }),
   dropdownOptionExact: (valueText) => page.getByRole('option', { name: valueText, exact: true }),
 
+  dropdownByLabel: (labelText) => page.locator(`//label[normalize-space()='${labelText}']/following-sibling::*//div[contains(@class,'dropdown')]`),
+  
   // Bill Rate Type radio/label — dynamic by label text
   billRateLabel: (billRateType) => page.getByLabel(billRateType).nth(1),
 
